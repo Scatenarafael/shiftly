@@ -12,25 +12,23 @@ from src.infra.settings.config import get_settings
 settings = get_settings()
 
 
-def create_access_token(subject: str, expires_delta: int | None = None):
+def create_access_token(subject: str):
     now = datetime.now(timezone.utc)
     expire = now + timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES)
-    payload = {"sub": subject, "iat": now, "exp": expire}
-    token = jwt.encode(payload, settings.SECRET_KEY, algorithm=settings.ALGORITHM)
+    payload = {"sub": subject, "iat": int(now.timestamp()), "exp": int(expire.timestamp())}
+    token = jwt.encode(payload, settings.ACCESS_SECRET, algorithm=settings.ALGORITHM)
     return token
 
 
 def verify_access_token(token: str):
     try:
-        payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
+        payload = jwt.decode(token, settings.ACCESS_SECRET, algorithms=[settings.ALGORITHM])
         return payload
     except JWTError:
         return None
 
 
 # Refresh tokens (opaque)
-
-
 def generate_refresh_token_raw():
     # gera um token opaco seguro + jti encodado dentro, mas vamos guardar jti separado no DB
     return secrets.token_urlsafe(64)

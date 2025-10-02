@@ -1,28 +1,32 @@
 from abc import ABC, abstractmethod
-from typing import Any, Dict, Optional
+from typing import Awaitable, Optional
 
 from src.account.domain.entities.user import User
 
 
 class IUsersRepository(ABC):
     @abstractmethod
-    def list(self) -> list[User] | None:
+    async def list(self) -> Awaitable[list[User] | None]:
         pass
 
     @abstractmethod
-    def create(self, first_name: str, last_name: str, email: str, hashed_password: str, active: bool) -> Optional[User]:
+    async def create(self, first_name: str, last_name: str, email: str, password: str, active: bool) -> Awaitable[Optional[User]]:
         pass
 
     @abstractmethod
-    def get_by_id(self, id: str) -> Dict[str, Any] | None:
+    async def get_by_email(self, email: str) -> Awaitable[Optional[User]]:
         pass
 
     @abstractmethod
-    def partial_update_by_id(self, id: str, first_name: Optional[str], last_name: Optional[str], email: Optional[str], hashed_password: Optional[str], active: Optional[bool]) -> Optional[User]:
+    async def get_by_id(self, id: str) -> Awaitable[Optional[User]]:
         pass
 
     @abstractmethod
-    def delete(self, id: str):
+    async def partial_update_by_id(self, id: str, first_name: Optional[str], last_name: Optional[str], email: Optional[str], hashed_password: Optional[str], active: Optional[bool]) -> Awaitable[Optional[User]]:
+        pass
+
+    @abstractmethod
+    async def delete(self, id: str) -> Awaitable[None]:
         pass
 
     @abstractmethod

@@ -1,6 +1,7 @@
-from typing import Any, Dict, Optional
+from typing import Optional
 
 from passlib.context import CryptContext
+from sqlalchemy import delete, select
 
 from src.account.domain.entities.user import User
 from src.account.interfaces.iusers_repository import IUsersRepository
@@ -12,20 +13,21 @@ pwd_ctx = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 class UsersRepository(IUsersRepository):
     @classmethod
-    def list(cls) -> Optional[list[User]]:
-        with DbConnectionHandler() as database:
+    async def list(cls) -> Optional[list[User]]:
+        async with DbConnectionHandler() as database:
             try:
                 if database.session:
-                    users = database.session.query(User).order_by(User.created_at.desc()).all()
-                    return users
+                    result = await database.session.execute(select(User).order_by(User.created_at.desc()))  # type: ignore
+                    users = result.scalars().all()
+                    return users  # type: ignore
             except Exception as exception:
                 raise exception
 
     @classmethod
-    def create(cls, first_name: str, last_name: str, email: str, hashed_password: str, active: bool) -> Optional[User]:
-        with DbConnectionHandler() as database:
+    async def create(cls, first_name: str, last_name: str, email: str, password: str, active: bool) -> Optional[User]:
+        async with DbConnectionHandler() as database:
             try:
-                new_register = User(first_name=first_name, last_name=last_name, email=email, hashed_password=hashed_password, active=active)
+                new_register = User(first_name=first_name, last_name=last_name, email=email, hashed_password=pwd_ctx.hash(password), active=active)
 
                 app_logger.info(f"[USER][CREATE] new_register: (first_name: {new_register.first_name}, last_name: {new_register.last_name}, email: {new_register.email}, active: {new_register.active})")
 
@@ -34,43 +36,52 @@ class UsersRepository(IUsersRepository):
 
                 if database.session:
                     database.session.add(new_register)
-                    database.session.commit()
-                    database.session.refresh(new_register)
+                    await database.session.commit()
+                    await database.session.refresh(new_register)
                     return new_register
             except Exception as exception:
                 raise exception
 
     @classmethod
-    def get_by_id(cls, id: str) -> Optional[Dict[str, Any]]:
-        with DbConnectionHandler() as database:
+    async def get_by_id(cls, id: str) -> Optional[User]:
+        async with DbConnectionHandler() as database:
             try:
                 app_logger.info(f"[USER][GETBY][ID] not_none_args: {id}")
                 if database.session:
-                    user = database.session.query(User).filter(User.id == id).first()
+                    user = await database.session.execute(select(User).filter(User.id == id))  # type: ignore
                     if not user:
                         raise LookupError("User not found!")
-                    return {
-                        "id": user.id,
-                        "sent_to_server_status": user.sent_to_server_status,
-                        "server_user_uuid": user.server_user_uuid,
-                        "fuel": user.fuel,
-                        "partner": user.partner,
-                        "gauge": user.gauge,
-                        "measurement_scan": user.measurement_scan,
-                        "created_at": user.created_at,
-                    }
+                    return user  # type: ignore
             except Exception as exception:
                 app_logger.error(f"[USER][GETBY][ID] exception: {exception}")
                 if database.session:
-                    database.session.rollback()
+                    await database.session.rollback()
                 raise exception
 
     @classmethod
-    def partial_update_by_id(cls, id: str, first_name: str | None, last_name: str | None, email: str | None, hashed_password: str | None, active: bool | None) -> Optional[User]:
-        with DbConnectionHandler() as database:
+    async def get_by_email(cls, email: str) -> Optional[User]:
+        async with DbConnectionHandler() as database:
+            try:
+                app_logger.info(f"[USER][GETBY][EMAIL] not_none_args: {email}")
+                if database.session:
+                    result = await database.session.execute(select(User).where(User.email == email))  # type: ignore
+                    user = result.scalars().first()
+                    if not user:
+                        raise LookupError("User not found!")
+                    return user
+            except Exception as exception:
+                app_logger.error(f"[USER][GETBY][EMAIL] exception: {exception}")
+                if database.session:
+                    await database.session.rollback()
+                raise exception
+
+    @classmethod
+    async def partial_update_by_id(cls, id: str, first_name: str | None, last_name: str | None, email: str | None, hashed_password: str | None, active: bool | None) -> Optional[User]:
+        async with DbConnectionHandler() as database:
             try:
                 if database.session:
-                    user = database.session.query(User).filter(User.id == id).first()
+                    result = await database.session.execute(select(User).filter(User.id == id))  # type: ignore
+                    user = result.scalars().first()
                     if not user:
                         raise ValueError("User not found")
 
@@ -85,25 +96,25 @@ class UsersRepository(IUsersRepository):
 
                 if database.session:
                     database.session.add(user)
-                    database.session.commit()
+                    await database.session.commit()
             except Exception as exception:
                 app_logger.error(f"[USER][PARTIAL][UPDATE] exception: {exception}")
                 if database.session:
-                    database.session.rollback()
+                    await database.session.rollback()
                 raise exception
 
     @classmethod
-    def delete(cls, id: str):
-        with DbConnectionHandler() as database:
+    async def delete(cls, id: str):
+        async with DbConnectionHandler() as database:
             try:
                 app_logger.info(f"[USER][DELETE] user_id: {id}")
                 if database.session:
-                    database.session.query(User).filter(User.id == id).delete()
-                    database.session.commit()
+                    await database.session.execute(delete(User).where(User.id == id))
+                    await database.session.commit()
             except Exception as exception:
                 app_logger.error(f"[USER][DELETE] exception: {exception}")
                 if database.session:
-                    database.session.rollback()
+                    await database.session.rollback()
                 raise exception
 
     @classmethod

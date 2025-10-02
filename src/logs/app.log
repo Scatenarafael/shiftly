@@ -1,0 +1,766 @@
+2025-10-01 18:46:30.060836 [INFO] [USER][CREATE] new_register: (first_name: john, last_name: doe, email: john.doe@email.com, active: True)
+2025-10-01 18:46:59.740505 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com, password: abcd4321
+2025-10-01 18:46:59.741419 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 18:46:59.741774 [ERROR] [USER][GETBY][EMAIL] exception: 'module' object is not callable. Did you mean: 'select.select(...)'?
+2025-10-01 18:46:59.743133 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: 'module' object is not callable. Did you mean: 'select.select(...)'?
+2025-10-01 18:50:34.369160 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com, password: abcd4321
+2025-10-01 18:50:34.372737 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 18:50:34.375679 [ERROR] [USER][GETBY][EMAIL] exception: select expected at least 3 arguments, got 1
+2025-10-01 18:50:34.378901 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: select expected at least 3 arguments, got 1
+2025-10-01 18:52:54.641321 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com, password: abcd4321
+2025-10-01 18:52:54.644423 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 18:52:55.178435 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: Object of type UUID is not JSON serializable
+2025-10-01 18:54:48.489396 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com, password: abcd4321
+2025-10-01 18:54:48.490666 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 18:54:48.884481 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: Object of type UUID is not JSON serializable
+2025-10-01 18:57:55.175376 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com, password: abcd4vavad321
+2025-10-01 18:57:55.176250 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 18:57:55.536170 [ERROR] [AUTH ROUTES] [LOGIN] [InvalidCredentials] exc: Usuário ou senha inválidos
+2025-10-01 18:58:11.907371 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com, password: abcd4321
+2025-10-01 18:58:11.908290 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 18:58:12.269494 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: Object of type UUID is not JSON serializable
+2025-10-01 19:30:03.785484 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-01 19:30:03.786096 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-01 19:30:03.787576 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 19:30:03.898011 [DEBUG] [AUTH SERVICE] [LOGIN] user: <src.account.domain.entities.user.User object at 0x7f2ddbf2e270>
+2025-10-01 19:30:04.235579 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: Object of type UUID is not JSON serializable
+2025-10-01 19:34:41.612482 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-01 19:34:41.613034 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-01 19:34:41.614367 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 19:34:41.733776 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': UUID('52fc79e7-c09d-4218-bf53-29af81a83b21'), 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': datetime.datetime(2025, 10, 1, 18, 46, 30, 129867, tzinfo=datetime.timezone.utc)}
+2025-10-01 19:34:42.131661 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: Object of type UUID is not JSON serializable
+2025-10-01 19:37:04.391506 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-01 19:37:04.392508 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-01 19:37:04.394146 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 19:37:04.499364 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': UUID('52fc79e7-c09d-4218-bf53-29af81a83b21'), 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': datetime.datetime(2025, 10, 1, 18, 46, 30, 129867, tzinfo=datetime.timezone.utc)}
+2025-10-01 19:37:04.499665 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: 'dict' object has no attribute 'hashed_password'
+2025-10-01 20:06:01.122173 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-01 20:06:01.123377 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-01 20:06:01.124422 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 20:06:01.232388 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': UUID('52fc79e7-c09d-4218-bf53-29af81a83b21'), 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': datetime.datetime(2025, 10, 1, 18, 46, 30, 129867, tzinfo=datetime.timezone.utc)}
+2025-10-01 20:06:01.645683 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: Object of type UUID is not JSON serializable
+2025-10-01 20:17:27.430941 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-01 20:17:27.431996 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-01 20:17:27.434067 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 20:17:27.562125 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': UUID('52fc79e7-c09d-4218-bf53-29af81a83b21'), 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': datetime.datetime(2025, 10, 1, 18, 46, 30, 129867, tzinfo=datetime.timezone.utc)}
+2025-10-01 20:17:27.562832 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-01 20:17:28.002244 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: Object of type UUID is not JSON serializable
+2025-10-01 20:18:41.387980 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-01 20:18:41.388905 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-01 20:18:41.390663 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 20:18:41.537135 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': UUID('52fc79e7-c09d-4218-bf53-29af81a83b21'), 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': datetime.datetime(2025, 10, 1, 18, 46, 30, 129867, tzinfo=datetime.timezone.utc)}
+2025-10-01 20:18:41.537535 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-01 20:18:41.977208 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNDk5MjEsImV4cCI6MTc1OTM1MDgyMX0.Hck_2cB4gkiLnkMH3VUsQRDm5DkCFro7xkkmyIXBA5A
+2025-10-01 20:18:41.977828 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: d8d63f516277e45f58f9486dd289f3dc3e51a10773fc5fac4bef11504557bd49
+2025-10-01 20:18:41.978252 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 85a6cc25-a950-444b-b60a-bd93a08ca85b
+2025-10-01 20:18:41.978565 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-31 20:18:41.978515+00:00
+2025-10-01 20:18:41.979704 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 85a6cc25-a950-444b-b60a-bd93a08ca85b, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= d8d63f516277e45f58f9486dd289f3dc3e51a10773fc5fac4bef11504557bd49, expires_at= 2025-10-31 20:18:41.978515+00:00)
+2025-10-01 20:18:42.155728 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNDk5MjEsImV4cCI6MTc1OTM1MDgyMX0.Hck_2cB4gkiLnkMH3VUsQRDm5DkCFro7xkkmyIXBA5A
+2025-10-01 20:18:42.156218 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: aTr5FYanLPGovZiSBFIwLVHmgzUmdOFNCIdmbzRbPWfDKVxaqsqIqzBqmR5c3q3dsjYxOz-bbBAw8R6FETz9RQ
+2025-10-01 20:21:13.251587 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-01 20:21:13.252061 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-01 20:21:13.254096 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 20:21:13.389830 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': UUID('52fc79e7-c09d-4218-bf53-29af81a83b21'), 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': datetime.datetime(2025, 10, 1, 18, 46, 30, 129867, tzinfo=datetime.timezone.utc)}
+2025-10-01 20:21:13.391148 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-01 20:21:13.899865 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNTAwNzMsImV4cCI6MTc1OTM1MDk3M30.DO80duRdk4VFI30xG0a3NIoUD9EzhzumcnAiaFMLMi8
+2025-10-01 20:21:13.900378 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: a941eccba32756c6413ff575d09037a93d8f502ad548c51b92a0f6a65349a76f
+2025-10-01 20:21:13.900750 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 242db897-16c8-4500-8d25-d40b3f7d9eeb
+2025-10-01 20:21:13.900999 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-31 20:21:13.900943+00:00
+2025-10-01 20:21:13.902099 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 242db897-16c8-4500-8d25-d40b3f7d9eeb, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= a941eccba32756c6413ff575d09037a93d8f502ad548c51b92a0f6a65349a76f, expires_at= 2025-10-31 20:21:13.900943+00:00)
+2025-10-01 20:21:14.000516 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNTAwNzMsImV4cCI6MTc1OTM1MDk3M30.DO80duRdk4VFI30xG0a3NIoUD9EzhzumcnAiaFMLMi8
+2025-10-01 20:21:14.001250 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: TLpMRhY9yewrnbEDxdQ8L_y5YWYawL8MiesE8J9dQnN0vbzoLo0PVY0UKTs-k1FFCEv-PKgwqz5mAN1-QzvL_w
+2025-10-01 20:22:09.821352 [INFO] [AUTH ROUTES] [REFRESH] cookie: 242db897-16c8-4500-8d25-d40b3f7d9eeb:TLpMRhY9yewrnbEDxdQ8L_y5YWYawL8MiesE8J9dQnN0vbzoLo0PVY0UKTs-k1FFCEv-PKgwqz5mAN1-QzvL_w
+2025-10-01 20:22:09.822689 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 242db897-16c8-4500-8d25-d40b3f7d9eeb
+2025-10-01 20:22:09.909793 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= b721f256-ffb5-40b3-9dde-12279bfa28e8, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 592df9183e7c0bd5aa60a6d85cec75a4fe4be2d5c09fc9ef08d70dbcb9fb19bf, expires_at= 2025-10-31 20:22:09.908886+00:00)
+2025-10-01 20:31:10.182946 [INFO] [AUTH ROUTES] [REFRESH] cookie: 242db897-16c8-4500-8d25-d40b3f7d9eeb:TLpMRhY9yewrnbEDxdQ8L_y5YWYawL8MiesE8J9dQnN0vbzoLo0PVY0UKTs-k1FFCEv-PKgwqz5mAN1-QzvL_w
+2025-10-01 20:31:10.184597 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 242db897-16c8-4500-8d25-d40b3f7d9eeb
+2025-10-01 20:31:10.293259 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 6eea1a06-9c28-4bd7-95f2-291f774c62c1, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 5cd2fa271d46fde23fc99d427d3fcba984d652a8104a585e5836dff3f758c3ab, expires_at= 2025-10-31 20:31:10.292718+00:00)
+2025-10-01 20:35:57.535865 [INFO] [AUTH ROUTES] [REFRESH] cookie: 242db897-16c8-4500-8d25-d40b3f7d9eeb:TLpMRhY9yewrnbEDxdQ8L_y5YWYawL8MiesE8J9dQnN0vbzoLo0PVY0UKTs-k1FFCEv-PKgwqz5mAN1-QzvL_w
+2025-10-01 20:35:57.537168 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 242db897-16c8-4500-8d25-d40b3f7d9eeb
+2025-10-01 20:35:57.684322 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 2705fe94-9e43-4313-9c55-e4190c2446d0, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= cb5b041b047a1ecdf56edfbe7cfcfb984de05a0647575dff16bfddc420922b24, expires_at= 2025-10-31 20:35:57.683613+00:00)
+2025-10-01 20:35:57.801324 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x70a114332270>, replaced_by: 2705fe94-9e43-4313-9c55-e4190c2446d0
+2025-10-01 20:36:57.850413 [INFO] [AUTH ROUTES] [REFRESH] cookie: 242db897-16c8-4500-8d25-d40b3f7d9eeb:TLpMRhY9yewrnbEDxdQ8L_y5YWYawL8MiesE8J9dQnN0vbzoLo0PVY0UKTs-k1FFCEv-PKgwqz5mAN1-QzvL_w
+2025-10-01 20:36:57.851817 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 242db897-16c8-4500-8d25-d40b3f7d9eeb
+2025-10-01 20:36:58.033202 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-01 20:36:58.125941 [ERROR] [AUTH ROUTES] [REFRESH] [RefreshNotFound, RefreshExpired, RefreshReuseDetected, RefreshInvalid] e: Refresh reutilizado. Sessões revogadas.
+2025-10-01 20:37:12.722357 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-01 20:37:12.722637 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-01 20:37:12.724031 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 20:37:12.813946 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': UUID('52fc79e7-c09d-4218-bf53-29af81a83b21'), 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': datetime.datetime(2025, 10, 1, 18, 46, 30, 129867, tzinfo=datetime.timezone.utc)}
+2025-10-01 20:37:12.815248 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-01 20:37:13.162655 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNTEwMzMsImV4cCI6MTc1OTM1MTkzM30.x8PWrpXPnNQRiTXHuZSLiZXw6p2skXnYwiOoICOIY5E
+2025-10-01 20:37:13.163054 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 3a6cbc6af982914698b9158e75f46f73b59b063e319db13446f7cc943a638c7a
+2025-10-01 20:37:13.163351 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 9a051ca2-1bdf-4324-a739-8e9c2b1b44d1
+2025-10-01 20:37:13.163655 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-31 20:37:13.163590+00:00
+2025-10-01 20:37:13.164490 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 9a051ca2-1bdf-4324-a739-8e9c2b1b44d1, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 3a6cbc6af982914698b9158e75f46f73b59b063e319db13446f7cc943a638c7a, expires_at= 2025-10-31 20:37:13.163590+00:00)
+2025-10-01 20:37:13.291682 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNTEwMzMsImV4cCI6MTc1OTM1MTkzM30.x8PWrpXPnNQRiTXHuZSLiZXw6p2skXnYwiOoICOIY5E
+2025-10-01 20:37:13.292052 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: wuABy7vdNqBVREiTsiT422v4XRWsvUMy27Uht4j7nzOUex5BOM-fgDLMr1aHPmjDazgwgtoXv-fNYgPSg4cffw
+2025-10-01 20:37:17.676833 [INFO] [AUTH ROUTES] [REFRESH] cookie: 9a051ca2-1bdf-4324-a739-8e9c2b1b44d1:wuABy7vdNqBVREiTsiT422v4XRWsvUMy27Uht4j7nzOUex5BOM-fgDLMr1aHPmjDazgwgtoXv-fNYgPSg4cffw
+2025-10-01 20:37:17.678690 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 9a051ca2-1bdf-4324-a739-8e9c2b1b44d1
+2025-10-01 20:37:17.808392 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= fc40a3fe-8758-4869-91ea-a86850db4a3a, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 11f8e5d88ab45dd08f072fbb468211a15ca21db8d7110465b9a23fb5e5b6243f, expires_at= 2025-10-31 20:37:17.807166+00:00)
+2025-10-01 20:37:17.889420 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7f421234e0d0>, replaced_by: fc40a3fe-8758-4869-91ea-a86850db4a3a
+2025-10-01 20:37:17.957528 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNTEwMzcsImV4cCI6MTc1OTM1MTkzN30.v-bMfQ-fQCw5gVb6kjq7p_zpTeyuHaG7sgpUqbi5QFQ
+2025-10-01 20:37:17.957883 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: z4QYWvWZ1BW95Mw0sagIhQhLa9o7VUhrn93MZ3USYdYb2rLiE-qKdIV6ZWLe03IV9kc4Utl_Lu1nSVyNSTbfcw
+2025-10-01 20:38:17.783729 [INFO] [AUTH ROUTES] [REFRESH] cookie: 9a051ca2-1bdf-4324-a739-8e9c2b1b44d1:wuABy7vdNqBVREiTsiT422v4XRWsvUMy27Uht4j7nzOUex5BOM-fgDLMr1aHPmjDazgwgtoXv-fNYgPSg4cffw
+2025-10-01 20:38:17.785546 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 9a051ca2-1bdf-4324-a739-8e9c2b1b44d1
+2025-10-01 20:38:17.995854 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-01 20:38:18.102255 [ERROR] [AUTH ROUTES] [REFRESH] [RefreshNotFound, RefreshExpired, RefreshReuseDetected, RefreshInvalid] e: Refresh reutilizado. Sessões revogadas.
+2025-10-01 20:41:35.439831 [INFO] [AUTH ROUTES] [REFRESH] cookie: 9a051ca2-1bdf-4324-a739-8e9c2b1b44d1:wuABy7vdNqBVREiTsiT422v4XRWsvUMy27Uht4j7nzOUex5BOM-fgDLMr1aHPmjDazgwgtoXv-fNYgPSg4cffw
+2025-10-01 20:41:35.442728 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 9a051ca2-1bdf-4324-a739-8e9c2b1b44d1
+2025-10-01 20:41:35.550459 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-01 20:41:35.641147 [ERROR] [AUTH ROUTES] [REFRESH] [RefreshNotFound, RefreshExpired, RefreshReuseDetected, RefreshInvalid] e: Refresh reutilizado. Sessões revogadas.
+2025-10-01 20:43:11.764329 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-01 20:43:11.764870 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-01 20:43:11.766149 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 20:43:11.886941 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': UUID('52fc79e7-c09d-4218-bf53-29af81a83b21'), 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': datetime.datetime(2025, 10, 1, 18, 46, 30, 129867, tzinfo=datetime.timezone.utc)}
+2025-10-01 20:43:11.887827 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-01 20:43:12.235172 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNTEzOTIsImV4cCI6MTc1OTM1MjI5Mn0.HX0xFt83sJCrlATn8Vi5CDWbKktMAZk0MKVORAtia8U
+2025-10-01 20:43:12.235460 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 0d3e90c3e0b9211ba85404685a701d9d0b31961dc909131e14faf3d3493dc40b
+2025-10-01 20:43:12.235632 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 37db4037-3f97-4afe-8413-4d983f779799
+2025-10-01 20:43:12.235815 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-31 20:43:12.235788+00:00
+2025-10-01 20:43:12.236484 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 37db4037-3f97-4afe-8413-4d983f779799, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 0d3e90c3e0b9211ba85404685a701d9d0b31961dc909131e14faf3d3493dc40b, expires_at= 2025-10-31 20:43:12.235788+00:00)
+2025-10-01 20:43:12.305473 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNTEzOTIsImV4cCI6MTc1OTM1MjI5Mn0.HX0xFt83sJCrlATn8Vi5CDWbKktMAZk0MKVORAtia8U
+2025-10-01 20:43:12.305770 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: 0DzDs3t3Uh2qlhn9LgSzwbSko6cS3m8I3MXLua8zoyYjjsEumjxUX_uLayQ6QEaK4py13K0QrscQAcQUC5Tt2g
+2025-10-01 20:44:59.233127 [INFO] [USER][CREATE] new_register: (first_name: jack, last_name: rich, email: jack@email.com, active: True)
+2025-10-01 20:45:12.815170 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 37db4037-3f97-4afe-8413-4d983f779799:0DzDs3t3Uh2qlhn9LgSzwbSko6cS3m8I3MXLua8zoyYjjsEumjxUX_uLayQ6QEaK4py13K0QrscQAcQUC5Tt2g
+2025-10-01 20:45:12.816094 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 37db4037-3f97-4afe-8413-4d983f779799
+2025-10-01 20:46:11.137678 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 37db4037-3f97-4afe-8413-4d983f779799:0DzDs3t3Uh2qlhn9LgSzwbSko6cS3m8I3MXLua8zoyYjjsEumjxUX_uLayQ6QEaK4py13K0QrscQAcQUC5Tt2g
+2025-10-01 20:46:11.140674 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 37db4037-3f97-4afe-8413-4d983f779799
+2025-10-01 20:46:11.256555 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x778e0ae42120>, replaced_by: None
+2025-10-01 20:46:31.417552 [INFO] [USER][CREATE] new_register: (first_name: jack2, last_name: rich2, email: jack2@email.com, active: True)
+2025-10-01 22:31:03.449056 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-01 22:31:03.449386 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-01 22:31:03.450145 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-01 22:31:03.504861 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': UUID('52fc79e7-c09d-4218-bf53-29af81a83b21'), 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': datetime.datetime(2025, 10, 1, 18, 46, 30, 129867, tzinfo=datetime.timezone.utc)}
+2025-10-01 22:31:03.505095 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-01 22:31:03.805570 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNTc4NjMsImV4cCI6MTc1OTM1ODc2M30.p3-fvfofXwfAPuLmCudhPvGz4h045qvmyMKAi_X-l88
+2025-10-01 22:31:03.805846 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: c512a6f4da6d9c277cd7be63892b2e7d5a13f06c4c4ccf7337bd8ca015c98c66
+2025-10-01 22:31:03.806083 [DEBUG] [AUTH SERVICE] [LOGIN] jti: d8e22e86-cf49-43c2-96a7-96686a93086c
+2025-10-01 22:31:03.806262 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-31 22:31:03.806232+00:00
+2025-10-01 22:31:03.806906 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= d8e22e86-cf49-43c2-96a7-96686a93086c, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= c512a6f4da6d9c277cd7be63892b2e7d5a13f06c4c4ccf7337bd8ca015c98c66, expires_at= 2025-10-31 22:31:03.806232+00:00)
+2025-10-01 22:31:03.867220 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNTc4NjMsImV4cCI6MTc1OTM1ODc2M30.p3-fvfofXwfAPuLmCudhPvGz4h045qvmyMKAi_X-l88
+2025-10-01 22:31:03.867530 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: r2LBlpWS1QK4fdX7w_Jiva9IF72iRgJcQukmFiDrEq5JdrGJ6y89V2psZZL4qqvXBjIVghFFk6uF0ybmZY8O_A
+2025-10-01 22:31:11.604228 [INFO] [USER][CREATE] new_register: (first_name: jack3, last_name: rich3, email: jack3@email.com, active: True)
+2025-10-02 13:19:37.035361 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-02 13:19:37.036218 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-02 13:19:37.038242 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-02 13:19:37.126866 [INFO] user: {'id': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': '2025-10-01T18:46:30.129867+00:00'}
+2025-10-02 13:19:37.127424 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': UUID('52fc79e7-c09d-4218-bf53-29af81a83b21'), 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': datetime.datetime(2025, 10, 1, 18, 46, 30, 129867, tzinfo=datetime.timezone.utc)}
+2025-10-02 13:19:37.128393 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-02 13:19:37.508313 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTExNzcsImV4cCI6MTc1OTQxMjA3N30.fJKdlnHLqXf74WSlrfuTTVLBDCE95Lu_UYEkTugnamI
+2025-10-02 13:19:37.508747 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 9a13c3743e109c84cf5170a567e80224d62ad7ddf76270494efe1731dc02b742
+2025-10-02 13:19:37.509049 [DEBUG] [AUTH SERVICE] [LOGIN] jti: c20eff1b-35cf-46e3-a124-c7de0297ab67
+2025-10-02 13:19:37.509785 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-11-01 13:19:37.509736+00:00
+2025-10-02 13:19:37.510928 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= c20eff1b-35cf-46e3-a124-c7de0297ab67, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 9a13c3743e109c84cf5170a567e80224d62ad7ddf76270494efe1731dc02b742, expires_at= 2025-11-01 13:19:37.509736+00:00)
+2025-10-02 13:19:37.630423 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTExNzcsImV4cCI6MTc1OTQxMjA3N30.fJKdlnHLqXf74WSlrfuTTVLBDCE95Lu_UYEkTugnamI
+2025-10-02 13:19:37.630954 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: q3M7RxZYzD3ehnwmEQAUILla1Z14iXxHQ2WO1o4nrLUWK90R97ercpbGGzByc7oS3Wz_abbe4z9TTFu2ddzAkw
+2025-10-02 13:33:39.149181 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-02 13:33:39.151556 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-02 13:33:39.155853 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-02 13:33:39.281444 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': '2025-10-01T18:46:30.129867+00:00'}
+2025-10-02 13:33:39.281929 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-02 13:33:39.651187 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTIwMTksImV4cCI6MTc1OTQxMjkxOX0.mfZWC8DXcWYncmu7bI9LbfwjcD6kmblt7m-EqBOIEFE
+2025-10-02 13:33:39.651825 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 0f8c07b2863ea8dfcfaf6ff6de47927ed8c169dee1b31423a5ad0766f80d8dbc
+2025-10-02 13:33:39.653213 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 638c194f-609b-453c-8abf-b7261c043d62
+2025-10-02 13:33:39.653716 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-11-01 13:33:39.653669+00:00
+2025-10-02 13:33:39.654815 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 638c194f-609b-453c-8abf-b7261c043d62, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 0f8c07b2863ea8dfcfaf6ff6de47927ed8c169dee1b31423a5ad0766f80d8dbc, expires_at= 2025-11-01 13:33:39.653669+00:00)
+2025-10-02 13:33:39.744248 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTIwMTksImV4cCI6MTc1OTQxMjkxOX0.mfZWC8DXcWYncmu7bI9LbfwjcD6kmblt7m-EqBOIEFE
+2025-10-02 13:33:39.745015 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: 6jAxpqn7hBzFlOErlQSrU-ljUvL7-WlEUpFImWCT8VsVUomN6PMa8P0pv4ADRd-Eo0JrfxYjaIXHkE7pcr9DmQ
+2025-10-02 14:15:08.374035 [INFO] [AUTH ROUTES] [REFRESH] cookie: 638c194f-609b-453c-8abf-b7261c043d62:6jAxpqn7hBzFlOErlQSrU-ljUvL7-WlEUpFImWCT8VsVUomN6PMa8P0pv4ADRd-Eo0JrfxYjaIXHkE7pcr9DmQ
+2025-10-02 14:15:08.374983 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 638c194f-609b-453c-8abf-b7261c043d62
+2025-10-02 14:17:26.919820 [INFO] [AUTH ROUTES] [REFRESH] cookie: 638c194f-609b-453c-8abf-b7261c043d62:6jAxpqn7hBzFlOErlQSrU-ljUvL7-WlEUpFImWCT8VsVUomN6PMa8P0pv4ADRd-Eo0JrfxYjaIXHkE7pcr9DmQ
+2025-10-02 14:17:26.920734 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 638c194f-609b-453c-8abf-b7261c043d62
+2025-10-02 14:17:27.018027 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 73aa630b-ff5d-4a9c-b305-f9dc175545df, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 141072255cac691f98344b5d822606350359e958f2564304dd6ffd33974a08ef, expires_at= 2025-10-03 14:17:27.017539+00:00)
+2025-10-02 14:17:27.105925 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x700382c32a50>, replaced_by: 73aa630b-ff5d-4a9c-b305-f9dc175545df
+2025-10-02 14:17:27.179691 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTQ2NDcsImV4cCI6MTc1OTQxNTU0N30.MWnqEYbSmdAuwwlWK296ys4lrnQjMPgNN7yaP7hJHig
+2025-10-02 14:17:27.180053 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: aMapvD9iwilhJdycnQR5ruiQ766TUNNKptqXTj5RMCbFmKSQ_gWdgtG3CsdeMX1frApoACcjxUG8zIgnieAngQ
+2025-10-02 14:23:13.447474 [INFO] [AUTH ROUTES] [REFRESH] cookie: 73aa630b-ff5d-4a9c-b305-f9dc175545df:aMapvD9iwilhJdycnQR5ruiQ766TUNNKptqXTj5RMCbFmKSQ_gWdgtG3CsdeMX1frApoACcjxUG8zIgnieAngQ
+2025-10-02 14:23:13.448694 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 73aa630b-ff5d-4a9c-b305-f9dc175545df
+2025-10-02 14:23:13.546396 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= b12b1c3a-fd6e-456c-90ec-a6f772befb2b, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 200e0599bb4d9771941c35454a6a94a50f2d528f52d62c4615c3442c9a1b2e5e, expires_at= 2025-10-03 14:23:13.545705+00:00)
+2025-10-02 14:23:13.647641 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x700382c53750>, replaced_by: b12b1c3a-fd6e-456c-90ec-a6f772befb2b
+2025-10-02 14:23:13.774659 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTQ5OTMsImV4cCI6MTc1OTQxNTg5M30.uLONh-nFCdCNm3IdlWGOsGlkJdyBO_Q7XwEEDRvBYAc
+2025-10-02 14:23:13.775010 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: PHqZ2QihOSL0UrLcUjUC5n6-rT7hOSn-dQpHyqhk4CGVZT1TA504o1ED13Xq9kdyQidNFiMSEOLKTuSUbj9EiA
+2025-10-02 14:37:49.679036 [INFO] [AUTH ROUTES] [REFRESH] cookie: b12b1c3a-fd6e-456c-90ec-a6f772befb2b:PHqZ2QihOSL0UrLcUjUC5n6-rT7hOSn-dQpHyqhk4CGVZT1TA504o1ED13Xq9kdyQidNFiMSEOLKTuSUbj9EiA
+2025-10-02 14:37:49.680967 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: b12b1c3a-fd6e-456c-90ec-a6f772befb2b
+2025-10-02 14:37:49.742883 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= cef381b3-fa03-47cc-9943-c17696f8745d, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 75f46865713ac55949940e15345a1ab55eb1527bd6b7b7be3903038d1b31f1c0, expires_at= 2025-10-03 14:37:49.742347+00:00)
+2025-10-02 14:37:49.808284 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 14:37:49.866345 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTU4NjksImV4cCI6MTc1OTQxNjc2OX0.-VyGpV9igLRJdh4QI8JmYGxAxMT55MghGDKcwy5yLso
+2025-10-02 14:37:49.866700 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: srXurl0Xc6fKzR5frgdH4ceNKRSrcpl9YKfOERU6eqcjemKOEmz4xXBYSx1-woGOHIk28sjYLU5DU5YhRbiKbQ
+2025-10-02 14:40:20.591061 [INFO] [AUTH ROUTES] [REFRESH] cookie: cef381b3-fa03-47cc-9943-c17696f8745d:srXurl0Xc6fKzR5frgdH4ceNKRSrcpl9YKfOERU6eqcjemKOEmz4xXBYSx1-woGOHIk28sjYLU5DU5YhRbiKbQ
+2025-10-02 14:40:20.591859 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: cef381b3-fa03-47cc-9943-c17696f8745d
+2025-10-02 14:40:20.679563 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 14:40:20.725357 [ERROR] [AUTH ROUTES] [REFRESH] [RefreshNotFound, RefreshExpired, RefreshReuseDetected, RefreshInvalid] e: Refresh reutilizado. Sessões revogadas.
+2025-10-02 14:40:54.938550 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-02 14:40:54.938880 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-02 14:40:54.939734 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-02 14:40:54.987499 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': '2025-10-01T18:46:30.129867+00:00'}
+2025-10-02 14:40:54.987796 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-02 14:40:55.318784 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTYwNTUsImV4cCI6MTc1OTQxNjk1NX0.RBq4-TlfmNSxIq0ipUrclAj_jTB35QunbJUMW-SZJt0
+2025-10-02 14:40:55.319094 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 513173b85096a3e984de675ea6441c363edef2203620a22831950738002540f7
+2025-10-02 14:40:55.319302 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 3ddce056-8fb0-44e4-a588-450e0a0f8f51
+2025-10-02 14:40:55.319507 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-03 14:40:55.319474+00:00
+2025-10-02 14:40:55.320439 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 3ddce056-8fb0-44e4-a588-450e0a0f8f51, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 513173b85096a3e984de675ea6441c363edef2203620a22831950738002540f7, expires_at= 2025-10-03 14:40:55.319474+00:00)
+2025-10-02 14:40:55.379788 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTYwNTUsImV4cCI6MTc1OTQxNjk1NX0.RBq4-TlfmNSxIq0ipUrclAj_jTB35QunbJUMW-SZJt0
+2025-10-02 14:40:55.380162 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: MyXUWLczgzHpCxYJ-I2HVn7Mn_eRjcFlBuFpkp0nXguIFNRjwbDIiglE-AKuOO0mkObc64fqPQpjfZyI4e9ZUQ
+2025-10-02 14:41:09.486826 [INFO] [AUTH ROUTES] [REFRESH] cookie: 3ddce056-8fb0-44e4-a588-450e0a0f8f51:MyXUWLczgzHpCxYJ-I2HVn7Mn_eRjcFlBuFpkp0nXguIFNRjwbDIiglE-AKuOO0mkObc64fqPQpjfZyI4e9ZUQ
+2025-10-02 14:41:09.487690 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 3ddce056-8fb0-44e4-a588-450e0a0f8f51
+2025-10-02 14:41:09.538616 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 14:41:09.598451 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 2092d635-3754-4788-a6f2-fc99f681a4a0, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= cc63f44650e1f17412d7e6619580155589e084474cff8b355ecb327e6dcf60ea, expires_at= 2025-10-03 14:41:09.597915+00:00)
+2025-10-02 14:41:09.652251 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTYwNjksImV4cCI6MTc1OTQxNjk2OX0.oDPYQ3NO5uL_z-OZER_8yrG501ulGZ6HFkdPiUhaglw
+2025-10-02 14:41:09.652533 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: DTzzw6RjVcELbFQIWkYvxXcAZdn8RuRSD40m4MQOgBd-eh3iJdunTzeo4_BG-yM_-ZnGYb4rsXNAxYlJoGAq5w
+2025-10-02 17:08:43.904385 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-02 17:08:43.904866 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-02 17:08:43.905871 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-02 17:08:44.010272 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': '2025-10-01T18:46:30.129867+00:00'}
+2025-10-02 17:08:44.010573 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-02 17:08:44.358992 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjQ5MjQsImV4cCI6MTc1OTQyNDk4NH0.VZcOe78rVg_Ei_S-5Dd_HzDGq78MS5edBXP_9ogSjcA
+2025-10-02 17:08:44.359395 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 23f8681f450411d656969fd7181dd3b40218ed9583a08f4c432737fb2b800498
+2025-10-02 17:08:44.359663 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 31f381d6-d413-404d-8735-960c336c6ca9
+2025-10-02 17:08:44.359896 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-03 17:08:44.359862+00:00
+2025-10-02 17:08:44.360851 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 31f381d6-d413-404d-8735-960c336c6ca9, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 23f8681f450411d656969fd7181dd3b40218ed9583a08f4c432737fb2b800498, expires_at= 2025-10-03 17:08:44.359862+00:00)
+2025-10-02 17:08:44.450083 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjQ5MjQsImV4cCI6MTc1OTQyNDk4NH0.VZcOe78rVg_Ei_S-5Dd_HzDGq78MS5edBXP_9ogSjcA
+2025-10-02 17:08:44.450457 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: X98RMqnvruDAgqrmwgVZMYiKfO56Mwv5_YsnvMm2zNrNAkaKWFQnmlQ8nzg3tt1eQF1XiAFTPSv6SvwhaBhKzw
+2025-10-02 17:09:05.561482 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'JWTRepository' object has no attribute 'verify_access_token'
+2025-10-02 17:09:34.726654 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'JWTRepository' object has no attribute 'verify_access_token'
+2025-10-02 17:12:52.781771 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-02 17:12:52.782303 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-02 17:12:52.783423 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-02 17:12:52.880797 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': '2025-10-01T18:46:30.129867+00:00'}
+2025-10-02 17:12:52.881013 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-02 17:12:53.226764 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjUxNzMsImV4cCI6MTc1OTQyNTIzM30.smCA26N0w0pAi2uxFZQboOB3MpNmBTadfXzZAcN7HY0
+2025-10-02 17:12:53.227049 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 1d95c13fe1ca27a1375e9dbad5b446d5e732eaef529f7fa0acdb88832944cf39
+2025-10-02 17:12:53.227319 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 9dd40364-669b-49a5-86a7-24ecdf46872e
+2025-10-02 17:12:53.227501 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-03 17:12:53.227470+00:00
+2025-10-02 17:12:53.228240 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 9dd40364-669b-49a5-86a7-24ecdf46872e, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 1d95c13fe1ca27a1375e9dbad5b446d5e732eaef529f7fa0acdb88832944cf39, expires_at= 2025-10-03 17:12:53.227470+00:00)
+2025-10-02 17:12:53.294455 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjUxNzMsImV4cCI6MTc1OTQyNTIzM30.smCA26N0w0pAi2uxFZQboOB3MpNmBTadfXzZAcN7HY0
+2025-10-02 17:12:53.294802 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: cKbu9WdnPkNK1oNib5PbLejdusKVxmQsYXcVt0-P4-aLwaoEn5A4xR6Fy8zcZF4n0kRUT6UNLPXCG_JokMJEvQ
+2025-10-02 17:12:56.917191 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjUxNzMsImV4cCI6MTc1OTQyNTIzM30.smCA26N0w0pAi2uxFZQboOB3MpNmBTadfXzZAcN7HY0
+2025-10-02 17:12:56.918611 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:13:48.807660 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjUxNzMsImV4cCI6MTc1OTQyNTIzM30.smCA26N0w0pAi2uxFZQboOB3MpNmBTadfXzZAcN7HY0
+2025-10-02 17:13:48.812063 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:18:37.835905 [INFO] [AUTH ROUTES] [REFRESH] cookie: 9dd40364-669b-49a5-86a7-24ecdf46872e:cKbu9WdnPkNK1oNib5PbLejdusKVxmQsYXcVt0-P4-aLwaoEn5A4xR6Fy8zcZF4n0kRUT6UNLPXCG_JokMJEvQ
+2025-10-02 17:18:37.838376 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 9dd40364-669b-49a5-86a7-24ecdf46872e
+2025-10-02 17:18:37.945761 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:18:38.013860 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= ed05cf79-c60e-4746-a391-985842d57aff, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= b4df94a5fd0387c9bc09dc2ce987a6e2d32dcd4e5e59ce6e77540ec1304b4ecc, expires_at= 2025-10-03 17:18:38.013338+00:00)
+2025-10-02 17:18:38.080625 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjU1MTgsImV4cCI6MTc1OTQyNTU3OH0.3I5WLAXRc9TGVHlEqbjXyPd9wgTd3Ia0TECTC19xPeI
+2025-10-02 17:18:38.081003 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: pWnI3IrDcjazwz_i4PvZOmXaJxsCNYKq4EK9lvOjAPi1qQqW5ICJg5I5tZ2bvRcaNJVzxlPfR8OMf_w3FVPszw
+2025-10-02 17:18:47.585628 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjU1MTgsImV4cCI6MTc1OTQyNTU3OH0.3I5WLAXRc9TGVHlEqbjXyPd9wgTd3Ia0TECTC19xPeI
+2025-10-02 17:18:47.587800 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:20:36.304327 [INFO] [AUTH ROUTES] [REFRESH] cookie: ed05cf79-c60e-4746-a391-985842d57aff:pWnI3IrDcjazwz_i4PvZOmXaJxsCNYKq4EK9lvOjAPi1qQqW5ICJg5I5tZ2bvRcaNJVzxlPfR8OMf_w3FVPszw
+2025-10-02 17:20:36.307182 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: ed05cf79-c60e-4746-a391-985842d57aff
+2025-10-02 17:20:36.433863 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:20:36.487332 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 68f3c2fa-c49e-465f-9860-c02f6f7602d6, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 64e71974c49c96ddd5696e701eeb6e6d1ea21650b18bc301e29151b39b5928e4, expires_at= 2025-10-03 17:20:36.486563+00:00)
+2025-10-02 17:20:36.553124 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjU2MzYsImV4cCI6MTc1OTQyNTY5Nn0.TBvZNY_7GlrFkv3w9Ajd9OnccY2ymk7YSn9843ya8I4
+2025-10-02 17:20:36.553524 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: wSwXSJTZS8Zkp29DnCK9XG6UzlEvLpV8LXAPCM5gFak9eGqbBYg5e2WWyKBLnhOJDM-IGoGZPMHL40VkIVyfGQ
+2025-10-02 17:20:41.907978 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjU2MzYsImV4cCI6MTc1OTQyNTY5Nn0.TBvZNY_7GlrFkv3w9Ajd9OnccY2ymk7YSn9843ya8I4
+2025-10-02 17:20:41.909538 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:20:41.978064 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'ChunkedIteratorResult' object has no attribute 'to_dict'
+2025-10-02 17:24:10.249607 [INFO] [AUTH ROUTES] [REFRESH] cookie: 68f3c2fa-c49e-465f-9860-c02f6f7602d6:wSwXSJTZS8Zkp29DnCK9XG6UzlEvLpV8LXAPCM5gFak9eGqbBYg5e2WWyKBLnhOJDM-IGoGZPMHL40VkIVyfGQ
+2025-10-02 17:24:10.250851 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 68f3c2fa-c49e-465f-9860-c02f6f7602d6
+2025-10-02 17:24:10.345163 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:24:10.405880 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= d51e06ba-53c3-480c-a4ca-052136126d84, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= a261ef1c4a87d8bf445854efea196dc7cb0e29d94765fbbbaa8b72b19de0fc32, expires_at= 2025-10-03 17:24:10.404947+00:00)
+2025-10-02 17:24:10.489928 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjU4NTAsImV4cCI6MTc1OTQyNTkxMH0.zINe8YA76jix6rSDYmo9uVAQCgBhAE1H3zAkHRpowbM
+2025-10-02 17:24:10.490378 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: D1wJjNUd59NgLss3KgPasQaBGbTR9oaeVdYgcNFdUER4-JRAuo_smt2N_etCyDSCznwySL60DTt530Z-5oX-8Q
+2025-10-02 17:24:15.366359 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjU4NTAsImV4cCI6MTc1OTQyNTkxMH0.zINe8YA76jix6rSDYmo9uVAQCgBhAE1H3zAkHRpowbM
+2025-10-02 17:24:15.369985 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:24:15.452596 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'ChunkedIteratorResult' object has no attribute 'to_dict'
+2025-10-02 17:29:21.077274 [INFO] [AUTH ROUTES] [REFRESH] cookie: d51e06ba-53c3-480c-a4ca-052136126d84:D1wJjNUd59NgLss3KgPasQaBGbTR9oaeVdYgcNFdUER4-JRAuo_smt2N_etCyDSCznwySL60DTt530Z-5oX-8Q
+2025-10-02 17:29:21.083201 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: d51e06ba-53c3-480c-a4ca-052136126d84
+2025-10-02 17:29:21.236307 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:29:21.369137 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 2f29afb3-df2d-40d5-a492-95b939c12d89, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= dfec2cd9ccc3be907786131c8397c4e17c02f1bcde79941a0ceb1feae3239ca4, expires_at= 2025-10-03 17:29:21.366374+00:00)
+2025-10-02 17:29:21.535846 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjYxNjEsImV4cCI6MTc1OTQyNjIyMX0._qiz-kCfHzRnVoKICuOGnrOdHzmqIp50W1-c2WH6uTg
+2025-10-02 17:29:21.536405 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: XU1P88kWgXo6qdzvyZlAzRz8YwH3QuwOCRsvwO9QkXgo-M8ntnw0O8FkPOEwYhxC2Vx0zRc2xj7B9KJvPVxBJg
+2025-10-02 17:29:25.049815 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjYxNjEsImV4cCI6MTc1OTQyNjIyMX0._qiz-kCfHzRnVoKICuOGnrOdHzmqIp50W1-c2WH6uTg
+2025-10-02 17:29:25.051187 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:29:25.130524 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'ChunkedIteratorResult' object has no attribute 'get'
+2025-10-02 17:30:48.015432 [INFO] [AUTH ROUTES] [REFRESH] cookie: 2f29afb3-df2d-40d5-a492-95b939c12d89:XU1P88kWgXo6qdzvyZlAzRz8YwH3QuwOCRsvwO9QkXgo-M8ntnw0O8FkPOEwYhxC2Vx0zRc2xj7B9KJvPVxBJg
+2025-10-02 17:30:48.016739 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 2f29afb3-df2d-40d5-a492-95b939c12d89
+2025-10-02 17:30:48.182757 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:30:48.254531 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 7560996a-cefc-4262-8c55-5a6c013cfacb, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= a25f74d6653f69963e127da41df305e70784993968db777db53cb444cf427421, expires_at= 2025-10-03 17:30:48.252044+00:00)
+2025-10-02 17:30:48.349550 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjYyNDgsImV4cCI6MTc1OTQyNjMwOH0.TSkb8K0WK0N9RzsaeDecjzJNUq1ty-EBpl-4Oq7PZXo
+2025-10-02 17:30:48.350106 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: RbV_tR4qEtnipodfsKbc8Cpc0IzjfPdDvKgY6l1hEQKII8LSIlg6wnJ4ScnEl6BWV_JVpu3GPfVfZLrIzxG-ZQ
+2025-10-02 17:30:51.262543 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjYyNDgsImV4cCI6MTc1OTQyNjMwOH0.TSkb8K0WK0N9RzsaeDecjzJNUq1ty-EBpl-4Oq7PZXo
+2025-10-02 17:30:51.265630 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:30:51.340643 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'ChunkedIteratorResult' object is not subscriptable
+2025-10-02 17:38:02.247430 [INFO] [AUTH ROUTES] [REFRESH] cookie: 7560996a-cefc-4262-8c55-5a6c013cfacb:RbV_tR4qEtnipodfsKbc8Cpc0IzjfPdDvKgY6l1hEQKII8LSIlg6wnJ4ScnEl6BWV_JVpu3GPfVfZLrIzxG-ZQ
+2025-10-02 17:38:02.248942 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 7560996a-cefc-4262-8c55-5a6c013cfacb
+2025-10-02 17:38:02.353201 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:38:02.432074 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= b46c8b2a-1f76-4287-9973-8afdc46e584a, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= d3dda128e88b15968563061d8caaf349ed382e5685f2511df8fbe1ff16b80b2d, expires_at= 2025-10-03 17:38:02.431430+00:00)
+2025-10-02 17:38:02.529456 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjY2ODIsImV4cCI6MTc1OTQyNjc0Mn0.2hGuQaDhGve8YOzM86xTLuQbUG3tvDYdZ2cZwNNCHTc
+2025-10-02 17:38:02.530435 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: QIXiF00hWjZuQPkwuasBCnK9D_n8_5mcekKrWab5fZKNFfazXvPsLVcTpUVJ0vTASM5qF6FVYnbSmZC5p4bZGQ
+2025-10-02 17:38:05.122434 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjY2ODIsImV4cCI6MTc1OTQyNjc0Mn0.2hGuQaDhGve8YOzM86xTLuQbUG3tvDYdZ2cZwNNCHTc
+2025-10-02 17:38:05.125780 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759426682, 'exp': 1759426742}
+2025-10-02 17:38:05.128028 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:39:17.751463 [INFO] [AUTH ROUTES] [REFRESH] cookie: b46c8b2a-1f76-4287-9973-8afdc46e584a:QIXiF00hWjZuQPkwuasBCnK9D_n8_5mcekKrWab5fZKNFfazXvPsLVcTpUVJ0vTASM5qF6FVYnbSmZC5p4bZGQ
+2025-10-02 17:39:17.752810 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: b46c8b2a-1f76-4287-9973-8afdc46e584a
+2025-10-02 17:39:17.925739 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:39:18.003369 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 29e3d4d0-e6db-42c6-810e-41f6b3bd04ba, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= c08b6df86efde9c85661aff4e563a214038e100c6c448780ad3a38d733cd89b1, expires_at= 2025-10-03 17:39:18.002825+00:00)
+2025-10-02 17:39:18.120038 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjY3NTgsImV4cCI6MTc1OTQyNjgxOH0.e_KU_uq6r8PqsPtSxFowHCX0s-rLrw-2HZB3CpPYza8
+2025-10-02 17:39:18.120516 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: a5jEop9lndjBGTXQ-CaRkKYH90vjEgPrQzTyvMtUztVSzWYKbJVVoChzYbJ69GA7DAFAOh7tHophfe1prirvow
+2025-10-02 17:39:20.527734 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjY3NTgsImV4cCI6MTc1OTQyNjgxOH0.e_KU_uq6r8PqsPtSxFowHCX0s-rLrw-2HZB3CpPYza8
+2025-10-02 17:39:20.530756 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759426758, 'exp': 1759426818}
+2025-10-02 17:39:20.531051 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:39:20.532255 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:39:20.620330 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7af035c8e450>
+2025-10-02 17:44:02.956450 [INFO] [AUTH ROUTES] [REFRESH] cookie: 29e3d4d0-e6db-42c6-810e-41f6b3bd04ba:a5jEop9lndjBGTXQ-CaRkKYH90vjEgPrQzTyvMtUztVSzWYKbJVVoChzYbJ69GA7DAFAOh7tHophfe1prirvow
+2025-10-02 17:44:02.957833 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 29e3d4d0-e6db-42c6-810e-41f6b3bd04ba
+2025-10-02 17:44:03.024195 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:44:03.082156 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 0a86028a-fa92-4fe1-b402-f839c6969b7e, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 616cbad4b2fa4986a6880d5f8753bf6db09044ea20c465b49006a069ee13f3db, expires_at= 2025-10-03 17:44:03.081445+00:00)
+2025-10-02 17:44:03.141653 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjcwNDMsImV4cCI6MTc1OTQyNzEwM30.bx6PjMVyDTNjUG2wTVIzfpYDn-cXofvc6DNN0tZp2eM
+2025-10-02 17:44:03.142106 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: td3QLjM2HJIlfq1KqSmpM4Gz639AWwwngesz9h-zkYR7C6xZ0w-43XFlv-uubiJHNO21Elf7guGIW7oUP71l6Q
+2025-10-02 17:44:08.332301 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjcwNDMsImV4cCI6MTc1OTQyNzEwM30.bx6PjMVyDTNjUG2wTVIzfpYDn-cXofvc6DNN0tZp2eM
+2025-10-02 17:44:08.332978 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759427043, 'exp': 1759427103}
+2025-10-02 17:44:08.333264 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:44:08.334259 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:44:08.394039 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7e0d4b6c8910>
+2025-10-02 17:44:08.394465 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7e0d4b82ee40>}]
+2025-10-02 17:44:08.394761 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_json: ["{'User': <src.account.domain.entities.user.User object at 0x7e0d4b82ee40>}"]
+2025-10-02 17:44:58.449682 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjcwNDMsImV4cCI6MTc1OTQyNzEwM30.bx6PjMVyDTNjUG2wTVIzfpYDn-cXofvc6DNN0tZp2eM
+2025-10-02 17:44:58.451067 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759427043, 'exp': 1759427103}
+2025-10-02 17:44:58.451532 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:44:58.455675 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:44:58.558635 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7b06dbaaf350>
+2025-10-02 17:44:58.558950 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7b06dba42e40>}]
+2025-10-02 17:44:58.559184 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'str' object has no attribute 'dict'
+2025-10-02 17:45:31.014167 [INFO] [AUTH ROUTES] [REFRESH] cookie: 0a86028a-fa92-4fe1-b402-f839c6969b7e:td3QLjM2HJIlfq1KqSmpM4Gz639AWwwngesz9h-zkYR7C6xZ0w-43XFlv-uubiJHNO21Elf7guGIW7oUP71l6Q
+2025-10-02 17:45:31.015336 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 0a86028a-fa92-4fe1-b402-f839c6969b7e
+2025-10-02 17:45:31.146727 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:45:31.201138 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 30dce339-10f3-4fcc-92b2-1a851938f593, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= f39dbeac276789c0574975e378149dac4eb13a693807d16250b0208e4bb27831, expires_at= 2025-10-03 17:45:31.200445+00:00)
+2025-10-02 17:45:31.269229 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjcxMzEsImV4cCI6MTc1OTQyNzE5MX0.wVjy9mWXfkfw86RQXhI_zMaqEb3QyNLOGK5tb87HR1M
+2025-10-02 17:45:31.269640 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: Yw0F1a_42LqVRvGrMo4xXCjepTn7C9oULTSoveA-NpQ0XehGVSv-eKSj6C84j7sBoIu2CKiL6vdDN1EK3vdvwQ
+2025-10-02 17:45:34.583460 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjcxMzEsImV4cCI6MTc1OTQyNzE5MX0.wVjy9mWXfkfw86RQXhI_zMaqEb3QyNLOGK5tb87HR1M
+2025-10-02 17:45:34.584553 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759427131, 'exp': 1759427191}
+2025-10-02 17:45:34.585338 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:45:34.586348 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:45:34.636951 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7fa5a35939d0>
+2025-10-02 17:45:34.637404 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7fa5a3733770>}]
+2025-10-02 17:45:34.637644 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'str' object has no attribute 'to_dict'
+2025-10-02 17:46:28.220519 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjcxMzEsImV4cCI6MTc1OTQyNzE5MX0.wVjy9mWXfkfw86RQXhI_zMaqEb3QyNLOGK5tb87HR1M
+2025-10-02 17:46:28.221585 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759427131, 'exp': 1759427191}
+2025-10-02 17:46:28.222659 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:46:28.224069 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:46:28.369595 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7ba14f79f450>
+2025-10-02 17:46:28.370236 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7ba14f732e40>}]
+2025-10-02 17:46:28.370732 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'str' object has no attribute 'to_dict'
+2025-10-02 17:47:45.028783 [INFO] [AUTH ROUTES] [REFRESH] cookie: 30dce339-10f3-4fcc-92b2-1a851938f593:Yw0F1a_42LqVRvGrMo4xXCjepTn7C9oULTSoveA-NpQ0XehGVSv-eKSj6C84j7sBoIu2CKiL6vdDN1EK3vdvwQ
+2025-10-02 17:47:45.030414 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 30dce339-10f3-4fcc-92b2-1a851938f593
+2025-10-02 17:47:45.098520 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:47:45.157050 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= fe37fccf-0e7a-44e6-a3b1-605ecce71844, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= db1585b43bda69cc0437f87fdf672d44b0f9310e0e9d9f54326c28107ac27328, expires_at= 2025-10-03 17:47:45.156522+00:00)
+2025-10-02 17:47:45.282368 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjcyNjUsImV4cCI6MTc1OTQyNzMyNX0.TPybQmElJ3Fc0GFfk7SQ6e3KBr-78CgM4Z-2WhQOsbw
+2025-10-02 17:47:45.282790 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: dGJKdFnykooRCDnLGnRavaqP5aUUhadhEw1IAW1vS7SCaGuyKhpP9A2dvde9EHWejjNWC3qnzrshm7XM70BcAw
+2025-10-02 17:47:50.173618 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjcyNjUsImV4cCI6MTc1OTQyNzMyNX0.TPybQmElJ3Fc0GFfk7SQ6e3KBr-78CgM4Z-2WhQOsbw
+2025-10-02 17:47:50.174170 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759427265, 'exp': 1759427325}
+2025-10-02 17:47:50.174390 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:47:50.175202 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:47:50.233528 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x74aebd6a39d0>
+2025-10-02 17:47:50.234179 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x74aebd843770>}]
+2025-10-02 17:47:50.234421 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_json: [
+2025-10-02 17:49:02.530482 [INFO] [AUTH ROUTES] [REFRESH] cookie: fe37fccf-0e7a-44e6-a3b1-605ecce71844:dGJKdFnykooRCDnLGnRavaqP5aUUhadhEw1IAW1vS7SCaGuyKhpP9A2dvde9EHWejjNWC3qnzrshm7XM70BcAw
+2025-10-02 17:49:02.531714 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: fe37fccf-0e7a-44e6-a3b1-605ecce71844
+2025-10-02 17:49:02.594531 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:49:02.649401 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 575b4a32-cafe-44bc-8a9f-66698603feef, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 5b5e74314aa70cae2d55cd57a961362c4cc4febe5305b941eb9bbcc69210fa5f, expires_at= 2025-10-03 17:49:02.648695+00:00)
+2025-10-02 17:49:02.707074 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjczNDIsImV4cCI6MTc1OTQyNzQwMn0.OLPBenFjxkci0nX4S454SW2UhulV0yop4p4hYyFIgHs
+2025-10-02 17:49:02.707475 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: 2ahbocxryhZoZGzX-wPNlcZOOeJgr1Bo2S3TfGjO9saIrX8b1gFtrWSdm0dWJHSXajYJ-MEhCCQ5Zbp4CTmD2g
+2025-10-02 17:49:04.590268 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjczNDIsImV4cCI6MTc1OTQyNzQwMn0.OLPBenFjxkci0nX4S454SW2UhulV0yop4p4hYyFIgHs
+2025-10-02 17:49:04.590945 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759427342, 'exp': 1759427402}
+2025-10-02 17:49:04.591304 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:49:04.592498 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 17:49:04.648191 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7295a2bd0510>
+2025-10-02 17:49:04.648611 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7295a5733770>}]
+2025-10-02 17:49:04.648897 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_json: ["{'User': <src.account.domain.entities.user.User object at 0x7295a5733770>}"]
+2025-10-02 18:32:56.440641 [INFO] [AUTH ROUTES] [REFRESH] cookie: 575b4a32-cafe-44bc-8a9f-66698603feef:2ahbocxryhZoZGzX-wPNlcZOOeJgr1Bo2S3TfGjO9saIrX8b1gFtrWSdm0dWJHSXajYJ-MEhCCQ5Zbp4CTmD2g
+2025-10-02 18:32:56.442994 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 575b4a32-cafe-44bc-8a9f-66698603feef
+2025-10-02 18:32:56.513435 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:32:56.594584 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= f0301742-bce9-4473-b7e1-b91e177691bd, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 0ef010b5635d95f738e270a8877a7aebbb27e891d7b4ec8c45f345337a3d518a, expires_at= 2025-10-03 18:32:56.593914+00:00)
+2025-10-02 18:32:56.677540 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0Mjk5NzYsImV4cCI6MTc1OTQzMDAzNn0.a_VyMqNpv46KUc25xcwHJ4X7SSWl-_iZeYZ1ZsWmb04
+2025-10-02 18:32:56.677845 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: 7_W8pjZIVMWWPrXaAuuNQ0Cv54DoWed2FoAmUOZh-IZ6Ds43h7LXUOu1OpCpCFNJBvfCRkopk9O69k5RN_mBkw
+2025-10-02 18:32:58.831666 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0Mjk5NzYsImV4cCI6MTc1OTQzMDAzNn0.a_VyMqNpv46KUc25xcwHJ4X7SSWl-_iZeYZ1ZsWmb04
+2025-10-02 18:32:58.832179 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759429976, 'exp': 1759430036}
+2025-10-02 18:32:58.832399 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:32:58.833209 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:32:58.893062 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7967d3793410>
+2025-10-02 18:32:58.893469 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7967d3933770>}]
+2025-10-02 18:32:58.893720 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: string indices must be integers, not 'str'
+2025-10-02 18:33:46.529613 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0Mjk5NzYsImV4cCI6MTc1OTQzMDAzNn0.a_VyMqNpv46KUc25xcwHJ4X7SSWl-_iZeYZ1ZsWmb04
+2025-10-02 18:33:46.530692 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759429976, 'exp': 1759430036}
+2025-10-02 18:33:46.531157 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:33:46.532858 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:33:46.682219 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7c15a5a9b4d0>
+2025-10-02 18:33:46.682940 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7c15a5a2ee40>}]
+2025-10-02 18:33:46.683462 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_json: [
+2025-10-02 18:35:41.903853 [INFO] [AUTH ROUTES] [REFRESH] cookie: f0301742-bce9-4473-b7e1-b91e177691bd:7_W8pjZIVMWWPrXaAuuNQ0Cv54DoWed2FoAmUOZh-IZ6Ds43h7LXUOu1OpCpCFNJBvfCRkopk9O69k5RN_mBkw
+2025-10-02 18:35:41.905815 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: f0301742-bce9-4473-b7e1-b91e177691bd
+2025-10-02 18:35:41.977005 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:35:42.046327 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= b10a1085-a641-4f15-a4e0-49315e82e770, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 454052637857a6ba32988b12d748369d00be888e795afe346db24697ea36bc2b, expires_at= 2025-10-03 18:35:42.045730+00:00)
+2025-10-02 18:35:42.123960 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAxNDIsImV4cCI6MTc1OTQzMDIwMn0.o1he8-Uktx5lhUJ4nVOn0dJ1EQIk7SQy4BNCF95H84Q
+2025-10-02 18:35:42.124419 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: esC0SN3R3MK6CBqafQ2J3pAMsJVvOVhsTr727wCwj7WZaaV82tA2QuKAzS0O0wxuy8iEBq46NBry7AzoXv6QGQ
+2025-10-02 18:35:44.827561 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAxNDIsImV4cCI6MTc1OTQzMDIwMn0.o1he8-Uktx5lhUJ4nVOn0dJ1EQIk7SQy4BNCF95H84Q
+2025-10-02 18:35:44.828216 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430142, 'exp': 1759430202}
+2025-10-02 18:35:44.828874 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:35:44.830326 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:35:44.932657 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x775446acc810>
+2025-10-02 18:35:44.933308 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x775446c2f770>}]
+2025-10-02 18:35:44.933786 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: [
+2025-10-02 18:35:44.934190 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: "
+2025-10-02 18:35:44.934432 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {
+2025-10-02 18:35:44.934644 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: '
+2025-10-02 18:35:44.934830 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: U
+2025-10-02 18:35:44.934981 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: s
+2025-10-02 18:35:44.935152 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: e
+2025-10-02 18:35:44.935289 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: r
+2025-10-02 18:35:44.935419 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: '
+2025-10-02 18:35:44.935550 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: :
+2025-10-02 18:35:44.935688 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row:  
+2025-10-02 18:35:44.935824 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: <
+2025-10-02 18:35:44.935957 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: s
+2025-10-02 18:35:44.936103 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: r
+2025-10-02 18:35:44.936244 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: c
+2025-10-02 18:35:44.936417 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: .
+2025-10-02 18:35:44.936559 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: a
+2025-10-02 18:35:44.936692 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: c
+2025-10-02 18:35:44.936828 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: c
+2025-10-02 18:35:44.936961 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: o
+2025-10-02 18:35:44.937266 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: u
+2025-10-02 18:35:44.937582 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: n
+2025-10-02 18:35:44.937876 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: t
+2025-10-02 18:35:44.938177 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: .
+2025-10-02 18:35:44.938354 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: d
+2025-10-02 18:35:44.938498 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: o
+2025-10-02 18:35:44.938636 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: m
+2025-10-02 18:35:44.938765 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: a
+2025-10-02 18:35:44.938893 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: i
+2025-10-02 18:35:44.939023 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: n
+2025-10-02 18:35:44.939185 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: .
+2025-10-02 18:35:44.939329 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: e
+2025-10-02 18:35:44.939463 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: n
+2025-10-02 18:35:44.939594 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: t
+2025-10-02 18:35:44.939725 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: i
+2025-10-02 18:35:44.939856 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: t
+2025-10-02 18:35:44.939984 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: i
+2025-10-02 18:35:44.940420 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: e
+2025-10-02 18:35:44.940785 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: s
+2025-10-02 18:35:44.941158 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: .
+2025-10-02 18:35:44.941571 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: u
+2025-10-02 18:35:44.941925 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: s
+2025-10-02 18:35:44.942114 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: e
+2025-10-02 18:35:44.942265 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: r
+2025-10-02 18:35:44.942410 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: .
+2025-10-02 18:35:44.942553 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: U
+2025-10-02 18:35:44.942693 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: s
+2025-10-02 18:35:44.942827 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: e
+2025-10-02 18:35:44.942959 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: r
+2025-10-02 18:35:44.943276 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row:  
+2025-10-02 18:35:44.943580 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: o
+2025-10-02 18:35:44.943915 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: b
+2025-10-02 18:35:44.944242 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: j
+2025-10-02 18:35:44.944560 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: e
+2025-10-02 18:35:44.944865 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: c
+2025-10-02 18:35:44.945180 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: t
+2025-10-02 18:35:44.945485 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row:  
+2025-10-02 18:35:44.945784 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: a
+2025-10-02 18:35:44.946082 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: t
+2025-10-02 18:35:44.946267 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row:  
+2025-10-02 18:35:44.946409 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: 0
+2025-10-02 18:35:44.946542 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: x
+2025-10-02 18:35:44.946690 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: 7
+2025-10-02 18:35:44.946826 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: 7
+2025-10-02 18:35:44.946959 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: 5
+2025-10-02 18:35:44.947269 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: 4
+2025-10-02 18:35:44.947583 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: 4
+2025-10-02 18:35:44.947903 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: 6
+2025-10-02 18:35:44.948222 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: c
+2025-10-02 18:35:44.948531 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: 2
+2025-10-02 18:35:44.948828 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: f
+2025-10-02 18:35:44.949174 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: 7
+2025-10-02 18:35:44.949557 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: 7
+2025-10-02 18:35:44.950454 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: 0
+2025-10-02 18:35:44.950865 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: >
+2025-10-02 18:35:44.951057 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: }
+2025-10-02 18:35:44.951619 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: "
+2025-10-02 18:35:44.951982 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: ]
+2025-10-02 18:37:16.408778 [INFO] [AUTH ROUTES] [REFRESH] cookie: b10a1085-a641-4f15-a4e0-49315e82e770:esC0SN3R3MK6CBqafQ2J3pAMsJVvOVhsTr727wCwj7WZaaV82tA2QuKAzS0O0wxuy8iEBq46NBry7AzoXv6QGQ
+2025-10-02 18:37:16.410664 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: b10a1085-a641-4f15-a4e0-49315e82e770
+2025-10-02 18:37:16.487365 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:37:16.546332 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 627736f7-760c-4d1b-9347-5c26bdebea27, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= f8503b57bfaaac333c2cece8639c3438874688ce1ce6d56d9deddebda5c31103, expires_at= 2025-10-03 18:37:16.545795+00:00)
+2025-10-02 18:37:16.613410 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAyMzYsImV4cCI6MTc1OTQzMDI5Nn0.c7RQaEFAFgJg5Jy3KGtbmFtmvY98cX1SBsgVp7m3wrI
+2025-10-02 18:37:16.613760 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: 6OLe4cgq5lWiFC7UbooEMCa-MmNjLHeeOSVxjlOfGp2QzrJh72At1FONJiSltVtiGUMJ5TPBpC57-zgA9iAG8w
+2025-10-02 18:37:19.904707 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAyMzYsImV4cCI6MTc1OTQzMDI5Nn0.c7RQaEFAFgJg5Jy3KGtbmFtmvY98cX1SBsgVp7m3wrI
+2025-10-02 18:37:19.906284 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430236, 'exp': 1759430296}
+2025-10-02 18:37:19.906574 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:37:19.907408 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:37:19.961219 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7450012c8990>
+2025-10-02 18:37:19.961552 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x74500142ee40>}]
+2025-10-02 18:37:19.961825 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x74500142ee40>}
+2025-10-02 18:38:07.116547 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAyMzYsImV4cCI6MTc1OTQzMDI5Nn0.c7RQaEFAFgJg5Jy3KGtbmFtmvY98cX1SBsgVp7m3wrI
+2025-10-02 18:38:07.117832 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430236, 'exp': 1759430296}
+2025-10-02 18:38:07.118590 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:38:07.123882 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:38:07.234584 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x75fa18099490>
+2025-10-02 18:38:07.236458 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x75fa17e2ee40>}]
+2025-10-02 18:38:07.236895 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x75fa17e2ee40>}
+2025-10-02 18:38:07.237832 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x75fa17e2ee40>
+2025-10-02 18:39:53.390478 [INFO] [AUTH ROUTES] [REFRESH] cookie: 627736f7-760c-4d1b-9347-5c26bdebea27:6OLe4cgq5lWiFC7UbooEMCa-MmNjLHeeOSVxjlOfGp2QzrJh72At1FONJiSltVtiGUMJ5TPBpC57-zgA9iAG8w
+2025-10-02 18:39:53.392082 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 627736f7-760c-4d1b-9347-5c26bdebea27
+2025-10-02 18:39:53.477532 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:39:53.546412 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 32aba946-4bf6-41c8-a0e4-6e60d660fa44, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 7613bd13085330c203f872da372b6a763dea18757687b7cc412914cc45c669a8, expires_at= 2025-10-03 18:39:53.545854+00:00)
+2025-10-02 18:39:53.630132 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:39:53.630485 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: weDPUOzz6OTwLsODDS-BDaYJDbl_2Vj1JJfAD0cXHA1NAkZL0xUnyaNI0UP7mW21FTxFmFQW4FAxhBhGdJr90g
+2025-10-02 18:39:56.359960 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:39:56.361024 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
+2025-10-02 18:39:56.361474 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:39:56.362467 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:39:56.418985 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daad08c72d0>
+2025-10-02 18:39:56.419378 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0a3f770>}]
+2025-10-02 18:39:56.419606 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0a3f770>}
+2025-10-02 18:39:56.419792 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0a3f770>
+2025-10-02 18:40:20.738322 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:40:20.738790 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
+2025-10-02 18:40:20.739019 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:20.741569 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:20.875708 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daad08c5cd0>
+2025-10-02 18:40:20.876431 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0afb890>}]
+2025-10-02 18:40:20.876858 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0afb890>}
+2025-10-02 18:40:20.877039 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0afb890>
+2025-10-02 18:40:22.791563 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:40:22.792579 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
+2025-10-02 18:40:22.792872 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:22.794753 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:22.855159 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdef2b10>
+2025-10-02 18:40:22.855495 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0afb750>}]
+2025-10-02 18:40:22.855767 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0afb750>}
+2025-10-02 18:40:22.855969 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0afb750>
+2025-10-02 18:40:24.414036 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:40:24.414692 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
+2025-10-02 18:40:24.415133 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:24.416013 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:24.477556 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdeffdd0>
+2025-10-02 18:40:24.477940 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0887ce0>}]
+2025-10-02 18:40:24.478192 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0887ce0>}
+2025-10-02 18:40:24.478393 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0887ce0>
+2025-10-02 18:40:26.160869 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:40:26.161597 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
+2025-10-02 18:40:26.161861 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:26.162884 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:26.219600 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdf21150>
+2025-10-02 18:40:26.219934 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daacdf14180>}]
+2025-10-02 18:40:26.220132 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daacdf14180>}
+2025-10-02 18:40:26.220298 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daacdf14180>
+2025-10-02 18:40:28.084710 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:40:28.085267 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
+2025-10-02 18:40:28.085546 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:28.086591 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:28.146669 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdf0f950>
+2025-10-02 18:40:28.146954 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad08143b0>}]
+2025-10-02 18:40:28.147150 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad08143b0>}
+2025-10-02 18:40:28.147300 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad08143b0>
+2025-10-02 18:40:29.845229 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:40:29.845753 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
+2025-10-02 18:40:29.846034 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:29.846700 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:29.908535 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdefea10>
+2025-10-02 18:40:29.908860 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daacdef68b0>}]
+2025-10-02 18:40:29.911528 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daacdef68b0>}
+2025-10-02 18:40:29.911690 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daacdef68b0>
+2025-10-02 18:40:31.616821 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:40:31.617502 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
+2025-10-02 18:40:31.617776 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:31.618849 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:31.681071 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdedd910>
+2025-10-02 18:40:31.681651 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daacdef6cf0>}]
+2025-10-02 18:40:31.681950 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daacdef6cf0>}
+2025-10-02 18:40:31.682199 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daacdef6cf0>
+2025-10-02 18:40:33.322856 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:40:33.323410 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
+2025-10-02 18:40:33.323740 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:33.325756 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:33.382048 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdf22ad0>
+2025-10-02 18:40:33.382330 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daacdedb150>}]
+2025-10-02 18:40:33.382481 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daacdedb150>}
+2025-10-02 18:40:33.382606 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daacdedb150>
+2025-10-02 18:40:34.954882 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:40:34.956405 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
+2025-10-02 18:40:34.956712 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:34.957828 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:35.021997 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdf33a90>
+2025-10-02 18:40:35.022402 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0be7550>}]
+2025-10-02 18:40:35.022662 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0be7550>}
+2025-10-02 18:40:35.022863 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0be7550>
+2025-10-02 18:40:36.248830 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
+2025-10-02 18:40:36.249714 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
+2025-10-02 18:40:36.250025 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:36.250860 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:40:36.310839 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daad084cfd0>
+2025-10-02 18:40:36.311251 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0897200>}]
+2025-10-02 18:40:36.311444 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0897200>}
+2025-10-02 18:40:36.311631 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0897200>
+2025-10-02 18:41:33.286985 [INFO] [AUTH ROUTES] [REFRESH] cookie: 32aba946-4bf6-41c8-a0e4-6e60d660fa44:weDPUOzz6OTwLsODDS-BDaYJDbl_2Vj1JJfAD0cXHA1NAkZL0xUnyaNI0UP7mW21FTxFmFQW4FAxhBhGdJr90g
+2025-10-02 18:41:33.291465 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 32aba946-4bf6-41c8-a0e4-6e60d660fa44
+2025-10-02 18:41:33.368908 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:41:33.439504 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 0158e195-7a99-4906-bd20-3baf51ec0e0f, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= a67c47b7e39f0151edd9c46c8d11165d14356c2613f66c0681bd2792087f031e, expires_at= 2025-10-03 18:41:33.438143+00:00)
+2025-10-02 18:41:33.496312 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzA0OTMsImV4cCI6MTc1OTQzMDU1M30.Sa4I4S8ssOFOGqjEbTYHsYevBQzSPoec6oreVYhM3fc
+2025-10-02 18:41:33.496639 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: oS3djObQR3u88DVoL1jj84yuW6dDENsR2trb3r0mDkLqruJXnk5BK2myx6AJt2z68tbpeE8zN2wM2ObadYSylw
+2025-10-02 18:41:37.442800 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzA0OTMsImV4cCI6MTc1OTQzMDU1M30.Sa4I4S8ssOFOGqjEbTYHsYevBQzSPoec6oreVYhM3fc
+2025-10-02 18:41:37.443341 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430493, 'exp': 1759430553}
+2025-10-02 18:41:37.443590 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:41:37.444291 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:41:37.569322 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daad0aa9510>
+2025-10-02 18:41:37.570164 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad085cd70>}]
+2025-10-02 18:41:37.570674 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad085cd70>}
+2025-10-02 18:41:37.571136 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad085cd70>
+2025-10-02 18:43:08.460906 [INFO] [AUTH ROUTES] [REFRESH] cookie: 0158e195-7a99-4906-bd20-3baf51ec0e0f:oS3djObQR3u88DVoL1jj84yuW6dDENsR2trb3r0mDkLqruJXnk5BK2myx6AJt2z68tbpeE8zN2wM2ObadYSylw
+2025-10-02 18:43:08.461976 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 0158e195-7a99-4906-bd20-3baf51ec0e0f
+2025-10-02 18:43:08.518712 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:43:08.580211 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= f708e114-6389-4607-b48d-f0b969d7d7da, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= bbbcb591b5df1248e61c24e53f35981b34e54ecfcfc81d3fcbfae7a9ace2e71f, expires_at= 2025-10-03 18:43:08.579656+00:00)
+2025-10-02 18:43:08.637571 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzA1ODgsImV4cCI6MTc1OTQzMDY0OH0.CDUe4vDvvgWd9rk1VgfxpFUdAFsskjgmIKxhZ0y5GpU
+2025-10-02 18:43:08.637922 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: ypy6E7wZqWrt9b3B7ZU9mFoxbSWk-hKJWUbYTAI3tklKxi3E9RCymwG1I82fZLPq9UFcm-Vm6UokDjMn4klL6g
+2025-10-02 18:43:10.458751 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzA1ODgsImV4cCI6MTc1OTQzMDY0OH0.CDUe4vDvvgWd9rk1VgfxpFUdAFsskjgmIKxhZ0y5GpU
+2025-10-02 18:43:10.460617 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430588, 'exp': 1759430648}
+2025-10-02 18:43:10.460959 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:43:10.461882 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:43:10.511020 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7536635cc890>
+2025-10-02 18:43:10.511474 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x753663733770>}]
+2025-10-02 18:43:10.511721 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x753663733770>}
+2025-10-02 18:43:10.511916 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x753663733770>
+2025-10-02 18:43:10.512114 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'User' object has no attribute 'pop'
+2025-10-02 18:44:32.760991 [INFO] [AUTH ROUTES] [REFRESH] cookie: f708e114-6389-4607-b48d-f0b969d7d7da:ypy6E7wZqWrt9b3B7ZU9mFoxbSWk-hKJWUbYTAI3tklKxi3E9RCymwG1I82fZLPq9UFcm-Vm6UokDjMn4klL6g
+2025-10-02 18:44:32.762482 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: f708e114-6389-4607-b48d-f0b969d7d7da
+2025-10-02 18:44:32.880877 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:44:32.938055 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 38a8a97d-142b-4b19-a84e-d8124d034541, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= dc8d094ff91ce23868bcf95c4e55fe1fcbf530998cf79aa2b2cda0afbcaa023d, expires_at= 2025-10-03 18:44:32.937295+00:00)
+2025-10-02 18:44:33.005479 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzA2NzMsImV4cCI6MTc1OTQzMDczM30.TQCkwQbhfBKwFvmAlmLiKJWzG1iorbsOdpeNt-Y0hO0
+2025-10-02 18:44:33.005770 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: _74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w
+2025-10-02 18:44:35.200505 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzA2NzMsImV4cCI6MTc1OTQzMDczM30.TQCkwQbhfBKwFvmAlmLiKJWzG1iorbsOdpeNt-Y0hO0
+2025-10-02 18:44:35.201497 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430673, 'exp': 1759430733}
+2025-10-02 18:44:35.202379 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:44:35.203230 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 18:44:35.254939 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7ec9ade8fb50>
+2025-10-02 18:44:35.255302 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7ec9ae02f770>}]
+2025-10-02 18:44:35.255457 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7ec9ae02f770>}
+2025-10-02 18:44:35.255589 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7ec9ae02f770>
+2025-10-02 18:45:16.056345 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 38a8a97d-142b-4b19-a84e-d8124d034541:_74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w
+2025-10-02 18:45:16.057906 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 38a8a97d-142b-4b19-a84e-d8124d034541
+2025-10-02 18:45:16.119622 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7ec9ae0ebb10>, replaced_by: None
+2025-10-02 18:45:19.146813 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 38a8a97d-142b-4b19-a84e-d8124d034541:_74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w
+2025-10-02 18:45:19.147723 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 38a8a97d-142b-4b19-a84e-d8124d034541
+2025-10-02 18:45:19.210831 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7ec9ade77820>, replaced_by: None
+2025-10-02 18:53:39.958611 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 38a8a97d-142b-4b19-a84e-d8124d034541:_74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w
+2025-10-02 18:53:39.961668 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 38a8a97d-142b-4b19-a84e-d8124d034541
+2025-10-02 18:53:40.068219 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7603bd032a50>, raw_refresh: _74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w, jti: 38a8a97d-142b-4b19-a84e-d8124d034541
+2025-10-02 18:53:40.068891 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7603bd032a50>, replaced_by: None
+2025-10-02 19:22:17.454889 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 38a8a97d-142b-4b19-a84e-d8124d034541:_74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w
+2025-10-02 19:22:17.457145 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 38a8a97d-142b-4b19-a84e-d8124d034541
+2025-10-02 19:22:17.524900 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae732a50>, raw_refresh: _74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w, jti: 38a8a97d-142b-4b19-a84e-d8124d034541
+2025-10-02 19:22:17.525750 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae732a50>, replaced_by: None
+2025-10-02 19:22:17.586915 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before
+2025-10-02 19:22:17.587321 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
+2025-10-02 19:23:40.105180 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-02 19:23:40.105409 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-02 19:23:40.106270 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-02 19:23:40.170934 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': '2025-10-01T18:46:30.129867+00:00'}
+2025-10-02 19:23:40.171198 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-02 19:23:40.505311 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzMwMjAsImV4cCI6MTc1OTQzMzA4MH0.z89Y8kDfvcIZdUedBG4q8tw6SZPitwoGBCNMy1Xs9n4
+2025-10-02 19:23:40.505592 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: fa6af8a4b13639594299c799d85adbac00f2e2ddbce4a16f4aa053c1aaecdf24
+2025-10-02 19:23:40.505836 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:23:40.505998 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-03 19:23:40.505968+00:00
+2025-10-02 19:23:40.506720 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 36acd70c-05a1-43f8-b6de-75e3ce6c86fc, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= fa6af8a4b13639594299c799d85adbac00f2e2ddbce4a16f4aa053c1aaecdf24, expires_at= 2025-10-03 19:23:40.505968+00:00)
+2025-10-02 19:23:40.562499 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzMwMjAsImV4cCI6MTc1OTQzMzA4MH0.z89Y8kDfvcIZdUedBG4q8tw6SZPitwoGBCNMy1Xs9n4
+2025-10-02 19:23:40.562898 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA
+2025-10-02 19:23:50.170488 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzMwMjAsImV4cCI6MTc1OTQzMzA4MH0.z89Y8kDfvcIZdUedBG4q8tw6SZPitwoGBCNMy1Xs9n4
+2025-10-02 19:23:50.170999 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759433020, 'exp': 1759433080}
+2025-10-02 19:23:50.171253 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 19:23:50.172242 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 19:23:50.237190 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x75afac5e5490>
+2025-10-02 19:23:54.753941 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc:sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA
+2025-10-02 19:23:54.755117 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:23:54.816200 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae9ef610>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:23:54.816930 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae9ef610>, replaced_by: None
+2025-10-02 19:23:54.875176 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before
+2025-10-02 19:23:54.875592 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
+2025-10-02 19:23:58.987505 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzMwMjAsImV4cCI6MTc1OTQzMzA4MH0.z89Y8kDfvcIZdUedBG4q8tw6SZPitwoGBCNMy1Xs9n4
+2025-10-02 19:23:58.987953 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759433020, 'exp': 1759433080}
+2025-10-02 19:23:58.988181 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 19:23:58.988899 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 19:23:59.073628 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x75afac5f1710>
+2025-10-02 19:24:03.755767 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc:sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA
+2025-10-02 19:24:03.756791 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:24:03.812484 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae77dba0>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:24:03.813370 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae77dba0>, replaced_by: None
+2025-10-02 19:24:03.865491 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before
+2025-10-02 19:24:03.865888 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
+2025-10-02 19:24:08.727143 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzMwMjAsImV4cCI6MTc1OTQzMzA4MH0.z89Y8kDfvcIZdUedBG4q8tw6SZPitwoGBCNMy1Xs9n4
+2025-10-02 19:24:08.727729 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759433020, 'exp': 1759433080}
+2025-10-02 19:24:08.728006 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 19:24:08.728859 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 19:24:08.795423 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x75afac5ff490>
+2025-10-02 19:28:10.258139 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc:sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA
+2025-10-02 19:28:10.260383 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:28:10.387713 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7333ef832a50>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:28:10.390063 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7333ef832a50>, replaced_by: None
+2025-10-02 19:28:10.494649 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: refresh_token - ACCESS_COOKIE_NAME: access_token
+2025-10-02 19:28:10.495451 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
+2025-10-02 19:57:24.890655 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc:sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA
+2025-10-02 19:57:24.892435 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:57:25.002476 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x772049732a50>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:57:25.003686 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x772049732a50>, replaced_by: None
+2025-10-02 19:57:25.081678 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: refresh_token - ACCESS_COOKIE_NAME: access_token
+2025-10-02 19:57:25.082432 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
+2025-10-02 19:57:37.489476 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-02 19:57:37.489742 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-02 19:57:37.490425 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-02 19:57:37.552896 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': '2025-10-01T18:46:30.129867+00:00'}
+2025-10-02 19:57:37.553289 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-02 19:57:37.892699 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzUwNTcsImV4cCI6MTc1OTQzNTExN30.vt7vbFMorXPBx4AgWkxq4SVlJHkED59_l3kI3YZEJXE
+2025-10-02 19:57:37.893078 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: d696116551c4e21ff6d5838e7f7bf11f0baaa404a40cab8c5ac76290408ca83d
+2025-10-02 19:57:37.893337 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501
+2025-10-02 19:57:37.893692 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-03 19:57:37.893651+00:00
+2025-10-02 19:57:37.894741 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 48f1f58d-d6c2-4d67-b5b9-6d02a1673501, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= d696116551c4e21ff6d5838e7f7bf11f0baaa404a40cab8c5ac76290408ca83d, expires_at= 2025-10-03 19:57:37.893651+00:00)
+2025-10-02 19:57:37.968367 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzUwNTcsImV4cCI6MTc1OTQzNTExN30.vt7vbFMorXPBx4AgWkxq4SVlJHkED59_l3kI3YZEJXE
+2025-10-02 19:57:37.969626 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: 05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg
+2025-10-02 19:57:49.458890 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501:05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg
+2025-10-02 19:57:49.460963 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501
+2025-10-02 19:57:49.545994 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x772049750cd0>, raw_refresh: 05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg, jti: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501
+2025-10-02 19:57:49.546898 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x772049750cd0>, replaced_by: None
+2025-10-02 19:57:49.621629 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: refresh_token - ACCESS_COOKIE_NAME: access_token
+2025-10-02 19:57:49.622015 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
+2025-10-02 19:59:59.285746 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501:05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg
+2025-10-02 19:59:59.287100 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501
+2025-10-02 19:59:59.350951 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7cffb722ea50>, raw_refresh: 05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg, jti: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501
+2025-10-02 19:59:59.351660 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7cffb722ea50>, replaced_by: None
+2025-10-02 19:59:59.407768 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: refresh_token - ACCESS_COOKIE_NAME: access_token
+2025-10-02 19:59:59.408253 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
+2025-10-02 20:00:08.697476 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-02 20:00:08.697869 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-02 20:00:08.699137 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-02 20:00:08.764576 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': '2025-10-01T18:46:30.129867+00:00'}
+2025-10-02 20:00:08.764800 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-02 20:00:09.098636 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzUyMDksImV4cCI6MTc1OTQzNTI2OX0.-FoxB4-0YONBdknkW0vexsWL5Uc0X3d53gWdO40tWe8
+2025-10-02 20:00:09.098897 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 3320554e421a451fc8c8ef8fd55cd1fe19abe0e87e8b22f3192c46f3553cfda9
+2025-10-02 20:00:09.099061 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 621a4656-9154-4151-912e-eb1f12c34fa1
+2025-10-02 20:00:09.099260 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-03 20:00:09.099229+00:00
+2025-10-02 20:00:09.099917 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 621a4656-9154-4151-912e-eb1f12c34fa1, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 3320554e421a451fc8c8ef8fd55cd1fe19abe0e87e8b22f3192c46f3553cfda9, expires_at= 2025-10-03 20:00:09.099229+00:00)
+2025-10-02 20:00:09.157584 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzUyMDksImV4cCI6MTc1OTQzNTI2OX0.-FoxB4-0YONBdknkW0vexsWL5Uc0X3d53gWdO40tWe8
+2025-10-02 20:00:09.157879 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: lam8u4_ShgnuuDdGdicaQK6ULlFVc3G-TVzc8-l0Yll9DLaU4jwYcvRzppbvu3ecJDVTZzMrVuthnwZl0strbQ
+2025-10-02 20:00:16.814780 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 621a4656-9154-4151-912e-eb1f12c34fa1:lam8u4_ShgnuuDdGdicaQK6ULlFVc3G-TVzc8-l0Yll9DLaU4jwYcvRzppbvu3ecJDVTZzMrVuthnwZl0strbQ
+2025-10-02 20:00:16.815793 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 621a4656-9154-4151-912e-eb1f12c34fa1
+2025-10-02 20:00:16.877204 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7cffb724cf50>, raw_refresh: lam8u4_ShgnuuDdGdicaQK6ULlFVc3G-TVzc8-l0Yll9DLaU4jwYcvRzppbvu3ecJDVTZzMrVuthnwZl0strbQ, jti: 621a4656-9154-4151-912e-eb1f12c34fa1
+2025-10-02 20:00:16.878144 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7cffb724cf50>, replaced_by: None
+2025-10-02 20:00:16.941052 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: refresh_token - ACCESS_COOKIE_NAME: access_token
+2025-10-02 20:00:16.941462 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
+2025-10-02 20:15:56.897470 [INFO] [AUTH ROUTES] [REFRESH] cookie: None
+2025-10-02 20:15:56.897725 [ERROR] [AUTH ROUTES] [REFRESH] no cookie found
+2025-10-02 20:16:12.149845 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-02 20:16:12.150183 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-02 20:16:12.151176 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-02 20:16:12.214777 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq', 'active': True, 'created_at': '2025-10-01T18:46:30.129867+00:00'}
+2025-10-02 20:16:12.215019 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$L9aZeJteCC.5rvWwfLv6L.iS9kueUxaYlxU3LolBDFS19LDboEkvq
+2025-10-02 20:16:12.521015 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzYxNzIsImV4cCI6MTc1OTQzNjIzMn0.Edm700RzACDAAnaW0RQfVM9ra9AZzCigyOpEY84Q9L8
+2025-10-02 20:16:12.521384 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 79cb91ca9009ded0419ec22bb104af763f95c2c165c19b733c8f6282143d13b1
+2025-10-02 20:16:12.521676 [DEBUG] [AUTH SERVICE] [LOGIN] jti: f6c73432-9299-4267-af40-2094e3a292a9
+2025-10-02 20:16:12.521991 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-03 20:16:12.521955+00:00
+2025-10-02 20:16:12.522768 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= f6c73432-9299-4267-af40-2094e3a292a9, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 79cb91ca9009ded0419ec22bb104af763f95c2c165c19b733c8f6282143d13b1, expires_at= 2025-10-03 20:16:12.521955+00:00)
+2025-10-02 20:16:12.586047 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzYxNzIsImV4cCI6MTc1OTQzNjIzMn0.Edm700RzACDAAnaW0RQfVM9ra9AZzCigyOpEY84Q9L8
+2025-10-02 20:16:12.586360 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: WkXl12StM5YyvHF1ck3N97FUJWU13mj0lBjoxrcqrRICfd21CZSQJSL2uJUHeX9-dfyoy8-10j3OJ8mj0lt6rQ
+2025-10-02 20:16:20.631863 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzYxNzIsImV4cCI6MTc1OTQzNjIzMn0.Edm700RzACDAAnaW0RQfVM9ra9AZzCigyOpEY84Q9L8
+2025-10-02 20:16:20.632575 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759436172, 'exp': 1759436232}
+2025-10-02 20:16:20.632907 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 20:16:20.634183 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
+2025-10-02 20:16:20.756008 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7cffb47dc350>
