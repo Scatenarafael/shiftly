@@ -170,14 +170,15 @@ class AuthService:
 
         app_logger.debug(f"[AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: {user}")
 
-        rows = user.mappings().all()
+        # rows = user.mappings().all()
 
-        for row in rows:
-            user_from_row = row["User"]
+        # for row in rows:
+        #     user_from_row = row["User"]
 
-        if not user_from_row:
-            raise InvalidCredentials("User not found")
+        # if not user_from_row:
+        #     raise InvalidCredentials("User not found")
 
-        delattr(user_from_row, "hashed_password")  # remove hashed_password before returning
+        delattr(user, "hashed_password")  # remove hashed_password before returning
+        # delattr(user_from_row, "hashed_password")  # remove hashed_password before returning
 
-        return user_from_row
+        return user

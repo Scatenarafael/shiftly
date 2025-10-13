@@ -48,7 +48,9 @@ class UsersRepository(IUsersRepository):
             try:
                 app_logger.info(f"[USER][GETBY][ID] not_none_args: {id}")
                 if database.session:
-                    user = await database.session.execute(select(User).filter(User.id == id))  # type: ignore
+                    result = await database.session.execute(select(User).filter(User.id == id))  # type: ignore
+                    user = result.scalars().first()
+                    app_logger.info(f"[USER][GETBY][ID] user: {user}")
                     if not user:
                         raise LookupError("User not found!")
                     return user  # type: ignore
@@ -92,11 +94,13 @@ class UsersRepository(IUsersRepository):
                 app_logger.info(f"[USER][PARTIAL][UPDATE] not_none_args: {not_none_args}")
 
                 for attr, value in not_none_args.items():
-                    setattr(User, attr, value)
+                    setattr(user, attr, value)
 
                 if database.session:
                     database.session.add(user)
                     await database.session.commit()
+                    await database.session.refresh(user)
+                    return user  # type: ignore
             except Exception as exception:
                 app_logger.error(f"[USER][PARTIAL][UPDATE] exception: {exception}")
                 if database.session:
