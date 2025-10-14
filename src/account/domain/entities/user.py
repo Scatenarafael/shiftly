@@ -37,7 +37,7 @@ class User(Base):
 
     refresh_tokens = relationship("RefreshToken", back_populates="user")
 
-    companies_roles = relationship("UserCompanyRole", back_populates="company_role_user")
+    # companies_roles = relationship("UserCompanyRole", back_populates="company_role_user")
 
     def to_dict(self) -> UserDict:
         return {

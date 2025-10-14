@@ -1011,3 +1011,16 @@
 2025-10-12 16:57:36.486971 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'john-ALTERADO'}
 2025-10-12 16:57:36.487441 [INFO] [USER][PARTIAL][UPDATE] user: <src.account.domain.entities.user.User object at 0x72f504c4ee40>
 2025-10-12 16:57:36.519263 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, user: <src.account.domain.entities.user.User object at 0x72f504c4ee40>
+2025-10-14 02:42:59.287060 [INFO] [USER][CREATE] new_register: (first_name: john, last_name: doe, email: john.doe@email.com, active: True)
+2025-10-14 02:44:33.805811 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-14 02:44:33.807777 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-14 02:44:33.813033 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-14 02:44:33.970746 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': 'aa8f1f98-1c80-42a1-86c0-1c4c51c8f990', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$lehGF.IyzpWQq4eDkfM7XujbW2MzGP6gAiRT73aq5ZI2/iXQROTny', 'active': True, 'created_at': '2025-10-14T02:42:59.446337+00:00'}
+2025-10-14 02:44:33.972051 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$lehGF.IyzpWQq4eDkfM7XujbW2MzGP6gAiRT73aq5ZI2/iXQROTny
+2025-10-14 02:44:34.406761 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYThmMWY5OC0xYzgwLTQyYTEtODZjMC0xYzRjNTFjOGY5OTAiLCJpYXQiOjE3NjA0MDk4NzQsImV4cCI6MTc2MDQxMDc3NH0.0vaKG51SZv9HJGmO6CzmIFqVzXjz4GmJrh21DBumb7A
+2025-10-14 02:44:34.408607 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: affcd2d9f8b7ca15e0aafe6947ea86972b18194225f464fa3010a969850b8943
+2025-10-14 02:44:34.409290 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 8ad4691a-b3f7-4423-aa3e-4371f53d8256
+2025-10-14 02:44:34.410054 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-15 02:44:34.410008+00:00
+2025-10-14 02:44:34.411473 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 8ad4691a-b3f7-4423-aa3e-4371f53d8256, user_id= aa8f1f98-1c80-42a1-86c0-1c4c51c8f990, token_hash= affcd2d9f8b7ca15e0aafe6947ea86972b18194225f464fa3010a969850b8943, expires_at= 2025-10-15 02:44:34.410008+00:00)
+2025-10-14 02:44:34.538718 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYThmMWY5OC0xYzgwLTQyYTEtODZjMC0xYzRjNTFjOGY5OTAiLCJpYXQiOjE3NjA0MDk4NzQsImV4cCI6MTc2MDQxMDc3NH0.0vaKG51SZv9HJGmO6CzmIFqVzXjz4GmJrh21DBumb7A
+2025-10-14 02:44:34.539241 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: oJ7zQeEheZU59U-Vxgpg7-cTrmTX7kHpB7i-5-eIRdIF6a4LbPBP2DFV-7X1836bS21LfO_RaLRi1fea3ezfNA

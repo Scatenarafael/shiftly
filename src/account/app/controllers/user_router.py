@@ -41,7 +41,7 @@ class UserRequestBody(BaseModel):
     active: bool
 
 
-@router.post("/users")
+@router.post("/users/register")
 async def create(payload: UserRequestBody, create_usecase: CreateUserUseCase = Depends(get_create_user_usecase)):
     new_user = await create_usecase.execute(first_name=payload.first_name, last_name=payload.last_name, email=payload.email, password=payload.password, active=payload.active)
     return new_user
