@@ -13,11 +13,12 @@ class UserCompanyRole(Base):
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     user_id = Column(UUID(as_uuid=True), ForeignKey("users.id"))
     company_id = Column(UUID(as_uuid=True), ForeignKey("companies.id"))
-    role_id = Column(UUID(as_uuid=True), ForeignKey("roles.id"))
+    role_id = Column(UUID(as_uuid=True), ForeignKey("roles.id"), nullable=True)
     is_owner = Column(Boolean, default=False)
 
-    # relação com User (corrigido)
     user = relationship("User", back_populates="companies_roles")
-
-    company = relationship("Company", back_populates="users")
+    company = relationship("Company", back_populates="users_roles")
     role = relationship("Role", back_populates="user_company_roles")
+
+    def __repr__(self):
+        return f"<UserCompanyRole(user_id='{self.user_id}', company_id='{self.company_id}', role_id='{self.role_id}')>"

@@ -1,7 +1,7 @@
 import uuid
 from typing import TypedDict
 
-from sqlalchemy import Boolean, Column, DateTime, ForeignKey, String, func
+from sqlalchemy import Boolean, Column, DateTime, ForeignKey, String, func, inspect
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 
@@ -27,17 +27,23 @@ class RefreshToken(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     expires_at = Column(DateTime(timezone=True), nullable=False)
     revoked = Column(Boolean, default=False)
-    replaced_by = Column(String, nullable=True)  # jti of new token
+    replaced_by = Column(String, nullable=True)
 
     user = relationship("User", back_populates="refresh_tokens")
 
     def to_dict(self) -> RefreshTokenDict:
-        return {
-            "id": str(getattr(self, "id")),
-            "user_id": str(getattr(self, "user_id")),
-            "token_hash": getattr(self, "token_hash"),
-            "created_at": self.created_at.isoformat() if str(self.created_at) else None,
-            "expires_at": self.expires_at.isoformat() if str(self.expires_at) else None,
-            "revoked": getattr(self, "revoked"),
-            "replaced_by": getattr(self, "replaced_by"),
-        }
+        data = {c.key: getattr(self, c.key) for c in inspect(self).mapper.column_attrs}
+        # Convert UUID and datetime objects to strings
+        if data.get("id"):
+            data["id"] = str(data["id"])
+        if data.get("user_id"):
+            data["user_id"] = str(data["user_id"])
+        if data.get("created_at") is not None:
+            data["created_at"] = data["created_at"].isoformat()
+        if data.get("expires_at") is not None:
+            data["expires_at"] = data["expires_at"].isoformat()
+
+        return data  # type: ignore
+
+    def __repr__(self):
+        return f"<RefreshToken(id='{self.id}', user_id='{self.user_id}')>"

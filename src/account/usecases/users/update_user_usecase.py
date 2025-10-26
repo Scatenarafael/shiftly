@@ -1,15 +1,6 @@
-from typing import Optional
-
+from src.account.app.controllers.dtos.update_user_dto import PayloadUpdateUserDTO
 from src.account.interfaces.iusers_repository import IUsersRepository
 from src.infra.settings.logging_config import app_logger
-
-
-class PayloadUpdateUserDTO:
-    first_name: Optional[str] = None
-    last_name: Optional[str] = None
-    email: Optional[str] = None
-    password: Optional[str] = None
-    active: Optional[bool] = None
 
 
 class UpdateUserUseCase:

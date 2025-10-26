@@ -1024,3 +1024,226 @@
 2025-10-14 02:44:34.411473 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 8ad4691a-b3f7-4423-aa3e-4371f53d8256, user_id= aa8f1f98-1c80-42a1-86c0-1c4c51c8f990, token_hash= affcd2d9f8b7ca15e0aafe6947ea86972b18194225f464fa3010a969850b8943, expires_at= 2025-10-15 02:44:34.410008+00:00)
 2025-10-14 02:44:34.538718 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYThmMWY5OC0xYzgwLTQyYTEtODZjMC0xYzRjNTFjOGY5OTAiLCJpYXQiOjE3NjA0MDk4NzQsImV4cCI6MTc2MDQxMDc3NH0.0vaKG51SZv9HJGmO6CzmIFqVzXjz4GmJrh21DBumb7A
 2025-10-14 02:44:34.539241 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: oJ7zQeEheZU59U-Vxgpg7-cTrmTX7kHpB7i-5-eIRdIF6a4LbPBP2DFV-7X1836bS21LfO_RaLRi1fea3ezfNA
+2025-10-21 22:44:32.761733 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-21 22:44:32.765889 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-21 22:44:32.821485 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-21 22:44:32.910837 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': 'aa8f1f98-1c80-42a1-86c0-1c4c51c8f990', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$lehGF.IyzpWQq4eDkfM7XujbW2MzGP6gAiRT73aq5ZI2/iXQROTny', 'active': True, 'created_at': '2025-10-14T02:42:59.446337+00:00'}
+2025-10-21 22:44:32.911148 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$lehGF.IyzpWQq4eDkfM7XujbW2MzGP6gAiRT73aq5ZI2/iXQROTny
+2025-10-21 22:44:33.258282 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYThmMWY5OC0xYzgwLTQyYTEtODZjMC0xYzRjNTFjOGY5OTAiLCJpYXQiOjE3NjEwODY2NzMsImV4cCI6MTc2MTA4NzU3M30.hbWdQIkW2BGUlNWkA36ZMZBeMHWeHZDmXKyELDwJ7EQ
+2025-10-21 22:44:33.258676 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: b579399865f52c50cb9fc591060315a03d85e933e024fa168e9f7bf56329b2c0
+2025-10-21 22:44:33.259027 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 85f410a6-b70b-4fd0-8389-383d3d55a132
+2025-10-21 22:44:33.259274 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-22 22:44:33.259237+00:00
+2025-10-21 22:44:33.260319 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 85f410a6-b70b-4fd0-8389-383d3d55a132, user_id= aa8f1f98-1c80-42a1-86c0-1c4c51c8f990, token_hash= b579399865f52c50cb9fc591060315a03d85e933e024fa168e9f7bf56329b2c0, expires_at= 2025-10-22 22:44:33.259237+00:00)
+2025-10-21 22:44:33.339269 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYThmMWY5OC0xYzgwLTQyYTEtODZjMC0xYzRjNTFjOGY5OTAiLCJpYXQiOjE3NjEwODY2NzMsImV4cCI6MTc2MTA4NzU3M30.hbWdQIkW2BGUlNWkA36ZMZBeMHWeHZDmXKyELDwJ7EQ
+2025-10-21 22:44:33.339762 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: jkBSvKjmQAJKgks-5GO7oqaIB7n0sEfaMyaRqvTVX_C94F6IQ8Ubi5wlVNzZv1a0BhomEJV3NU9B-QmyZZjRTQ
+2025-10-22 02:34:44.439016 [INFO] [AUTH ROUTES] [REFRESH] cookie: 85f410a6-b70b-4fd0-8389-383d3d55a132:jkBSvKjmQAJKgks-5GO7oqaIB7n0sEfaMyaRqvTVX_C94F6IQ8Ubi5wlVNzZv1a0BhomEJV3NU9B-QmyZZjRTQ
+2025-10-22 02:34:44.504952 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 85f410a6-b70b-4fd0-8389-383d3d55a132
+2025-10-22 02:34:44.581152 [ERROR] [REFRESH TOKEN][GETBY][JTI] exception: When initializing mapper Mapper[Company(companies)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.company.Company'> class after both dependent classes have been defined.
+2025-10-22 02:58:46.875209 [INFO] [AUTH ROUTES] [REFRESH] cookie: 85f410a6-b70b-4fd0-8389-383d3d55a132:jkBSvKjmQAJKgks-5GO7oqaIB7n0sEfaMyaRqvTVX_C94F6IQ8Ubi5wlVNzZv1a0BhomEJV3NU9B-QmyZZjRTQ
+2025-10-22 02:58:46.926806 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 85f410a6-b70b-4fd0-8389-383d3d55a132
+2025-10-22 02:58:47.011209 [ERROR] [REFRESH TOKEN][GETBY][JTI] exception: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.user.User'> class after both dependent classes have been defined.
+2025-10-22 02:59:03.615847 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-22 02:59:03.616226 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-22 02:59:03.650766 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-22 02:59:03.707264 [ERROR] [USER][GETBY][EMAIL] exception: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.user.User'> class after both dependent classes have been defined.
+2025-10-22 02:59:03.708035 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.user.User'> class after both dependent classes have been defined.
+2025-10-25 01:07:58.122696 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-25 01:07:58.126205 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-25 01:07:58.215304 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-25 01:07:58.335248 [ERROR] [USER][GETBY][EMAIL] exception: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.user.User'> class after both dependent classes have been defined.
+2025-10-25 01:07:58.335852 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.user.User'> class after both dependent classes have been defined.
+2025-10-25 01:26:46.425164 [INFO] [USER][CREATE] new_register: (first_name: john, last_name: doe, email: john.doe@email.com, active: True)
+2025-10-25 01:28:28.733946 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-25 01:28:28.734194 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-25 01:28:28.734949 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-25 01:28:28.858418 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '385cabbe-e52e-4203-b5c9-958a154a7953', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'active': True, 'created_at': '2025-10-25T01:26:46.544137+00:00'}
+2025-10-25 01:28:28.859227 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): None
+2025-10-25 01:28:29.493773 [ERROR] [AUTH SERVICE] [LOGIN] Could not authenticate user
+2025-10-25 01:28:29.494156 [ERROR] [AUTH ROUTES] [LOGIN] [InvalidCredentials] exc: Usuário ou senha inválidos
+2025-10-25 01:28:56.294841 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-25 01:28:56.295393 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-25 01:28:56.296893 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-25 01:28:56.398570 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '385cabbe-e52e-4203-b5c9-958a154a7953', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'active': True, 'created_at': '2025-10-25T01:26:46.544137+00:00'}
+2025-10-25 01:28:56.398945 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): None
+2025-10-25 01:28:56.723264 [ERROR] [AUTH SERVICE] [LOGIN] Could not authenticate user
+2025-10-25 01:28:56.723618 [ERROR] [AUTH ROUTES] [LOGIN] [InvalidCredentials] exc: Usuário ou senha inválidos
+2025-10-25 01:29:46.485814 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-25 01:29:46.486180 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-25 01:29:46.487619 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-25 01:29:46.556343 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '385cabbe-e52e-4203-b5c9-958a154a7953', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'active': True, 'created_at': '2025-10-25T01:26:46.544137+00:00'}
+2025-10-25 01:29:46.556632 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): None
+2025-10-25 01:29:46.867829 [ERROR] [AUTH SERVICE] [LOGIN] Could not authenticate user
+2025-10-25 01:29:46.868207 [ERROR] [AUTH ROUTES] [LOGIN] [InvalidCredentials] exc: Usuário ou senha inválidos
+2025-10-25 01:31:45.702521 [INFO] [USER][CREATE] new_register: (first_name: john, last_name: doe, email: john.doe@email.com, active: True)
+2025-10-25 01:31:58.000157 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-25 01:31:58.000854 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-25 01:31:58.002197 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-25 01:31:58.153472 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'active': True, 'created_at': '2025-10-25T01:31:45.853515+00:00'}
+2025-10-25 01:31:58.154018 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): None
+2025-10-25 01:31:58.999992 [ERROR] [AUTH SERVICE] [LOGIN] Could not authenticate user
+2025-10-25 01:31:59.001011 [ERROR] [AUTH ROUTES] [LOGIN] [InvalidCredentials] exc: Usuário ou senha inválidos
+2025-10-25 01:32:25.015504 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-25 01:32:25.016561 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-25 01:32:25.173798 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-25 01:32:25.319640 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'active': True, 'created_at': '2025-10-25T01:31:45.853515+00:00'}
+2025-10-25 01:32:25.320030 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): None
+2025-10-25 01:32:26.337225 [ERROR] [AUTH SERVICE] [LOGIN] Could not authenticate user
+2025-10-25 01:32:26.337748 [ERROR] [AUTH ROUTES] [LOGIN] [InvalidCredentials] exc: Usuário ou senha inválidos
+2025-10-25 01:35:38.150885 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-25 01:35:38.151364 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-25 01:35:38.201155 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-25 01:35:38.358665 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$SlhrQ0RPd7uead8NmuxppuNCFwZdpBOg9FWOpW0bKi3rr/cbOik0y', 'active': True, 'created_at': '2025-10-25T01:31:45.853515+00:00'}
+2025-10-25 01:35:38.359031 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$SlhrQ0RPd7uead8NmuxppuNCFwZdpBOg9FWOpW0bKi3rr/cbOik0y
+2025-10-25 01:35:38.761006 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNTYxMzgsImV4cCI6MTc2MTM1NzAzOH0.o34UMsBhUUAH2GXCXxJWe8vNO080wTLZCT0lS-_-lp4
+2025-10-25 01:35:38.761590 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 83dba6936830340a86cee0e421517075b2169008bcfd2f213633f8da51d8f75b
+2025-10-25 01:35:38.761882 [DEBUG] [AUTH SERVICE] [LOGIN] jti: 2bddd109-b3b0-4192-a20a-03ed30a3f3eb
+2025-10-25 01:35:38.762109 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-26 01:35:38.762075+00:00
+2025-10-25 01:35:38.762931 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 2bddd109-b3b0-4192-a20a-03ed30a3f3eb, user_id= 6dd8c6cd-e298-469b-ac88-601d82b77f57, token_hash= 83dba6936830340a86cee0e421517075b2169008bcfd2f213633f8da51d8f75b, expires_at= 2025-10-26 01:35:38.762075+00:00)
+2025-10-25 01:35:38.840414 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNTYxMzgsImV4cCI6MTc2MTM1NzAzOH0.o34UMsBhUUAH2GXCXxJWe8vNO080wTLZCT0lS-_-lp4
+2025-10-25 01:35:38.840755 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: uWys1QJWb8KC9P3uLcUhkJUzSxDWUor3TVhCsxdye0vYKTvUS9fhfUsBoHROmWbeAndZTQf1M3XH0914QDsKZg
+2025-10-25 01:35:49.997489 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNTYxMzgsImV4cCI6MTc2MTM1NzAzOH0.o34UMsBhUUAH2GXCXxJWe8vNO080wTLZCT0lS-_-lp4
+2025-10-25 01:35:49.998078 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761356138, 'exp': 1761357038}
+2025-10-25 01:35:49.998330 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 01:35:49.999148 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 01:35:50.053492 [INFO] [USER][GETBY][ID] user: <User(id='6dd8c6cd-e298-469b-ac88-601d82b77f57', email='john.doe@email.com')>
+2025-10-25 01:35:50.055595 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <User(id='6dd8c6cd-e298-469b-ac88-601d82b77f57', email='john.doe@email.com')>
+2025-10-25 01:40:59.277128 [INFO] [AUTH ROUTES] [REFRESH] cookie: 2bddd109-b3b0-4192-a20a-03ed30a3f3eb:uWys1QJWb8KC9P3uLcUhkJUzSxDWUor3TVhCsxdye0vYKTvUS9fhfUsBoHROmWbeAndZTQf1M3XH0914QDsKZg
+2025-10-25 01:40:59.279034 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 2bddd109-b3b0-4192-a20a-03ed30a3f3eb
+2025-10-25 01:40:59.398601 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 01:40:59.486627 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 1530d0d5-6614-45c8-ac22-9b31d6230534, user_id= 6dd8c6cd-e298-469b-ac88-601d82b77f57, token_hash= b8df52e6dceedded6007598aced3924433ef1d7d72944db99a5c7947b777a8a7, expires_at= 2025-10-26 01:40:59.485779+00:00)
+2025-10-25 01:40:59.576348 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNTY0NTksImV4cCI6MTc2MTM1NzM1OX0.0pvYp_vxeO6-_9MAttJORZWlsyMBWloN2036ECwgvmU
+2025-10-25 01:40:59.576692 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: hic83qpUwKiFOlR1OI-ZlvP3b3dOD1RQreQm4_QESYi-ikTFHk5AWCpkXHv3Jgw3c4GuB1qfZ1QCemVegykc7Q
+2025-10-25 03:27:20.057714 [INFO] [AUTH ROUTES] [REFRESH] cookie: 1530d0d5-6614-45c8-ac22-9b31d6230534:hic83qpUwKiFOlR1OI-ZlvP3b3dOD1RQreQm4_QESYi-ikTFHk5AWCpkXHv3Jgw3c4GuB1qfZ1QCemVegykc7Q
+2025-10-25 03:27:20.218165 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 1530d0d5-6614-45c8-ac22-9b31d6230534
+2025-10-25 03:27:20.554248 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:27:20.653403 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 4ad48e3d-c00a-48d5-a199-fa46ac380f9f, user_id= 6dd8c6cd-e298-469b-ac88-601d82b77f57, token_hash= a0ab4e3048619cd8f4eeb3843a2e2d376e7e7760c6cefbd570c180319a2d1663, expires_at= 2025-10-26 03:27:20.652475+00:00)
+2025-10-25 03:27:20.747419 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
+2025-10-25 03:27:20.748009 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: M7C4kMHaA8_KU47cC0GMf80B9mekU5_I8U6ZZrSd9OkH9mSurEKrkXDT0oSnPo-bnqlmE6aiIWA_5CA7gZx0CQ
+2025-10-25 03:27:44.885880 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
+2025-10-25 03:27:44.886478 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
+2025-10-25 03:27:44.887375 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:27:44.888923 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:27:44.975535 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x743c5a67bb60>
+2025-10-25 03:27:44.976412 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x743c5a67bb60>
+2025-10-25 03:27:44.976661 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: __init__() takes 1 positional argument but 2 were given
+2025-10-25 03:27:54.113071 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
+2025-10-25 03:27:54.113619 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
+2025-10-25 03:27:54.114033 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:27:54.115505 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:27:54.199554 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x743c59da25d0>
+2025-10-25 03:27:54.200728 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x743c59da25d0>
+2025-10-25 03:27:54.201109 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: __init__() takes 1 positional argument but 2 were given
+2025-10-25 03:30:35.684407 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
+2025-10-25 03:30:35.686930 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
+2025-10-25 03:30:35.687777 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:30:35.792884 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:30:35.940025 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7901a3db6f90>
+2025-10-25 03:30:35.941264 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7901a3db6f90>
+2025-10-25 03:30:35.941647 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: __init__() takes 1 positional argument but 2 were given
+2025-10-25 03:31:40.537732 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
+2025-10-25 03:31:40.538828 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
+2025-10-25 03:31:40.539804 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:31:40.612390 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:31:40.839701 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7599378b6f90>
+2025-10-25 03:31:40.840740 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7599378b6f90>
+2025-10-25 03:31:40.841058 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7599378b6f90>
+2025-10-25 03:31:40.841354 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: __init__() takes 1 positional argument but 2 were given
+2025-10-25 03:32:42.125367 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
+2025-10-25 03:32:42.126230 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
+2025-10-25 03:32:42.126612 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:32:42.186898 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:32:42.279310 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7a91c09b2f90>
+2025-10-25 03:32:42.280657 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7a91c09b2f90>
+2025-10-25 03:32:42.281104 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7a91c09b2f90>
+2025-10-25 03:32:42.281511 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:32:42.283130 [ERROR] [COMPANY][CREATE] Exception: 'owner_id' is an invalid keyword argument for Company
+2025-10-25 03:32:42.283880 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'owner_id' is an invalid keyword argument for Company
+2025-10-25 03:35:51.428674 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
+2025-10-25 03:35:51.433573 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
+2025-10-25 03:35:51.434674 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:35:51.506909 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:35:51.628621 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7a08141c2f90>
+2025-10-25 03:35:51.629891 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7a08141c2f90>
+2025-10-25 03:35:51.630208 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7a08141c2f90>
+2025-10-25 03:35:51.630621 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:35:51.631582 [ERROR] [COMPANY][CREATE] Exception: 'owner_id' is an invalid keyword argument for Company
+2025-10-25 03:35:51.632130 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'owner_id' is an invalid keyword argument for Company
+2025-10-25 03:37:58.762208 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
+2025-10-25 03:37:58.763174 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
+2025-10-25 03:37:58.763518 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:37:58.826549 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:37:58.946744 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7e598c9b6f90>
+2025-10-25 03:37:58.947764 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7e598c9b6f90>
+2025-10-25 03:37:58.948070 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7e598c9b6f90>
+2025-10-25 03:37:58.948349 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-25 03:37:58.949231 [ERROR] [COMPANY][CREATE] Exception: 'owner_id' is an invalid keyword argument for Company
+2025-10-25 03:37:58.949639 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'owner_id' is an invalid keyword argument for Company
+2025-10-26 13:56:56.653153 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-26 13:56:56.657331 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-26 13:56:56.783350 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-26 13:56:56.920414 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$SlhrQ0RPd7uead8NmuxppuNCFwZdpBOg9FWOpW0bKi3rr/cbOik0y', 'active': True, 'created_at': '2025-10-25T01:31:45.853515+00:00'}
+2025-10-26 13:56:56.920654 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$SlhrQ0RPd7uead8NmuxppuNCFwZdpBOg9FWOpW0bKi3rr/cbOik0y
+2025-10-26 13:56:57.280006 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODcwMTcsImV4cCI6MTc2MTQ4NzkxN30.3MWiehnSB4qYqyQNuLOJNU3dR-HfpkgIWBv9Q9Byatg
+2025-10-26 13:56:57.280356 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 76249adab5545a461cd56edacd001a984103fc72e0682c4f55e8000a34fba843
+2025-10-26 13:56:57.280672 [DEBUG] [AUTH SERVICE] [LOGIN] jti: e95643d4-39ce-464c-86c1-d55f08146a2c
+2025-10-26 13:56:57.280930 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-27 13:56:57.280885+00:00
+2025-10-26 13:56:57.282201 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= e95643d4-39ce-464c-86c1-d55f08146a2c, user_id= 6dd8c6cd-e298-469b-ac88-601d82b77f57, token_hash= 76249adab5545a461cd56edacd001a984103fc72e0682c4f55e8000a34fba843, expires_at= 2025-10-27 13:56:57.280885+00:00)
+2025-10-26 13:56:57.372899 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODcwMTcsImV4cCI6MTc2MTQ4NzkxN30.3MWiehnSB4qYqyQNuLOJNU3dR-HfpkgIWBv9Q9Byatg
+2025-10-26 13:56:57.373248 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: 7dtvn5ROFr-kWySnwcm7P4WJ8Sxl26GhEKKK39RM4VZ_n-Jj8iZUrBPNM4pVvs7xZcg65gmeNPv63_L7WLKT4w
+2025-10-26 13:57:18.237026 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODcwMTcsImV4cCI6MTc2MTQ4NzkxN30.3MWiehnSB4qYqyQNuLOJNU3dR-HfpkgIWBv9Q9Byatg
+2025-10-26 13:57:18.237559 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761487017, 'exp': 1761487917}
+2025-10-26 13:57:18.237855 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 13:57:18.238840 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 13:57:18.331792 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7cfe5dfa7d90>
+2025-10-26 13:57:18.333040 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7cfe5dfa7d90>
+2025-10-26 13:57:18.333688 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7cfe5dfa7d90>
+2025-10-26 13:57:18.334106 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 13:57:18.334968 [ERROR] [COMPANY][CREATE] Exception: 'owner_id' is an invalid keyword argument for Company
+2025-10-26 13:57:18.335406 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'owner_id' is an invalid keyword argument for Company
+2025-10-26 13:59:24.293165 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODcwMTcsImV4cCI6MTc2MTQ4NzkxN30.3MWiehnSB4qYqyQNuLOJNU3dR-HfpkgIWBv9Q9Byatg
+2025-10-26 13:59:24.294373 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761487017, 'exp': 1761487917}
+2025-10-26 13:59:24.294939 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 13:59:24.351758 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 13:59:24.600979 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x734f503c2e40>
+2025-10-26 13:59:24.603865 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x734f503c2e40>
+2025-10-26 13:59:24.604250 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x734f503c2e40>
+2025-10-26 13:59:24.604576 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:04:28.760099 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODcwMTcsImV4cCI6MTc2MTQ4NzkxN30.3MWiehnSB4qYqyQNuLOJNU3dR-HfpkgIWBv9Q9Byatg
+2025-10-26 14:04:28.761127 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761487017, 'exp': 1761487917}
+2025-10-26 14:04:28.761898 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:04:28.913735 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:04:29.076224 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x73bc5bab2e40>
+2025-10-26 14:04:29.079330 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x73bc5bab2e40>
+2025-10-26 14:04:29.080470 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x73bc5bab2e40>
+2025-10-26 14:04:29.081620 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:08:02.474154 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODcwMTcsImV4cCI6MTc2MTQ4NzkxN30.3MWiehnSB4qYqyQNuLOJNU3dR-HfpkgIWBv9Q9Byatg
+2025-10-26 14:08:02.477544 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761487017, 'exp': 1761487917}
+2025-10-26 14:08:02.479330 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:08:02.538806 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:08:02.698116 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x729f49ab2e40>
+2025-10-26 14:08:02.700876 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x729f49ab2e40>
+2025-10-26 14:08:02.701323 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x729f49ab2e40>
+2025-10-26 14:08:02.702056 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:08:02.703805 [INFO] [COMPANY][CREATE] new_register.id: None
+2025-10-26 14:10:23.709851 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODcwMTcsImV4cCI6MTc2MTQ4NzkxN30.3MWiehnSB4qYqyQNuLOJNU3dR-HfpkgIWBv9Q9Byatg
+2025-10-26 14:10:23.710718 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761487017, 'exp': 1761487917}
+2025-10-26 14:10:23.711016 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:10:23.742803 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:10:23.812706 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x715885fb6e40>
+2025-10-26 14:10:23.813625 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x715885fb6e40>
+2025-10-26 14:10:23.813942 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x715885fb6e40>
+2025-10-26 14:10:23.814205 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:20:24.497101 [INFO] [AUTH ROUTES] [REFRESH] cookie: e95643d4-39ce-464c-86c1-d55f08146a2c:7dtvn5ROFr-kWySnwcm7P4WJ8Sxl26GhEKKK39RM4VZ_n-Jj8iZUrBPNM4pVvs7xZcg65gmeNPv63_L7WLKT4w
+2025-10-26 14:20:24.554845 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: e95643d4-39ce-464c-86c1-d55f08146a2c
+2025-10-26 14:20:24.658228 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:20:24.733327 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 247b2e8e-f0e6-43ce-ab48-213e35a96dcd, user_id= 6dd8c6cd-e298-469b-ac88-601d82b77f57, token_hash= ddace9887bfc97e7deeb374ddfbb24f6cef157e6e34745f192b1004f6788e17f, expires_at= 2025-10-27 14:20:24.732781+00:00)
+2025-10-26 14:20:24.817629 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODg0MjQsImV4cCI6MTc2MTQ4OTMyNH0.yyeSJeEgOorgDfbxIQvOJdmWXraytUHn-qCMoCtqKkM
+2025-10-26 14:20:24.818090 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: -WpzGMI-jK6C2v3kChl7R2gDEodyKvI4opM65KjJaXujDOHdkiuBZmsd5JMJJ89Fy26ZqaE7cP6JxzEJ5l5r7g
+2025-10-26 14:20:30.134617 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODg0MjQsImV4cCI6MTc2MTQ4OTMyNH0.yyeSJeEgOorgDfbxIQvOJdmWXraytUHn-qCMoCtqKkM
+2025-10-26 14:20:30.135892 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761488424, 'exp': 1761489324}
+2025-10-26 14:20:30.136247 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:20:30.137634 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-26 14:20:30.506411 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7cf24c27cc20>
+2025-10-26 14:20:30.510795 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7cf24c27cc20>
+2025-10-26 14:20:30.511268 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7cf24c27cc20>
+2025-10-26 14:20:30.511693 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57

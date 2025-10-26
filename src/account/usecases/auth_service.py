@@ -178,7 +178,9 @@ class AuthService:
         # if not user_from_row:
         #     raise InvalidCredentials("User not found")
 
-        delattr(user, "hashed_password")  # remove hashed_password before returning
+        if hasattr(user, "hashed_password"):
+            delattr(user, "hashed_password")  # remove hashed_password before returning
         # delattr(user_from_row, "hashed_password")  # remove hashed_password before returning
 
+        app_logger.debug(f"[AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: {user}")
         return user

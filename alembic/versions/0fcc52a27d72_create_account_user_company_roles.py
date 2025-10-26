@@ -27,7 +27,7 @@ def upgrade():
         sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True, default=uuid.uuid4),
         sa.Column("user_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("users.id")),
         sa.Column("company_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("companies.id")),
-        sa.Column("role_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("roles.id")),
+        sa.Column("role_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("roles.id"), nullable=True),
         sa.Column("is_owner", sa.Boolean(), default=False),
     )
 

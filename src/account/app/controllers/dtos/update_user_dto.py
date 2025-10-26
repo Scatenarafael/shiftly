@@ -1,11 +1,9 @@
 from typing import Optional
 
-from pydantic import BaseModel
-
-from src.account.usecases.users.update_user_usecase import PayloadUpdateUserDTO
+from src.account.interfaces.types.user_types import UserUpdateRequestBody
 
 
-class UserUpdateRequestBody(BaseModel):
+class PayloadUpdateUserDTO:
     first_name: Optional[str] = None
     last_name: Optional[str] = None
     email: Optional[str] = None

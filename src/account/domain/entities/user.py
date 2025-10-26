@@ -22,22 +22,15 @@ class User(Base):
     __tablename__ = "users"
 
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-
     first_name = Column(String, index=True)
-
     last_name = Column(String, index=True)
-
     email = Column(String, index=True, unique=True)
-
     hashed_password = Column(String)
-
     active = Column(Boolean, default=False)
-
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
     refresh_tokens = relationship("RefreshToken", back_populates="user")
-
-    # companies_roles = relationship("UserCompanyRole", back_populates="company_role_user")
+    companies_roles = relationship("UserCompanyRole", back_populates="user")
 
     def to_dict(self) -> UserDict:
         return {
