@@ -1247,3 +1247,59 @@
 2025-10-26 14:20:30.510795 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7cf24c27cc20>
 2025-10-26 14:20:30.511268 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7cf24c27cc20>
 2025-10-26 14:20:30.511693 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
+2025-10-27 22:14:35.829795 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-27 22:14:35.829940 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-27 22:14:35.850038 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: The asyncio extension requires an async driver to be used. The loaded 'pysqlite' is not async.
+2025-10-27 22:19:14.478927 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-27 22:19:14.479083 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-27 22:19:14.512901 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-27 22:19:14.570707 [ERROR] [USER][GETBY][EMAIL] exception: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "users" does not exist
+[SQL: SELECT users.id, users.first_name, users.last_name, users.email, users.hashed_password, users.active, users.created_at 
+FROM users 
+WHERE users.email = $1::VARCHAR]
+[parameters: ('john.doe@email.com',)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-27 22:19:14.571013 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "users" does not exist
+[SQL: SELECT users.id, users.first_name, users.last_name, users.email, users.hashed_password, users.active, users.created_at 
+FROM users 
+WHERE users.email = $1::VARCHAR]
+[parameters: ('john.doe@email.com',)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-27 22:19:38.299132 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-27 22:19:38.299242 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-27 22:19:38.299512 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-27 22:19:38.313271 [ERROR] [USER][GETBY][EMAIL] exception: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "users" does not exist
+[SQL: SELECT users.id, users.first_name, users.last_name, users.email, users.hashed_password, users.active, users.created_at 
+FROM users 
+WHERE users.email = $1::VARCHAR]
+[parameters: ('john.doe@email.com',)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-27 22:19:38.313571 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedTableError'>: relation "users" does not exist
+[SQL: SELECT users.id, users.first_name, users.last_name, users.email, users.hashed_password, users.active, users.created_at 
+FROM users 
+WHERE users.email = $1::VARCHAR]
+[parameters: ('john.doe@email.com',)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-10-27 22:21:47.278329 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-27 22:21:47.278431 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-27 22:21:47.278666 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-27 22:21:47.302182 [ERROR] [USER][GETBY][EMAIL] exception: User not found!
+2025-10-27 22:21:47.303137 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: User not found!
+2025-10-27 22:22:59.242965 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-27 22:22:59.243099 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-27 22:22:59.252387 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-27 22:22:59.279356 [ERROR] [USER][GETBY][EMAIL] exception: User not found!
+2025-10-27 22:22:59.279593 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: User not found!
+2025-10-27 22:30:37.677965 [INFO] [USER][CREATE] new_register: (first_name: john, last_name: doe, email: john.doe@email.com, active: True)
+2025-10-27 22:31:05.997756 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-10-27 22:31:05.997876 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-10-27 22:31:05.998177 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-10-27 22:31:06.020587 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '9392e962-1cce-4918-a59a-206343bbaf6e', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$FCvfLTAijsW7sAzhLuT8lOqDNFqwyBcdBB60f8G1U40f48R8VMy6e', 'active': True, 'created_at': '2025-10-27T22:30:37.694011+00:00'}
+2025-10-27 22:31:06.020914 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$FCvfLTAijsW7sAzhLuT8lOqDNFqwyBcdBB60f8G1U40f48R8VMy6e
+2025-10-27 22:31:06.189139 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MzkyZTk2Mi0xY2NlLTQ5MTgtYTU5YS0yMDYzNDNiYmFmNmUiLCJpYXQiOjE3NjE2MDQyNjYsImV4cCI6MTc2MTYwNTE2Nn0.HihPCBvZlFJ_AKgOTbIVGBcX1Mp4BfFX9YPZwMeDDME
+2025-10-27 22:31:06.189240 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: b16c1f8daa7186eef7d13bf84cff7992c0c8a468610aa304cfd10dff145e1d1c
+2025-10-27 22:31:06.189282 [DEBUG] [AUTH SERVICE] [LOGIN] jti: cdafd16e-a9e5-432f-b18a-65fd25c9b6b1
+2025-10-27 22:31:06.189316 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-10-28 22:31:06.189308+00:00
+2025-10-27 22:31:06.189568 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= cdafd16e-a9e5-432f-b18a-65fd25c9b6b1, user_id= 9392e962-1cce-4918-a59a-206343bbaf6e, token_hash= b16c1f8daa7186eef7d13bf84cff7992c0c8a468610aa304cfd10dff145e1d1c, expires_at= 2025-10-28 22:31:06.189308+00:00)
+2025-10-27 22:31:06.211287 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MzkyZTk2Mi0xY2NlLTQ5MTgtYTU5YS0yMDYzNDNiYmFmNmUiLCJpYXQiOjE3NjE2MDQyNjYsImV4cCI6MTc2MTYwNTE2Nn0.HihPCBvZlFJ_AKgOTbIVGBcX1Mp4BfFX9YPZwMeDDME
+2025-10-27 22:31:06.211463 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: cht_LV1Z8wxog24nIRDN3yaNmsF83AoO6JSfdYgGcdjzS89hRI9ZRccOfYF-MLVe-C8QHYkAyIfNlXGesmVaeA

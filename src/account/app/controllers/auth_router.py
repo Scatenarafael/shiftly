@@ -57,7 +57,7 @@ async def login(response: Response, body: LoginRequestBody, auth_service: AuthSe
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Credenciais inválidas") from exc
     except Exception as e:
         app_logger.error(f"[AUTH ROUTES] [LOGIN] [Exception] e: {e}")
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Erro interno do servidor") from e
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=str(e)) from e
 
     # coloca access + refresh em cookies HttpOnly
     _set_access_cookie(response, result["access_token"])
