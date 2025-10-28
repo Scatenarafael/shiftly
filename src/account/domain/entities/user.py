@@ -30,7 +30,7 @@ class User(Base):
     created_at = Column(DateTime(timezone=True), server_default=func.now(), nullable=False)
 
     refresh_tokens = relationship("RefreshToken", back_populates="user")
-    companies_roles = relationship("UserCompanyRole", back_populates="user")
+    companies_roles = relationship("UserCompanyRole", back_populates="user", cascade="all, delete-orphan", passive_deletes=True)
 
     def to_dict(self) -> UserDict:
         return {

@@ -57,7 +57,7 @@ class CompaniesRepository(ICompaniesRepository):
                     await database.session.rollback()
                 raise exception
 
-    async def partial_update_by_id(self, id: str, name: str | None, owner_id: str | None) -> Optional[Company]:
+    async def partial_update_by_id(self, id: str, name: str | None) -> Optional[Company]:
         async with DbConnectionHandler() as database:
             try:
                 if database.session:
@@ -66,7 +66,7 @@ class CompaniesRepository(ICompaniesRepository):
                     if not company:
                         raise ValueError("Company not found")
 
-                args = {"name": name, "owner_id": owner_id}
+                args = {"name": name}
 
                 not_none_args = {k: v for k, v in args.items() if v is not None}
 

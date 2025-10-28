@@ -19,6 +19,8 @@ class UsersRepository(IUsersRepository):
                 if database.session:
                     result = await database.session.execute(select(User).order_by(User.created_at.desc()))  # type: ignore
                     users = result.scalars().all()
+                    for user in users:
+                        delattr(user, "hashed_password")
                     return users  # type: ignore
             except Exception as exception:
                 raise exception
@@ -38,6 +40,7 @@ class UsersRepository(IUsersRepository):
                     database.session.add(new_register)
                     await database.session.commit()
                     await database.session.refresh(new_register)
+                    delattr(new_register, "hashed_password")
                     return new_register
             except Exception as exception:
                 raise exception
