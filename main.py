@@ -2,8 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import MetaData
 
-from src.account.app.controllers import auth_router, company_router, user_router
-from src.account.app.controllers.middlewares.auth_middleware import AuthMiddleware
+from src.app.controllers import auth_router, company_router, user_router
+from src.app.controllers.middlewares.auth_middleware import AuthMiddleware
 
 origins = [
     "http://localhost",

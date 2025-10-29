@@ -26,6 +26,7 @@ def upgrade():
         "roles",
         sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True, default=uuid.uuid4),
         sa.Column("name", sa.String(), nullable=False),
+        sa.Column("number_of_cooldown_days", sa.Integer(), nullable=False, default=0),
     )
 
 

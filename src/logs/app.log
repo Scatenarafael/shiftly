@@ -22,7 +22,7 @@
 2025-10-01 19:30:03.785484 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
 2025-10-01 19:30:03.786096 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
 2025-10-01 19:30:03.787576 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
-2025-10-01 19:30:03.898011 [DEBUG] [AUTH SERVICE] [LOGIN] user: <src.account.domain.entities.user.User object at 0x7f2ddbf2e270>
+2025-10-01 19:30:03.898011 [DEBUG] [AUTH SERVICE] [LOGIN] user: <src.domain.entities.user.User object at 0x7f2ddbf2e270>
 2025-10-01 19:30:04.235579 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: Object of type UUID is not JSON serializable
 2025-10-01 19:34:41.612482 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
 2025-10-01 19:34:41.613034 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
@@ -78,7 +78,7 @@
 2025-10-01 20:35:57.535865 [INFO] [AUTH ROUTES] [REFRESH] cookie: 242db897-16c8-4500-8d25-d40b3f7d9eeb:TLpMRhY9yewrnbEDxdQ8L_y5YWYawL8MiesE8J9dQnN0vbzoLo0PVY0UKTs-k1FFCEv-PKgwqz5mAN1-QzvL_w
 2025-10-01 20:35:57.537168 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 242db897-16c8-4500-8d25-d40b3f7d9eeb
 2025-10-01 20:35:57.684322 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 2705fe94-9e43-4313-9c55-e4190c2446d0, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= cb5b041b047a1ecdf56edfbe7cfcfb984de05a0647575dff16bfddc420922b24, expires_at= 2025-10-31 20:35:57.683613+00:00)
-2025-10-01 20:35:57.801324 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x70a114332270>, replaced_by: 2705fe94-9e43-4313-9c55-e4190c2446d0
+2025-10-01 20:35:57.801324 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x70a114332270>, replaced_by: 2705fe94-9e43-4313-9c55-e4190c2446d0
 2025-10-01 20:36:57.850413 [INFO] [AUTH ROUTES] [REFRESH] cookie: 242db897-16c8-4500-8d25-d40b3f7d9eeb:TLpMRhY9yewrnbEDxdQ8L_y5YWYawL8MiesE8J9dQnN0vbzoLo0PVY0UKTs-k1FFCEv-PKgwqz5mAN1-QzvL_w
 2025-10-01 20:36:57.851817 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 242db897-16c8-4500-8d25-d40b3f7d9eeb
 2025-10-01 20:36:58.033202 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
@@ -98,7 +98,7 @@
 2025-10-01 20:37:17.676833 [INFO] [AUTH ROUTES] [REFRESH] cookie: 9a051ca2-1bdf-4324-a739-8e9c2b1b44d1:wuABy7vdNqBVREiTsiT422v4XRWsvUMy27Uht4j7nzOUex5BOM-fgDLMr1aHPmjDazgwgtoXv-fNYgPSg4cffw
 2025-10-01 20:37:17.678690 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 9a051ca2-1bdf-4324-a739-8e9c2b1b44d1
 2025-10-01 20:37:17.808392 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= fc40a3fe-8758-4869-91ea-a86850db4a3a, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 11f8e5d88ab45dd08f072fbb468211a15ca21db8d7110465b9a23fb5e5b6243f, expires_at= 2025-10-31 20:37:17.807166+00:00)
-2025-10-01 20:37:17.889420 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7f421234e0d0>, replaced_by: fc40a3fe-8758-4869-91ea-a86850db4a3a
+2025-10-01 20:37:17.889420 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x7f421234e0d0>, replaced_by: fc40a3fe-8758-4869-91ea-a86850db4a3a
 2025-10-01 20:37:17.957528 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTkzNTEwMzcsImV4cCI6MTc1OTM1MTkzN30.v-bMfQ-fQCw5gVb6kjq7p_zpTeyuHaG7sgpUqbi5QFQ
 2025-10-01 20:37:17.957883 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: z4QYWvWZ1BW95Mw0sagIhQhLa9o7VUhrn93MZ3USYdYb2rLiE-qKdIV6ZWLe03IV9kc4Utl_Lu1nSVyNSTbfcw
 2025-10-01 20:38:17.783729 [INFO] [AUTH ROUTES] [REFRESH] cookie: 9a051ca2-1bdf-4324-a739-8e9c2b1b44d1:wuABy7vdNqBVREiTsiT422v4XRWsvUMy27Uht4j7nzOUex5BOM-fgDLMr1aHPmjDazgwgtoXv-fNYgPSg4cffw
@@ -126,7 +126,7 @@
 2025-10-01 20:45:12.816094 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 37db4037-3f97-4afe-8413-4d983f779799
 2025-10-01 20:46:11.137678 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 37db4037-3f97-4afe-8413-4d983f779799:0DzDs3t3Uh2qlhn9LgSzwbSko6cS3m8I3MXLua8zoyYjjsEumjxUX_uLayQ6QEaK4py13K0QrscQAcQUC5Tt2g
 2025-10-01 20:46:11.140674 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 37db4037-3f97-4afe-8413-4d983f779799
-2025-10-01 20:46:11.256555 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x778e0ae42120>, replaced_by: None
+2025-10-01 20:46:11.256555 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x778e0ae42120>, replaced_by: None
 2025-10-01 20:46:31.417552 [INFO] [USER][CREATE] new_register: (first_name: jack2, last_name: rich2, email: jack2@email.com, active: True)
 2025-10-01 22:31:03.449056 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
 2025-10-01 22:31:03.449386 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
@@ -171,13 +171,13 @@
 2025-10-02 14:17:26.919820 [INFO] [AUTH ROUTES] [REFRESH] cookie: 638c194f-609b-453c-8abf-b7261c043d62:6jAxpqn7hBzFlOErlQSrU-ljUvL7-WlEUpFImWCT8VsVUomN6PMa8P0pv4ADRd-Eo0JrfxYjaIXHkE7pcr9DmQ
 2025-10-02 14:17:26.920734 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 638c194f-609b-453c-8abf-b7261c043d62
 2025-10-02 14:17:27.018027 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 73aa630b-ff5d-4a9c-b305-f9dc175545df, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 141072255cac691f98344b5d822606350359e958f2564304dd6ffd33974a08ef, expires_at= 2025-10-03 14:17:27.017539+00:00)
-2025-10-02 14:17:27.105925 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x700382c32a50>, replaced_by: 73aa630b-ff5d-4a9c-b305-f9dc175545df
+2025-10-02 14:17:27.105925 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x700382c32a50>, replaced_by: 73aa630b-ff5d-4a9c-b305-f9dc175545df
 2025-10-02 14:17:27.179691 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTQ2NDcsImV4cCI6MTc1OTQxNTU0N30.MWnqEYbSmdAuwwlWK296ys4lrnQjMPgNN7yaP7hJHig
 2025-10-02 14:17:27.180053 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: aMapvD9iwilhJdycnQR5ruiQ766TUNNKptqXTj5RMCbFmKSQ_gWdgtG3CsdeMX1frApoACcjxUG8zIgnieAngQ
 2025-10-02 14:23:13.447474 [INFO] [AUTH ROUTES] [REFRESH] cookie: 73aa630b-ff5d-4a9c-b305-f9dc175545df:aMapvD9iwilhJdycnQR5ruiQ766TUNNKptqXTj5RMCbFmKSQ_gWdgtG3CsdeMX1frApoACcjxUG8zIgnieAngQ
 2025-10-02 14:23:13.448694 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 73aa630b-ff5d-4a9c-b305-f9dc175545df
 2025-10-02 14:23:13.546396 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= b12b1c3a-fd6e-456c-90ec-a6f772befb2b, user_id= 52fc79e7-c09d-4218-bf53-29af81a83b21, token_hash= 200e0599bb4d9771941c35454a6a94a50f2d528f52d62c4615c3442c9a1b2e5e, expires_at= 2025-10-03 14:23:13.545705+00:00)
-2025-10-02 14:23:13.647641 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x700382c53750>, replaced_by: b12b1c3a-fd6e-456c-90ec-a6f772befb2b
+2025-10-02 14:23:13.647641 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x700382c53750>, replaced_by: b12b1c3a-fd6e-456c-90ec-a6f772befb2b
 2025-10-02 14:23:13.774659 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MTQ5OTMsImV4cCI6MTc1OTQxNTg5M30.uLONh-nFCdCNm3IdlWGOsGlkJdyBO_Q7XwEEDRvBYAc
 2025-10-02 14:23:13.775010 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: PHqZ2QihOSL0UrLcUjUC5n6-rT7hOSn-dQpHyqhk4CGVZT1TA504o1ED13Xq9kdyQidNFiMSEOLKTuSUbj9EiA
 2025-10-02 14:37:49.679036 [INFO] [AUTH ROUTES] [REFRESH] cookie: b12b1c3a-fd6e-456c-90ec-a6f772befb2b:PHqZ2QihOSL0UrLcUjUC5n6-rT7hOSn-dQpHyqhk4CGVZT1TA504o1ED13Xq9kdyQidNFiMSEOLKTuSUbj9EiA
@@ -313,14 +313,14 @@
 2025-10-02 17:44:08.333264 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:44:08.334259 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:44:08.394039 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7e0d4b6c8910>
-2025-10-02 17:44:08.394465 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7e0d4b82ee40>}]
-2025-10-02 17:44:08.394761 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_json: ["{'User': <src.account.domain.entities.user.User object at 0x7e0d4b82ee40>}"]
+2025-10-02 17:44:08.394465 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7e0d4b82ee40>}]
+2025-10-02 17:44:08.394761 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_json: ["{'User': <src.domain.entities.user.User object at 0x7e0d4b82ee40>}"]
 2025-10-02 17:44:58.449682 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjcwNDMsImV4cCI6MTc1OTQyNzEwM30.bx6PjMVyDTNjUG2wTVIzfpYDn-cXofvc6DNN0tZp2eM
 2025-10-02 17:44:58.451067 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759427043, 'exp': 1759427103}
 2025-10-02 17:44:58.451532 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:44:58.455675 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:44:58.558635 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7b06dbaaf350>
-2025-10-02 17:44:58.558950 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7b06dba42e40>}]
+2025-10-02 17:44:58.558950 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7b06dba42e40>}]
 2025-10-02 17:44:58.559184 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'str' object has no attribute 'dict'
 2025-10-02 17:45:31.014167 [INFO] [AUTH ROUTES] [REFRESH] cookie: 0a86028a-fa92-4fe1-b402-f839c6969b7e:td3QLjM2HJIlfq1KqSmpM4Gz639AWwwngesz9h-zkYR7C6xZ0w-43XFlv-uubiJHNO21Elf7guGIW7oUP71l6Q
 2025-10-02 17:45:31.015336 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 0a86028a-fa92-4fe1-b402-f839c6969b7e
@@ -333,14 +333,14 @@
 2025-10-02 17:45:34.585338 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:45:34.586348 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:45:34.636951 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7fa5a35939d0>
-2025-10-02 17:45:34.637404 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7fa5a3733770>}]
+2025-10-02 17:45:34.637404 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7fa5a3733770>}]
 2025-10-02 17:45:34.637644 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'str' object has no attribute 'to_dict'
 2025-10-02 17:46:28.220519 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MjcxMzEsImV4cCI6MTc1OTQyNzE5MX0.wVjy9mWXfkfw86RQXhI_zMaqEb3QyNLOGK5tb87HR1M
 2025-10-02 17:46:28.221585 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759427131, 'exp': 1759427191}
 2025-10-02 17:46:28.222659 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:46:28.224069 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:46:28.369595 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7ba14f79f450>
-2025-10-02 17:46:28.370236 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7ba14f732e40>}]
+2025-10-02 17:46:28.370236 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7ba14f732e40>}]
 2025-10-02 17:46:28.370732 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'str' object has no attribute 'to_dict'
 2025-10-02 17:47:45.028783 [INFO] [AUTH ROUTES] [REFRESH] cookie: 30dce339-10f3-4fcc-92b2-1a851938f593:Yw0F1a_42LqVRvGrMo4xXCjepTn7C9oULTSoveA-NpQ0XehGVSv-eKSj6C84j7sBoIu2CKiL6vdDN1EK3vdvwQ
 2025-10-02 17:47:45.030414 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 30dce339-10f3-4fcc-92b2-1a851938f593
@@ -353,7 +353,7 @@
 2025-10-02 17:47:50.174390 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:47:50.175202 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:47:50.233528 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x74aebd6a39d0>
-2025-10-02 17:47:50.234179 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x74aebd843770>}]
+2025-10-02 17:47:50.234179 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x74aebd843770>}]
 2025-10-02 17:47:50.234421 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_json: [
 2025-10-02 17:49:02.530482 [INFO] [AUTH ROUTES] [REFRESH] cookie: fe37fccf-0e7a-44e6-a3b1-605ecce71844:dGJKdFnykooRCDnLGnRavaqP5aUUhadhEw1IAW1vS7SCaGuyKhpP9A2dvde9EHWejjNWC3qnzrshm7XM70BcAw
 2025-10-02 17:49:02.531714 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: fe37fccf-0e7a-44e6-a3b1-605ecce71844
@@ -366,8 +366,8 @@
 2025-10-02 17:49:04.591304 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:49:04.592498 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 17:49:04.648191 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7295a2bd0510>
-2025-10-02 17:49:04.648611 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7295a5733770>}]
-2025-10-02 17:49:04.648897 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_json: ["{'User': <src.account.domain.entities.user.User object at 0x7295a5733770>}"]
+2025-10-02 17:49:04.648611 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7295a5733770>}]
+2025-10-02 17:49:04.648897 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_json: ["{'User': <src.domain.entities.user.User object at 0x7295a5733770>}"]
 2025-10-02 18:32:56.440641 [INFO] [AUTH ROUTES] [REFRESH] cookie: 575b4a32-cafe-44bc-8a9f-66698603feef:2ahbocxryhZoZGzX-wPNlcZOOeJgr1Bo2S3TfGjO9saIrX8b1gFtrWSdm0dWJHSXajYJ-MEhCCQ5Zbp4CTmD2g
 2025-10-02 18:32:56.442994 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 575b4a32-cafe-44bc-8a9f-66698603feef
 2025-10-02 18:32:56.513435 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
@@ -379,14 +379,14 @@
 2025-10-02 18:32:58.832399 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:32:58.833209 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:32:58.893062 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7967d3793410>
-2025-10-02 18:32:58.893469 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7967d3933770>}]
+2025-10-02 18:32:58.893469 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7967d3933770>}]
 2025-10-02 18:32:58.893720 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: string indices must be integers, not 'str'
 2025-10-02 18:33:46.529613 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0Mjk5NzYsImV4cCI6MTc1OTQzMDAzNn0.a_VyMqNpv46KUc25xcwHJ4X7SSWl-_iZeYZ1ZsWmb04
 2025-10-02 18:33:46.530692 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759429976, 'exp': 1759430036}
 2025-10-02 18:33:46.531157 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:33:46.532858 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:33:46.682219 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7c15a5a9b4d0>
-2025-10-02 18:33:46.682940 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7c15a5a2ee40>}]
+2025-10-02 18:33:46.682940 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7c15a5a2ee40>}]
 2025-10-02 18:33:46.683462 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_json: [
 2025-10-02 18:35:41.903853 [INFO] [AUTH ROUTES] [REFRESH] cookie: f0301742-bce9-4473-b7e1-b91e177691bd:7_W8pjZIVMWWPrXaAuuNQ0Cv54DoWed2FoAmUOZh-IZ6Ds43h7LXUOu1OpCpCFNJBvfCRkopk9O69k5RN_mBkw
 2025-10-02 18:35:41.905815 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: f0301742-bce9-4473-b7e1-b91e177691bd
@@ -399,7 +399,7 @@
 2025-10-02 18:35:44.828874 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:35:44.830326 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:35:44.932657 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x775446acc810>
-2025-10-02 18:35:44.933308 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x775446c2f770>}]
+2025-10-02 18:35:44.933308 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x775446c2f770>}]
 2025-10-02 18:35:44.933786 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: [
 2025-10-02 18:35:44.934190 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: "
 2025-10-02 18:35:44.934432 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {
@@ -489,16 +489,16 @@
 2025-10-02 18:37:19.906574 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:37:19.907408 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:37:19.961219 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7450012c8990>
-2025-10-02 18:37:19.961552 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x74500142ee40>}]
-2025-10-02 18:37:19.961825 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x74500142ee40>}
+2025-10-02 18:37:19.961552 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x74500142ee40>}]
+2025-10-02 18:37:19.961825 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x74500142ee40>}
 2025-10-02 18:38:07.116547 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAyMzYsImV4cCI6MTc1OTQzMDI5Nn0.c7RQaEFAFgJg5Jy3KGtbmFtmvY98cX1SBsgVp7m3wrI
 2025-10-02 18:38:07.117832 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430236, 'exp': 1759430296}
 2025-10-02 18:38:07.118590 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:38:07.123882 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:38:07.234584 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x75fa18099490>
-2025-10-02 18:38:07.236458 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x75fa17e2ee40>}]
-2025-10-02 18:38:07.236895 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x75fa17e2ee40>}
-2025-10-02 18:38:07.237832 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x75fa17e2ee40>
+2025-10-02 18:38:07.236458 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x75fa17e2ee40>}]
+2025-10-02 18:38:07.236895 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x75fa17e2ee40>}
+2025-10-02 18:38:07.237832 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x75fa17e2ee40>
 2025-10-02 18:39:53.390478 [INFO] [AUTH ROUTES] [REFRESH] cookie: 627736f7-760c-4d1b-9347-5c26bdebea27:6OLe4cgq5lWiFC7UbooEMCa-MmNjLHeeOSVxjlOfGp2QzrJh72At1FONJiSltVtiGUMJ5TPBpC57-zgA9iAG8w
 2025-10-02 18:39:53.392082 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 627736f7-760c-4d1b-9347-5c26bdebea27
 2025-10-02 18:39:53.477532 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
@@ -510,89 +510,89 @@
 2025-10-02 18:39:56.361474 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:39:56.362467 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:39:56.418985 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daad08c72d0>
-2025-10-02 18:39:56.419378 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0a3f770>}]
-2025-10-02 18:39:56.419606 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0a3f770>}
-2025-10-02 18:39:56.419792 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0a3f770>
+2025-10-02 18:39:56.419378 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daad0a3f770>}]
+2025-10-02 18:39:56.419606 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daad0a3f770>}
+2025-10-02 18:39:56.419792 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daad0a3f770>
 2025-10-02 18:40:20.738322 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
 2025-10-02 18:40:20.738790 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
 2025-10-02 18:40:20.739019 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:20.741569 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:20.875708 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daad08c5cd0>
-2025-10-02 18:40:20.876431 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0afb890>}]
-2025-10-02 18:40:20.876858 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0afb890>}
-2025-10-02 18:40:20.877039 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0afb890>
+2025-10-02 18:40:20.876431 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daad0afb890>}]
+2025-10-02 18:40:20.876858 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daad0afb890>}
+2025-10-02 18:40:20.877039 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daad0afb890>
 2025-10-02 18:40:22.791563 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
 2025-10-02 18:40:22.792579 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
 2025-10-02 18:40:22.792872 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:22.794753 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:22.855159 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdef2b10>
-2025-10-02 18:40:22.855495 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0afb750>}]
-2025-10-02 18:40:22.855767 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0afb750>}
-2025-10-02 18:40:22.855969 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0afb750>
+2025-10-02 18:40:22.855495 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daad0afb750>}]
+2025-10-02 18:40:22.855767 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daad0afb750>}
+2025-10-02 18:40:22.855969 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daad0afb750>
 2025-10-02 18:40:24.414036 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
 2025-10-02 18:40:24.414692 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
 2025-10-02 18:40:24.415133 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:24.416013 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:24.477556 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdeffdd0>
-2025-10-02 18:40:24.477940 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0887ce0>}]
-2025-10-02 18:40:24.478192 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0887ce0>}
-2025-10-02 18:40:24.478393 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0887ce0>
+2025-10-02 18:40:24.477940 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daad0887ce0>}]
+2025-10-02 18:40:24.478192 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daad0887ce0>}
+2025-10-02 18:40:24.478393 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daad0887ce0>
 2025-10-02 18:40:26.160869 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
 2025-10-02 18:40:26.161597 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
 2025-10-02 18:40:26.161861 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:26.162884 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:26.219600 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdf21150>
-2025-10-02 18:40:26.219934 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daacdf14180>}]
-2025-10-02 18:40:26.220132 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daacdf14180>}
-2025-10-02 18:40:26.220298 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daacdf14180>
+2025-10-02 18:40:26.219934 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daacdf14180>}]
+2025-10-02 18:40:26.220132 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daacdf14180>}
+2025-10-02 18:40:26.220298 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daacdf14180>
 2025-10-02 18:40:28.084710 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
 2025-10-02 18:40:28.085267 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
 2025-10-02 18:40:28.085546 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:28.086591 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:28.146669 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdf0f950>
-2025-10-02 18:40:28.146954 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad08143b0>}]
-2025-10-02 18:40:28.147150 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad08143b0>}
-2025-10-02 18:40:28.147300 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad08143b0>
+2025-10-02 18:40:28.146954 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daad08143b0>}]
+2025-10-02 18:40:28.147150 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daad08143b0>}
+2025-10-02 18:40:28.147300 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daad08143b0>
 2025-10-02 18:40:29.845229 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
 2025-10-02 18:40:29.845753 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
 2025-10-02 18:40:29.846034 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:29.846700 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:29.908535 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdefea10>
-2025-10-02 18:40:29.908860 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daacdef68b0>}]
-2025-10-02 18:40:29.911528 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daacdef68b0>}
-2025-10-02 18:40:29.911690 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daacdef68b0>
+2025-10-02 18:40:29.908860 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daacdef68b0>}]
+2025-10-02 18:40:29.911528 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daacdef68b0>}
+2025-10-02 18:40:29.911690 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daacdef68b0>
 2025-10-02 18:40:31.616821 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
 2025-10-02 18:40:31.617502 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
 2025-10-02 18:40:31.617776 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:31.618849 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:31.681071 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdedd910>
-2025-10-02 18:40:31.681651 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daacdef6cf0>}]
-2025-10-02 18:40:31.681950 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daacdef6cf0>}
-2025-10-02 18:40:31.682199 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daacdef6cf0>
+2025-10-02 18:40:31.681651 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daacdef6cf0>}]
+2025-10-02 18:40:31.681950 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daacdef6cf0>}
+2025-10-02 18:40:31.682199 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daacdef6cf0>
 2025-10-02 18:40:33.322856 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
 2025-10-02 18:40:33.323410 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
 2025-10-02 18:40:33.323740 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:33.325756 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:33.382048 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdf22ad0>
-2025-10-02 18:40:33.382330 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daacdedb150>}]
-2025-10-02 18:40:33.382481 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daacdedb150>}
-2025-10-02 18:40:33.382606 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daacdedb150>
+2025-10-02 18:40:33.382330 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daacdedb150>}]
+2025-10-02 18:40:33.382481 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daacdedb150>}
+2025-10-02 18:40:33.382606 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daacdedb150>
 2025-10-02 18:40:34.954882 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
 2025-10-02 18:40:34.956405 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
 2025-10-02 18:40:34.956712 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:34.957828 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:35.021997 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daacdf33a90>
-2025-10-02 18:40:35.022402 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0be7550>}]
-2025-10-02 18:40:35.022662 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0be7550>}
-2025-10-02 18:40:35.022863 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0be7550>
+2025-10-02 18:40:35.022402 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daad0be7550>}]
+2025-10-02 18:40:35.022662 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daad0be7550>}
+2025-10-02 18:40:35.022863 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daad0be7550>
 2025-10-02 18:40:36.248830 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzAzOTMsImV4cCI6MTc1OTQzMDQ1M30.pI2ycFkLVfqihcNVrN81Qti6iGbovDKYb5JxNHkcpgk
 2025-10-02 18:40:36.249714 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1759430393, 'exp': 1759430453}
 2025-10-02 18:40:36.250025 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:36.250860 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:40:36.310839 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daad084cfd0>
-2025-10-02 18:40:36.311251 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad0897200>}]
-2025-10-02 18:40:36.311444 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad0897200>}
-2025-10-02 18:40:36.311631 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad0897200>
+2025-10-02 18:40:36.311251 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daad0897200>}]
+2025-10-02 18:40:36.311444 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daad0897200>}
+2025-10-02 18:40:36.311631 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daad0897200>
 2025-10-02 18:41:33.286985 [INFO] [AUTH ROUTES] [REFRESH] cookie: 32aba946-4bf6-41c8-a0e4-6e60d660fa44:weDPUOzz6OTwLsODDS-BDaYJDbl_2Vj1JJfAD0cXHA1NAkZL0xUnyaNI0UP7mW21FTxFmFQW4FAxhBhGdJr90g
 2025-10-02 18:41:33.291465 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 32aba946-4bf6-41c8-a0e4-6e60d660fa44
 2025-10-02 18:41:33.368908 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
@@ -604,9 +604,9 @@
 2025-10-02 18:41:37.443590 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:41:37.444291 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:41:37.569322 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7daad0aa9510>
-2025-10-02 18:41:37.570164 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7daad085cd70>}]
-2025-10-02 18:41:37.570674 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7daad085cd70>}
-2025-10-02 18:41:37.571136 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7daad085cd70>
+2025-10-02 18:41:37.570164 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7daad085cd70>}]
+2025-10-02 18:41:37.570674 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7daad085cd70>}
+2025-10-02 18:41:37.571136 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7daad085cd70>
 2025-10-02 18:43:08.460906 [INFO] [AUTH ROUTES] [REFRESH] cookie: 0158e195-7a99-4906-bd20-3baf51ec0e0f:oS3djObQR3u88DVoL1jj84yuW6dDENsR2trb3r0mDkLqruJXnk5BK2myx6AJt2z68tbpeE8zN2wM2ObadYSylw
 2025-10-02 18:43:08.461976 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 0158e195-7a99-4906-bd20-3baf51ec0e0f
 2025-10-02 18:43:08.518712 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
@@ -618,9 +618,9 @@
 2025-10-02 18:43:10.460959 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:43:10.461882 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:43:10.511020 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7536635cc890>
-2025-10-02 18:43:10.511474 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x753663733770>}]
-2025-10-02 18:43:10.511721 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x753663733770>}
-2025-10-02 18:43:10.511916 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x753663733770>
+2025-10-02 18:43:10.511474 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x753663733770>}]
+2025-10-02 18:43:10.511721 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x753663733770>}
+2025-10-02 18:43:10.511916 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x753663733770>
 2025-10-02 18:43:10.512114 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'User' object has no attribute 'pop'
 2025-10-02 18:44:32.760991 [INFO] [AUTH ROUTES] [REFRESH] cookie: f708e114-6389-4607-b48d-f0b969d7d7da:ypy6E7wZqWrt9b3B7ZU9mFoxbSWk-hKJWUbYTAI3tklKxi3E9RCymwG1I82fZLPq9UFcm-Vm6UokDjMn4klL6g
 2025-10-02 18:44:32.762482 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: f708e114-6389-4607-b48d-f0b969d7d7da
@@ -633,23 +633,23 @@
 2025-10-02 18:44:35.202379 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:44:35.203230 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-02 18:44:35.254939 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7ec9ade8fb50>
-2025-10-02 18:44:35.255302 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.account.domain.entities.user.User object at 0x7ec9ae02f770>}]
-2025-10-02 18:44:35.255457 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.account.domain.entities.user.User object at 0x7ec9ae02f770>}
-2025-10-02 18:44:35.255589 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.account.domain.entities.user.User object at 0x7ec9ae02f770>
+2025-10-02 18:44:35.255302 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] rows: [{'User': <src.domain.entities.user.User object at 0x7ec9ae02f770>}]
+2025-10-02 18:44:35.255457 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row: {'User': <src.domain.entities.user.User object at 0x7ec9ae02f770>}
+2025-10-02 18:44:35.255589 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] row[User]: <src.domain.entities.user.User object at 0x7ec9ae02f770>
 2025-10-02 18:45:16.056345 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 38a8a97d-142b-4b19-a84e-d8124d034541:_74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w
 2025-10-02 18:45:16.057906 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 38a8a97d-142b-4b19-a84e-d8124d034541
-2025-10-02 18:45:16.119622 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7ec9ae0ebb10>, replaced_by: None
+2025-10-02 18:45:16.119622 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x7ec9ae0ebb10>, replaced_by: None
 2025-10-02 18:45:19.146813 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 38a8a97d-142b-4b19-a84e-d8124d034541:_74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w
 2025-10-02 18:45:19.147723 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 38a8a97d-142b-4b19-a84e-d8124d034541
-2025-10-02 18:45:19.210831 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7ec9ade77820>, replaced_by: None
+2025-10-02 18:45:19.210831 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x7ec9ade77820>, replaced_by: None
 2025-10-02 18:53:39.958611 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 38a8a97d-142b-4b19-a84e-d8124d034541:_74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w
 2025-10-02 18:53:39.961668 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 38a8a97d-142b-4b19-a84e-d8124d034541
-2025-10-02 18:53:40.068219 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7603bd032a50>, raw_refresh: _74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w, jti: 38a8a97d-142b-4b19-a84e-d8124d034541
-2025-10-02 18:53:40.068891 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7603bd032a50>, replaced_by: None
+2025-10-02 18:53:40.068219 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.domain.entities.refresh_token.RefreshToken object at 0x7603bd032a50>, raw_refresh: _74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w, jti: 38a8a97d-142b-4b19-a84e-d8124d034541
+2025-10-02 18:53:40.068891 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x7603bd032a50>, replaced_by: None
 2025-10-02 19:22:17.454889 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 38a8a97d-142b-4b19-a84e-d8124d034541:_74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w
 2025-10-02 19:22:17.457145 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 38a8a97d-142b-4b19-a84e-d8124d034541
-2025-10-02 19:22:17.524900 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae732a50>, raw_refresh: _74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w, jti: 38a8a97d-142b-4b19-a84e-d8124d034541
-2025-10-02 19:22:17.525750 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae732a50>, replaced_by: None
+2025-10-02 19:22:17.524900 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.domain.entities.refresh_token.RefreshToken object at 0x75afae732a50>, raw_refresh: _74M_5njEuOOtUT4ChCthx-wJi6r_3kwE6GfkboagRQdVbg5ltt9-PPJhp1dJ-JHpK2HW8xaMR48VRpT1OiH-w, jti: 38a8a97d-142b-4b19-a84e-d8124d034541
+2025-10-02 19:22:17.525750 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x75afae732a50>, replaced_by: None
 2025-10-02 19:22:17.586915 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before
 2025-10-02 19:22:17.587321 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
 2025-10-02 19:23:40.105180 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
@@ -671,8 +671,8 @@
 2025-10-02 19:23:50.237190 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x75afac5e5490>
 2025-10-02 19:23:54.753941 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc:sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA
 2025-10-02 19:23:54.755117 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
-2025-10-02 19:23:54.816200 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae9ef610>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
-2025-10-02 19:23:54.816930 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae9ef610>, replaced_by: None
+2025-10-02 19:23:54.816200 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.domain.entities.refresh_token.RefreshToken object at 0x75afae9ef610>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:23:54.816930 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x75afae9ef610>, replaced_by: None
 2025-10-02 19:23:54.875176 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before
 2025-10-02 19:23:54.875592 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
 2025-10-02 19:23:58.987505 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzMwMjAsImV4cCI6MTc1OTQzMzA4MH0.z89Y8kDfvcIZdUedBG4q8tw6SZPitwoGBCNMy1Xs9n4
@@ -682,8 +682,8 @@
 2025-10-02 19:23:59.073628 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x75afac5f1710>
 2025-10-02 19:24:03.755767 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc:sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA
 2025-10-02 19:24:03.756791 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
-2025-10-02 19:24:03.812484 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae77dba0>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
-2025-10-02 19:24:03.813370 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x75afae77dba0>, replaced_by: None
+2025-10-02 19:24:03.812484 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.domain.entities.refresh_token.RefreshToken object at 0x75afae77dba0>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:24:03.813370 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x75afae77dba0>, replaced_by: None
 2025-10-02 19:24:03.865491 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before
 2025-10-02 19:24:03.865888 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
 2025-10-02 19:24:08.727143 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NTk0MzMwMjAsImV4cCI6MTc1OTQzMzA4MH0.z89Y8kDfvcIZdUedBG4q8tw6SZPitwoGBCNMy1Xs9n4
@@ -693,14 +693,14 @@
 2025-10-02 19:24:08.795423 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x75afac5ff490>
 2025-10-02 19:28:10.258139 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc:sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA
 2025-10-02 19:28:10.260383 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
-2025-10-02 19:28:10.387713 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7333ef832a50>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
-2025-10-02 19:28:10.390063 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7333ef832a50>, replaced_by: None
+2025-10-02 19:28:10.387713 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.domain.entities.refresh_token.RefreshToken object at 0x7333ef832a50>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:28:10.390063 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x7333ef832a50>, replaced_by: None
 2025-10-02 19:28:10.494649 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: refresh_token - ACCESS_COOKIE_NAME: access_token
 2025-10-02 19:28:10.495451 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
 2025-10-02 19:57:24.890655 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc:sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA
 2025-10-02 19:57:24.892435 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
-2025-10-02 19:57:25.002476 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x772049732a50>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
-2025-10-02 19:57:25.003686 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x772049732a50>, replaced_by: None
+2025-10-02 19:57:25.002476 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.domain.entities.refresh_token.RefreshToken object at 0x772049732a50>, raw_refresh: sTDFfMd5qC7BzOJRfMtwRFs__05p9IH9VK3azY1a0WDrytmq8mJSqKeVtVMAU1a4RwJQd4WFfuwshhU1yXfLmA, jti: 36acd70c-05a1-43f8-b6de-75e3ce6c86fc
+2025-10-02 19:57:25.003686 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x772049732a50>, replaced_by: None
 2025-10-02 19:57:25.081678 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: refresh_token - ACCESS_COOKIE_NAME: access_token
 2025-10-02 19:57:25.082432 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
 2025-10-02 19:57:37.489476 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
@@ -717,14 +717,14 @@
 2025-10-02 19:57:37.969626 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: 05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg
 2025-10-02 19:57:49.458890 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501:05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg
 2025-10-02 19:57:49.460963 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501
-2025-10-02 19:57:49.545994 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x772049750cd0>, raw_refresh: 05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg, jti: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501
-2025-10-02 19:57:49.546898 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x772049750cd0>, replaced_by: None
+2025-10-02 19:57:49.545994 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.domain.entities.refresh_token.RefreshToken object at 0x772049750cd0>, raw_refresh: 05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg, jti: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501
+2025-10-02 19:57:49.546898 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x772049750cd0>, replaced_by: None
 2025-10-02 19:57:49.621629 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: refresh_token - ACCESS_COOKIE_NAME: access_token
 2025-10-02 19:57:49.622015 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
 2025-10-02 19:59:59.285746 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501:05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg
 2025-10-02 19:59:59.287100 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501
-2025-10-02 19:59:59.350951 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7cffb722ea50>, raw_refresh: 05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg, jti: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501
-2025-10-02 19:59:59.351660 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7cffb722ea50>, replaced_by: None
+2025-10-02 19:59:59.350951 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.domain.entities.refresh_token.RefreshToken object at 0x7cffb722ea50>, raw_refresh: 05FUZiBxZ2TivO1gXMZE8QP4kUXiJRs-8Q9cYUQ5nmqFgZYzrXSG7l7odLl1TatredFf4bJ574FXW1zFNrYEcg, jti: 48f1f58d-d6c2-4d67-b5b9-6d02a1673501
+2025-10-02 19:59:59.351660 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x7cffb722ea50>, replaced_by: None
 2025-10-02 19:59:59.407768 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: refresh_token - ACCESS_COOKIE_NAME: access_token
 2025-10-02 19:59:59.408253 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
 2025-10-02 20:00:08.697476 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
@@ -741,8 +741,8 @@
 2025-10-02 20:00:09.157879 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: lam8u4_ShgnuuDdGdicaQK6ULlFVc3G-TVzc8-l0Yll9DLaU4jwYcvRzppbvu3ecJDVTZzMrVuthnwZl0strbQ
 2025-10-02 20:00:16.814780 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 621a4656-9154-4151-912e-eb1f12c34fa1:lam8u4_ShgnuuDdGdicaQK6ULlFVc3G-TVzc8-l0Yll9DLaU4jwYcvRzppbvu3ecJDVTZzMrVuthnwZl0strbQ
 2025-10-02 20:00:16.815793 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 621a4656-9154-4151-912e-eb1f12c34fa1
-2025-10-02 20:00:16.877204 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7cffb724cf50>, raw_refresh: lam8u4_ShgnuuDdGdicaQK6ULlFVc3G-TVzc8-l0Yll9DLaU4jwYcvRzppbvu3ecJDVTZzMrVuthnwZl0strbQ, jti: 621a4656-9154-4151-912e-eb1f12c34fa1
-2025-10-02 20:00:16.878144 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7cffb724cf50>, replaced_by: None
+2025-10-02 20:00:16.877204 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.domain.entities.refresh_token.RefreshToken object at 0x7cffb724cf50>, raw_refresh: lam8u4_ShgnuuDdGdicaQK6ULlFVc3G-TVzc8-l0Yll9DLaU4jwYcvRzppbvu3ecJDVTZzMrVuthnwZl0strbQ, jti: 621a4656-9154-4151-912e-eb1f12c34fa1
+2025-10-02 20:00:16.878144 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x7cffb724cf50>, replaced_by: None
 2025-10-02 20:00:16.941052 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: refresh_token - ACCESS_COOKIE_NAME: access_token
 2025-10-02 20:00:16.941462 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
 2025-10-02 20:15:56.897470 [INFO] [AUTH ROUTES] [REFRESH] cookie: None
@@ -818,9 +818,9 @@
 2025-10-12 02:43:30.290520 [INFO] [USER][GETBY][ID] not_none_args: 784911db-2085-4ce9-aa8f-b7013d2b92a3
 2025-10-12 02:43:30.407488 [INFO] [USER][GETBY][ID] user: <sqlalchemy.engine.result.ChunkedIteratorResult object at 0x7f72ae8c27d0>
 2025-10-12 02:45:04.600043 [INFO] [USER][GETBY][ID] not_none_args: 784911db-2085-4ce9-aa8f-b7013d2b92a3
-2025-10-12 02:45:04.761144 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7e7874d4acf0>
+2025-10-12 02:45:04.761144 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7e7874d4acf0>
 2025-10-12 02:47:00.124334 [INFO] [USER][GETBY][ID] not_none_args: 784911db-2085-4ce9-aa8f-b7013d2b92a3
-2025-10-12 02:47:00.240310 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7e78723e11d0>
+2025-10-12 02:47:00.240310 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7e78723e11d0>
 2025-10-12 02:52:38.525469 [INFO] [AUTH ROUTES] [REFRESH] cookie: e9365961-04e5-42bf-8cf9-fb00ce6501d7:jxJtB2Fq7_uiSRTtgEx97gEkQQtThDXdx2TebAGvvNm7LhWZSP-stcICqYy2LUsGt0PgEV9U-nhxSv1egJMktg
 2025-10-12 02:52:38.526796 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: e9365961-04e5-42bf-8cf9-fb00ce6501d7
 2025-10-12 02:52:38.638755 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
@@ -828,7 +828,7 @@
 2025-10-12 02:52:38.957840 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NjAyMzc1NTgsImV4cCI6MTc2MDIzODQ1OH0.x_aAIBx7CeLyuIvysJDOBpc8iPTk63WY8Nu8JkrkmW8
 2025-10-12 02:52:38.958484 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: 9xs_h-7aOCmh6QpxdY1fQ1o7sD927nyNv63v865P9dPyvVv8I2ZpA9_6LlJJNsP_2xc2djDFJB10j1RIl3sIoQ
 2025-10-12 02:52:47.684603 [INFO] [USER][GETBY][ID] not_none_args: 784911db-2085-4ce9-aa8f-b7013d2b92a3
-2025-10-12 02:52:47.802871 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x70d62ee530e0>
+2025-10-12 02:52:47.802871 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x70d62ee530e0>
 2025-10-12 03:03:12.371352 [INFO] [USER ROUTER] [UPDATE] Payload received for update: {'first_name': 'jack2-ALTERADO', 'last_name': None, 'email': None, 'password': None, 'active': None}
 2025-10-12 03:05:26.147075 [INFO] [USER ROUTER] [UPDATE] Payload ONLY received for update: first_name='jack2-ALTERADO' last_name=None email=None password=None active=None
 2025-10-12 03:05:26.147675 [INFO] [USER ROUTER] [UPDATE] Payload received for update: {'first_name': 'jack2-ALTERADO', 'last_name': None, 'email': None, 'password': None, 'active': None}
@@ -874,8 +874,8 @@
 2025-10-12 13:27:29.417765 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1760275623, 'exp': 1760276523}
 2025-10-12 13:27:29.418052 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-12 13:27:29.418842 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
-2025-10-12 13:27:29.484439 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7b7803066c10>
-2025-10-12 13:27:29.485251 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7b7803066c10>
+2025-10-12 13:27:29.484439 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7b7803066c10>
+2025-10-12 13:27:29.485251 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7b7803066c10>
 2025-10-12 13:27:29.485497 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'User' object has no attribute 'mappings'
 2025-10-12 13:27:43.301143 [INFO] [AUTH ROUTES] [REFRESH] cookie: e635d67e-69dc-4dfe-9db5-facbae0e58c2:p1mVhnL9ShgpnUSFrZ-NYWGWdFwJySHl7bPXxFyzvsxm8dqMKP8TCGyJtx_zn593fVwoOEi6-kfYOYbLhME5dQ
 2025-10-12 13:27:43.302363 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: e635d67e-69dc-4dfe-9db5-facbae0e58c2
@@ -887,15 +887,15 @@
 2025-10-12 13:27:50.163790 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1760275663, 'exp': 1760276563}
 2025-10-12 13:27:50.164096 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-12 13:27:50.164991 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
-2025-10-12 13:27:50.243653 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7b78030665d0>
-2025-10-12 13:27:50.246865 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7b78030665d0>
+2025-10-12 13:27:50.243653 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7b78030665d0>
+2025-10-12 13:27:50.246865 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7b78030665d0>
 2025-10-12 13:27:50.247309 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'User' object has no attribute 'mappings'
 2025-10-12 13:27:52.661584 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NjAyNzU2NjMsImV4cCI6MTc2MDI3NjU2M30.AqFprX7dq5SXcj5PUGx10ifdMyRFkFMqIWdWE5cqp38
 2025-10-12 13:27:52.662038 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1760275663, 'exp': 1760276563}
 2025-10-12 13:27:52.662240 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-12 13:27:52.662828 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
-2025-10-12 13:27:52.739582 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7b7803090b00>
-2025-10-12 13:27:52.740783 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7b7803090b00>
+2025-10-12 13:27:52.739582 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7b7803090b00>
+2025-10-12 13:27:52.740783 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7b7803090b00>
 2025-10-12 13:27:52.741118 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'User' object has no attribute 'mappings'
 2025-10-12 13:27:56.059591 [INFO] [AUTH ROUTES] [REFRESH] cookie: 48a747bf-de16-4d7e-8ad4-f554054ce55d:cXPDM0RDOIddKWgpk4M2boIHYHWrde84GgxjrHrBHdHiCjkStzk0bc3ODj-edetj0RVnCG8DX57mc4xVHOGHZA
 2025-10-12 13:27:56.060770 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 48a747bf-de16-4d7e-8ad4-f554054ce55d
@@ -907,8 +907,8 @@
 2025-10-12 13:28:00.159129 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1760275676, 'exp': 1760276576}
 2025-10-12 13:28:00.159380 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-12 13:28:00.159971 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
-2025-10-12 13:28:00.224625 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7b7803091220>
-2025-10-12 13:28:00.226888 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7b7803091220>
+2025-10-12 13:28:00.224625 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7b7803091220>
+2025-10-12 13:28:00.226888 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7b7803091220>
 2025-10-12 13:28:00.228046 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'User' object has no attribute 'mappings'
 2025-10-12 13:29:01.729253 [INFO] [AUTH ROUTES] [REFRESH] cookie: bd2c0fd5-9528-49f9-a7aa-008b1a39ae45:r4VrgdiEFcqkfcjQk9kcTCS0d-y0n0lF4UnU41deCc9s4F0AfUDw_1j9_6RcjeLuFvFMDRzv97CQD9HQ9g5q-g
 2025-10-12 13:29:01.731287 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: bd2c0fd5-9528-49f9-a7aa-008b1a39ae45
@@ -918,8 +918,8 @@
 2025-10-12 13:29:02.024627 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: m96yjgh3kqqkm6tdZwJA0A7O3xxl1s8MTyDBXx6CKwxmfQREEfM_L1LUYTs6oAYDwgiHGj3gnC5Bvvg8qlWucQ
 2025-10-12 13:29:10.386826 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 012e4706-7c80-4fc2-827d-23e2209169ff:m96yjgh3kqqkm6tdZwJA0A7O3xxl1s8MTyDBXx6CKwxmfQREEfM_L1LUYTs6oAYDwgiHGj3gnC5Bvvg8qlWucQ
 2025-10-12 13:29:10.387746 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 012e4706-7c80-4fc2-827d-23e2209169ff
-2025-10-12 13:29:10.482597 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7b780308cd10>, raw_refresh: m96yjgh3kqqkm6tdZwJA0A7O3xxl1s8MTyDBXx6CKwxmfQREEfM_L1LUYTs6oAYDwgiHGj3gnC5Bvvg8qlWucQ, jti: 012e4706-7c80-4fc2-827d-23e2209169ff
-2025-10-12 13:29:10.483793 [INFO] [REFRESH TOKEN][REVOKE] token: <src.account.domain.entities.refresh_token.RefreshToken object at 0x7b780308cd10>, replaced_by: None
+2025-10-12 13:29:10.482597 [INFO] [AUTH SERVICE] [LOGOUT BY COOKIE] rec: <src.domain.entities.refresh_token.RefreshToken object at 0x7b780308cd10>, raw_refresh: m96yjgh3kqqkm6tdZwJA0A7O3xxl1s8MTyDBXx6CKwxmfQREEfM_L1LUYTs6oAYDwgiHGj3gnC5Bvvg8qlWucQ, jti: 012e4706-7c80-4fc2-827d-23e2209169ff
+2025-10-12 13:29:10.483793 [INFO] [REFRESH TOKEN][REVOKE] token: <src.domain.entities.refresh_token.RefreshToken object at 0x7b780308cd10>, replaced_by: None
 2025-10-12 13:29:10.568351 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: refresh_token - ACCESS_COOKIE_NAME: access_token
 2025-10-12 13:29:10.568780 [INFO] [AUTH ROUTES] [LOGOUT] cookie.delete after
 2025-10-12 13:29:23.599197 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
@@ -938,22 +938,22 @@
 2025-10-12 13:29:32.053304 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1760275764, 'exp': 1760276664}
 2025-10-12 13:29:32.053884 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-12 13:29:32.054938 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
-2025-10-12 13:29:32.131015 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7b780308e470>
-2025-10-12 13:29:32.132320 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7b780308e470>
+2025-10-12 13:29:32.131015 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7b780308e470>
+2025-10-12 13:29:32.132320 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7b780308e470>
 2025-10-12 13:29:32.133226 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'User' object has no attribute 'mappings'
 2025-10-12 13:29:40.860924 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NjAyNzU3NjQsImV4cCI6MTc2MDI3NjY2NH0.QrpiIK33eW1J5jeus2T68Feea8FLuHJTUtivaHePrbg
 2025-10-12 13:29:40.861361 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1760275764, 'exp': 1760276664}
 2025-10-12 13:29:40.861605 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-12 13:29:40.862304 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
-2025-10-12 13:29:40.929907 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7b780308ef10>
-2025-10-12 13:29:40.930813 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7b780308ef10>
+2025-10-12 13:29:40.929907 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7b780308ef10>
+2025-10-12 13:29:40.930813 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7b780308ef10>
 2025-10-12 13:29:40.931029 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'User' object has no attribute 'mappings'
 2025-10-12 13:35:40.988482 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NjAyNzU3NjQsImV4cCI6MTc2MDI3NjY2NH0.QrpiIK33eW1J5jeus2T68Feea8FLuHJTUtivaHePrbg
 2025-10-12 13:35:40.989549 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1760275764, 'exp': 1760276664}
 2025-10-12 13:35:40.989908 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-12 13:35:40.991343 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
-2025-10-12 13:35:41.136788 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x747f49642f90>
-2025-10-12 13:35:41.139441 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x747f49642f90>
+2025-10-12 13:35:41.136788 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x747f49642f90>
+2025-10-12 13:35:41.139441 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x747f49642f90>
 2025-10-12 13:36:55.826769 [INFO] [USER ROUTER] [UPDATE] Payload ONLY received for update: first_name='john-ALTERADO' last_name=None email=None password=None active=None
 2025-10-12 13:36:55.827104 [INFO] [USER ROUTER] [UPDATE] Payload received for update: {'first_name': 'john-ALTERADO'}
 2025-10-12 13:36:55.827339 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, kwargs: {'first_name': 'john-ALTERADO'}
@@ -984,16 +984,16 @@
 2025-10-12 14:20:33.318554 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '52fc79e7-c09d-4218-bf53-29af81a83b21', 'iat': 1760278830, 'exp': 1760279730}
 2025-10-12 14:20:33.318819 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21
 2025-10-12 14:20:33.319454 [INFO] [USER][GETBY][ID] not_none_args: 52fc79e7-c09d-4218-bf53-29af81a83b21
-2025-10-12 14:20:33.370698 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x743def253380>
-2025-10-12 14:20:33.371531 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x743def253380>
+2025-10-12 14:20:33.370698 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x743def253380>
+2025-10-12 14:20:33.371531 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x743def253380>
 2025-10-12 14:20:37.230668 [INFO] [USER ROUTER] [UPDATE] Payload ONLY received for update: first_name='john-ALTERADO' last_name=None email=None password=None active=None
 2025-10-12 14:20:37.230912 [INFO] [USER ROUTER] [UPDATE] Payload received for update: {'first_name': 'john-ALTERADO'}
-2025-10-12 14:20:37.231120 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, payload: <src.account.usecases.users.update_user_usecase.PayloadUpdateUserDTO object at 0x743def0402f0>
+2025-10-12 14:20:37.231120 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, payload: <src.usecases.users.update_user_usecase.PayloadUpdateUserDTO object at 0x743def0402f0>
 2025-10-12 14:20:37.312599 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'john-ALTERADO'}
 2025-10-12 14:20:37.313876 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, user: None
 2025-10-12 14:21:37.080674 [INFO] [USER ROUTER] [UPDATE] Payload ONLY received for update: first_name='john-ALTERADO' last_name=None email=None password=None active=None
 2025-10-12 14:21:37.080996 [INFO] [USER ROUTER] [UPDATE] Payload received for update: {'first_name': 'john-ALTERADO'}
-2025-10-12 14:21:37.081232 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, payload: <src.account.usecases.users.update_user_usecase.PayloadUpdateUserDTO object at 0x743def06b4d0>
+2025-10-12 14:21:37.081232 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, payload: <src.usecases.users.update_user_usecase.PayloadUpdateUserDTO object at 0x743def06b4d0>
 2025-10-12 14:21:37.142445 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'john-ALTERADO'}
 2025-10-12 14:21:37.143857 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, user: None
 2025-10-12 16:56:32.910266 [INFO] [AUTH ROUTES] [REFRESH] cookie: e3f52e66-07fe-4a68-8850-24f660028883:x-IuKikzvjpkLf8Wimx7kxBcIt_vsGauF6nuo5D1NeNgicba3Af6d3MTm0889dlfHoBdz0ml79O-TXSWqwoglQ
@@ -1003,14 +1003,14 @@
 2025-10-12 16:56:33.285637 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MmZjNzllNy1jMDlkLTQyMTgtYmY1My0yOWFmODFhODNiMjEiLCJpYXQiOjE3NjAyODgxOTMsImV4cCI6MTc2MDI4OTA5M30.58DizHg-UTCve28DpWNXyBh4hDlvBOO5lEefplk0PN4
 2025-10-12 16:56:33.286111 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: DA95hjL2v_eu-MO3_Y4I12BbQm0T8UMjOLAdPFScJ8RMWKuOUa6ZJkZAvkUF--zRyShUjL-tH0Xr_REJqP3n2A
 2025-10-12 16:56:42.338119 [INFO] [USER ROUTER] [UPDATE] Payload ONLY received for update: first_name='john-ALTERADO' last_name=None email=None password=None active=None
-2025-10-12 16:56:42.338514 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, payload: <src.account.usecases.users.update_user_usecase.PayloadUpdateUserDTO object at 0x7d4a06f57e00>
+2025-10-12 16:56:42.338514 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, payload: <src.usecases.users.update_user_usecase.PayloadUpdateUserDTO object at 0x7d4a06f57e00>
 2025-10-12 16:56:42.501714 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'john-ALTERADO'}
-2025-10-12 16:56:42.507153 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, user: <src.account.domain.entities.user.User object at 0x7d4a06f56f90>
+2025-10-12 16:56:42.507153 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, user: <src.domain.entities.user.User object at 0x7d4a06f56f90>
 2025-10-12 16:57:36.242731 [INFO] [USER ROUTER] [UPDATE] Payload ONLY received for update: first_name='john-ALTERADO' last_name=None email=None password=None active=None
-2025-10-12 16:57:36.244897 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, payload: <src.account.usecases.users.update_user_usecase.PayloadUpdateUserDTO object at 0x72f504c4da90>
+2025-10-12 16:57:36.244897 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, payload: <src.usecases.users.update_user_usecase.PayloadUpdateUserDTO object at 0x72f504c4da90>
 2025-10-12 16:57:36.486971 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'john-ALTERADO'}
-2025-10-12 16:57:36.487441 [INFO] [USER][PARTIAL][UPDATE] user: <src.account.domain.entities.user.User object at 0x72f504c4ee40>
-2025-10-12 16:57:36.519263 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, user: <src.account.domain.entities.user.User object at 0x72f504c4ee40>
+2025-10-12 16:57:36.487441 [INFO] [USER][PARTIAL][UPDATE] user: <src.domain.entities.user.User object at 0x72f504c4ee40>
+2025-10-12 16:57:36.519263 [INFO] [USER USE CASE] [UPDATE] user_id: 52fc79e7-c09d-4218-bf53-29af81a83b21, user: <src.domain.entities.user.User object at 0x72f504c4ee40>
 2025-10-14 02:42:59.287060 [INFO] [USER][CREATE] new_register: (first_name: john, last_name: doe, email: john.doe@email.com, active: True)
 2025-10-14 02:44:33.805811 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
 2025-10-14 02:44:33.807777 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
@@ -1038,20 +1038,20 @@
 2025-10-21 22:44:33.339762 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: jkBSvKjmQAJKgks-5GO7oqaIB7n0sEfaMyaRqvTVX_C94F6IQ8Ubi5wlVNzZv1a0BhomEJV3NU9B-QmyZZjRTQ
 2025-10-22 02:34:44.439016 [INFO] [AUTH ROUTES] [REFRESH] cookie: 85f410a6-b70b-4fd0-8389-383d3d55a132:jkBSvKjmQAJKgks-5GO7oqaIB7n0sEfaMyaRqvTVX_C94F6IQ8Ubi5wlVNzZv1a0BhomEJV3NU9B-QmyZZjRTQ
 2025-10-22 02:34:44.504952 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 85f410a6-b70b-4fd0-8389-383d3d55a132
-2025-10-22 02:34:44.581152 [ERROR] [REFRESH TOKEN][GETBY][JTI] exception: When initializing mapper Mapper[Company(companies)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.company.Company'> class after both dependent classes have been defined.
+2025-10-22 02:34:44.581152 [ERROR] [REFRESH TOKEN][GETBY][JTI] exception: When initializing mapper Mapper[Company(companies)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.domain.entities.company.Company'> class after both dependent classes have been defined.
 2025-10-22 02:58:46.875209 [INFO] [AUTH ROUTES] [REFRESH] cookie: 85f410a6-b70b-4fd0-8389-383d3d55a132:jkBSvKjmQAJKgks-5GO7oqaIB7n0sEfaMyaRqvTVX_C94F6IQ8Ubi5wlVNzZv1a0BhomEJV3NU9B-QmyZZjRTQ
 2025-10-22 02:58:46.926806 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 85f410a6-b70b-4fd0-8389-383d3d55a132
-2025-10-22 02:58:47.011209 [ERROR] [REFRESH TOKEN][GETBY][JTI] exception: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.user.User'> class after both dependent classes have been defined.
+2025-10-22 02:58:47.011209 [ERROR] [REFRESH TOKEN][GETBY][JTI] exception: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.domain.entities.user.User'> class after both dependent classes have been defined.
 2025-10-22 02:59:03.615847 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
 2025-10-22 02:59:03.616226 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
 2025-10-22 02:59:03.650766 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
-2025-10-22 02:59:03.707264 [ERROR] [USER][GETBY][EMAIL] exception: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.user.User'> class after both dependent classes have been defined.
-2025-10-22 02:59:03.708035 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.user.User'> class after both dependent classes have been defined.
+2025-10-22 02:59:03.707264 [ERROR] [USER][GETBY][EMAIL] exception: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.domain.entities.user.User'> class after both dependent classes have been defined.
+2025-10-22 02:59:03.708035 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.domain.entities.user.User'> class after both dependent classes have been defined.
 2025-10-25 01:07:58.122696 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
 2025-10-25 01:07:58.126205 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
 2025-10-25 01:07:58.215304 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
-2025-10-25 01:07:58.335248 [ERROR] [USER][GETBY][EMAIL] exception: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.user.User'> class after both dependent classes have been defined.
-2025-10-25 01:07:58.335852 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.account.domain.entities.user.User'> class after both dependent classes have been defined.
+2025-10-25 01:07:58.335248 [ERROR] [USER][GETBY][EMAIL] exception: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.domain.entities.user.User'> class after both dependent classes have been defined.
+2025-10-25 01:07:58.335852 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: When initializing mapper Mapper[User(users)], expression 'UserCompanyRole' failed to locate a name ('UserCompanyRole'). If this is a class name, consider adding this relationship() to the <class 'src.domain.entities.user.User'> class after both dependent classes have been defined.
 2025-10-25 01:26:46.425164 [INFO] [USER][CREATE] new_register: (first_name: john, last_name: doe, email: john.doe@email.com, active: True)
 2025-10-25 01:28:28.733946 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
 2025-10-25 01:28:28.734194 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
@@ -1123,38 +1123,38 @@
 2025-10-25 03:27:44.886478 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
 2025-10-25 03:27:44.887375 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-25 03:27:44.888923 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-25 03:27:44.975535 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x743c5a67bb60>
-2025-10-25 03:27:44.976412 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x743c5a67bb60>
+2025-10-25 03:27:44.975535 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x743c5a67bb60>
+2025-10-25 03:27:44.976412 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x743c5a67bb60>
 2025-10-25 03:27:44.976661 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: __init__() takes 1 positional argument but 2 were given
 2025-10-25 03:27:54.113071 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
 2025-10-25 03:27:54.113619 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
 2025-10-25 03:27:54.114033 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-25 03:27:54.115505 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-25 03:27:54.199554 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x743c59da25d0>
-2025-10-25 03:27:54.200728 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x743c59da25d0>
+2025-10-25 03:27:54.199554 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x743c59da25d0>
+2025-10-25 03:27:54.200728 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x743c59da25d0>
 2025-10-25 03:27:54.201109 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: __init__() takes 1 positional argument but 2 were given
 2025-10-25 03:30:35.684407 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
 2025-10-25 03:30:35.686930 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
 2025-10-25 03:30:35.687777 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-25 03:30:35.792884 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-25 03:30:35.940025 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7901a3db6f90>
-2025-10-25 03:30:35.941264 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7901a3db6f90>
+2025-10-25 03:30:35.940025 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7901a3db6f90>
+2025-10-25 03:30:35.941264 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7901a3db6f90>
 2025-10-25 03:30:35.941647 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: __init__() takes 1 positional argument but 2 were given
 2025-10-25 03:31:40.537732 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
 2025-10-25 03:31:40.538828 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
 2025-10-25 03:31:40.539804 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-25 03:31:40.612390 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-25 03:31:40.839701 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7599378b6f90>
-2025-10-25 03:31:40.840740 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7599378b6f90>
-2025-10-25 03:31:40.841058 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7599378b6f90>
+2025-10-25 03:31:40.839701 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7599378b6f90>
+2025-10-25 03:31:40.840740 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7599378b6f90>
+2025-10-25 03:31:40.841058 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x7599378b6f90>
 2025-10-25 03:31:40.841354 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: __init__() takes 1 positional argument but 2 were given
 2025-10-25 03:32:42.125367 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjEzNjI4NDAsImV4cCI6MTc2MTM2Mzc0MH0.zJDHjhjKwGQ6Y2FwaN_uiXOpxm9N-_7u5-gy-IVkDNI
 2025-10-25 03:32:42.126230 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
 2025-10-25 03:32:42.126612 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-25 03:32:42.186898 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-25 03:32:42.279310 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7a91c09b2f90>
-2025-10-25 03:32:42.280657 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7a91c09b2f90>
-2025-10-25 03:32:42.281104 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7a91c09b2f90>
+2025-10-25 03:32:42.279310 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7a91c09b2f90>
+2025-10-25 03:32:42.280657 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7a91c09b2f90>
+2025-10-25 03:32:42.281104 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x7a91c09b2f90>
 2025-10-25 03:32:42.281511 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-25 03:32:42.283130 [ERROR] [COMPANY][CREATE] Exception: 'owner_id' is an invalid keyword argument for Company
 2025-10-25 03:32:42.283880 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'owner_id' is an invalid keyword argument for Company
@@ -1162,9 +1162,9 @@
 2025-10-25 03:35:51.433573 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
 2025-10-25 03:35:51.434674 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-25 03:35:51.506909 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-25 03:35:51.628621 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7a08141c2f90>
-2025-10-25 03:35:51.629891 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7a08141c2f90>
-2025-10-25 03:35:51.630208 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7a08141c2f90>
+2025-10-25 03:35:51.628621 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7a08141c2f90>
+2025-10-25 03:35:51.629891 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7a08141c2f90>
+2025-10-25 03:35:51.630208 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x7a08141c2f90>
 2025-10-25 03:35:51.630621 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-25 03:35:51.631582 [ERROR] [COMPANY][CREATE] Exception: 'owner_id' is an invalid keyword argument for Company
 2025-10-25 03:35:51.632130 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'owner_id' is an invalid keyword argument for Company
@@ -1172,9 +1172,9 @@
 2025-10-25 03:37:58.763174 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761362840, 'exp': 1761363740}
 2025-10-25 03:37:58.763518 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-25 03:37:58.826549 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-25 03:37:58.946744 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7e598c9b6f90>
-2025-10-25 03:37:58.947764 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7e598c9b6f90>
-2025-10-25 03:37:58.948070 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7e598c9b6f90>
+2025-10-25 03:37:58.946744 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7e598c9b6f90>
+2025-10-25 03:37:58.947764 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7e598c9b6f90>
+2025-10-25 03:37:58.948070 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x7e598c9b6f90>
 2025-10-25 03:37:58.948349 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-25 03:37:58.949231 [ERROR] [COMPANY][CREATE] Exception: 'owner_id' is an invalid keyword argument for Company
 2025-10-25 03:37:58.949639 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'owner_id' is an invalid keyword argument for Company
@@ -1194,9 +1194,9 @@
 2025-10-26 13:57:18.237559 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761487017, 'exp': 1761487917}
 2025-10-26 13:57:18.237855 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-26 13:57:18.238840 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-26 13:57:18.331792 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7cfe5dfa7d90>
-2025-10-26 13:57:18.333040 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7cfe5dfa7d90>
-2025-10-26 13:57:18.333688 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7cfe5dfa7d90>
+2025-10-26 13:57:18.331792 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7cfe5dfa7d90>
+2025-10-26 13:57:18.333040 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7cfe5dfa7d90>
+2025-10-26 13:57:18.333688 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x7cfe5dfa7d90>
 2025-10-26 13:57:18.334106 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-26 13:57:18.334968 [ERROR] [COMPANY][CREATE] Exception: 'owner_id' is an invalid keyword argument for Company
 2025-10-26 13:57:18.335406 [ERROR] [AUTH ROUTES] [ME] [EXCEPTION] e: 'owner_id' is an invalid keyword argument for Company
@@ -1204,34 +1204,34 @@
 2025-10-26 13:59:24.294373 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761487017, 'exp': 1761487917}
 2025-10-26 13:59:24.294939 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-26 13:59:24.351758 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-26 13:59:24.600979 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x734f503c2e40>
-2025-10-26 13:59:24.603865 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x734f503c2e40>
-2025-10-26 13:59:24.604250 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x734f503c2e40>
+2025-10-26 13:59:24.600979 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x734f503c2e40>
+2025-10-26 13:59:24.603865 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x734f503c2e40>
+2025-10-26 13:59:24.604250 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x734f503c2e40>
 2025-10-26 13:59:24.604576 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-26 14:04:28.760099 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODcwMTcsImV4cCI6MTc2MTQ4NzkxN30.3MWiehnSB4qYqyQNuLOJNU3dR-HfpkgIWBv9Q9Byatg
 2025-10-26 14:04:28.761127 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761487017, 'exp': 1761487917}
 2025-10-26 14:04:28.761898 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-26 14:04:28.913735 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-26 14:04:29.076224 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x73bc5bab2e40>
-2025-10-26 14:04:29.079330 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x73bc5bab2e40>
-2025-10-26 14:04:29.080470 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x73bc5bab2e40>
+2025-10-26 14:04:29.076224 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x73bc5bab2e40>
+2025-10-26 14:04:29.079330 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x73bc5bab2e40>
+2025-10-26 14:04:29.080470 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x73bc5bab2e40>
 2025-10-26 14:04:29.081620 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-26 14:08:02.474154 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODcwMTcsImV4cCI6MTc2MTQ4NzkxN30.3MWiehnSB4qYqyQNuLOJNU3dR-HfpkgIWBv9Q9Byatg
 2025-10-26 14:08:02.477544 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761487017, 'exp': 1761487917}
 2025-10-26 14:08:02.479330 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-26 14:08:02.538806 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-26 14:08:02.698116 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x729f49ab2e40>
-2025-10-26 14:08:02.700876 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x729f49ab2e40>
-2025-10-26 14:08:02.701323 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x729f49ab2e40>
+2025-10-26 14:08:02.698116 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x729f49ab2e40>
+2025-10-26 14:08:02.700876 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x729f49ab2e40>
+2025-10-26 14:08:02.701323 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x729f49ab2e40>
 2025-10-26 14:08:02.702056 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-26 14:08:02.703805 [INFO] [COMPANY][CREATE] new_register.id: None
 2025-10-26 14:10:23.709851 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ZGQ4YzZjZC1lMjk4LTQ2OWItYWM4OC02MDFkODJiNzdmNTciLCJpYXQiOjE3NjE0ODcwMTcsImV4cCI6MTc2MTQ4NzkxN30.3MWiehnSB4qYqyQNuLOJNU3dR-HfpkgIWBv9Q9Byatg
 2025-10-26 14:10:23.710718 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761487017, 'exp': 1761487917}
 2025-10-26 14:10:23.711016 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-26 14:10:23.742803 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-26 14:10:23.812706 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x715885fb6e40>
-2025-10-26 14:10:23.813625 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x715885fb6e40>
-2025-10-26 14:10:23.813942 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x715885fb6e40>
+2025-10-26 14:10:23.812706 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x715885fb6e40>
+2025-10-26 14:10:23.813625 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x715885fb6e40>
+2025-10-26 14:10:23.813942 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x715885fb6e40>
 2025-10-26 14:10:23.814205 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-26 14:20:24.497101 [INFO] [AUTH ROUTES] [REFRESH] cookie: e95643d4-39ce-464c-86c1-d55f08146a2c:7dtvn5ROFr-kWySnwcm7P4WJ8Sxl26GhEKKK39RM4VZ_n-Jj8iZUrBPNM4pVvs7xZcg65gmeNPv63_L7WLKT4w
 2025-10-26 14:20:24.554845 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: e95643d4-39ce-464c-86c1-d55f08146a2c
@@ -1243,9 +1243,9 @@
 2025-10-26 14:20:30.135892 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '6dd8c6cd-e298-469b-ac88-601d82b77f57', 'iat': 1761488424, 'exp': 1761489324}
 2025-10-26 14:20:30.136247 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-26 14:20:30.137634 [INFO] [USER][GETBY][ID] not_none_args: 6dd8c6cd-e298-469b-ac88-601d82b77f57
-2025-10-26 14:20:30.506411 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7cf24c27cc20>
-2025-10-26 14:20:30.510795 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7cf24c27cc20>
-2025-10-26 14:20:30.511268 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7cf24c27cc20>
+2025-10-26 14:20:30.506411 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7cf24c27cc20>
+2025-10-26 14:20:30.510795 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7cf24c27cc20>
+2025-10-26 14:20:30.511268 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x7cf24c27cc20>
 2025-10-26 14:20:30.511693 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: 6dd8c6cd-e298-469b-ac88-601d82b77f57
 2025-10-27 22:14:35.829795 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
 2025-10-27 22:14:35.829940 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
@@ -1320,9 +1320,9 @@ WHERE users.email = $1::VARCHAR]
 2025-10-27 22:47:30.240543 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': 'f8369e47-9d64-42ad-96aa-dd88bceed0f1', 'iat': 1761605133, 'exp': 1761606033}
 2025-10-27 22:47:30.240649 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: f8369e47-9d64-42ad-96aa-dd88bceed0f1
 2025-10-27 22:47:30.241167 [INFO] [USER][GETBY][ID] not_none_args: f8369e47-9d64-42ad-96aa-dd88bceed0f1
-2025-10-27 22:47:30.261572 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x7313b4721e50>
-2025-10-27 22:47:30.261895 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x7313b4721e50>
-2025-10-27 22:47:30.262000 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x7313b4721e50>
+2025-10-27 22:47:30.261572 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7313b4721e50>
+2025-10-27 22:47:30.261895 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7313b4721e50>
+2025-10-27 22:47:30.262000 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x7313b4721e50>
 2025-10-27 22:47:30.262100 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: f8369e47-9d64-42ad-96aa-dd88bceed0f1
 2025-10-28 00:21:32.442634 [INFO] [AUTH ROUTES] [REFRESH] cookie: 1d28a299-4185-4f46-b0ea-64f67f05bfa9:gZ5nw34gak2AUYRgT36DkGxbjL44F1cvcRA-ZvOkvyeuqD_ag0A2ebluRrzwRakA2J29q67qsbyWkn6iIEe_HA
 2025-10-28 00:21:32.449787 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 1d28a299-4185-4f46-b0ea-64f67f05bfa9
@@ -1334,9 +1334,9 @@ WHERE users.email = $1::VARCHAR]
 2025-10-28 00:22:02.284068 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': 'f8369e47-9d64-42ad-96aa-dd88bceed0f1', 'iat': 1761610892, 'exp': 1761611792}
 2025-10-28 00:22:02.284169 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: f8369e47-9d64-42ad-96aa-dd88bceed0f1
 2025-10-28 00:22:02.284416 [INFO] [USER][GETBY][ID] not_none_args: f8369e47-9d64-42ad-96aa-dd88bceed0f1
-2025-10-28 00:22:02.297825 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x728c5fd9cc20>
-2025-10-28 00:22:02.298035 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x728c5fd9cc20>
-2025-10-28 00:22:02.298101 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x728c5fd9cc20>
+2025-10-28 00:22:02.297825 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x728c5fd9cc20>
+2025-10-28 00:22:02.298035 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x728c5fd9cc20>
+2025-10-28 00:22:02.298101 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x728c5fd9cc20>
 2025-10-28 00:22:02.298157 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: f8369e47-9d64-42ad-96aa-dd88bceed0f1
 2025-10-28 00:22:27.972944 [INFO] [COMPANY][PARTIAL][UPDATE] not_none_args: {'name': 'company2-ALTERED'}
 2025-10-28 00:22:51.866893 [INFO] [COMPANY][DELETE] company_id: 0fc5135f-45f2-4c51-b788-4e9c4cf31215
@@ -1362,8 +1362,8 @@ DETAIL:  Key (id)=(0fc5135f-45f2-4c51-b788-4e9c4cf31215) is still referenced fro
 2025-10-28 00:37:29.815181 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': 'b0dc0828-972c-4a75-beed-17c449174829', 'iat': 1761611816, 'exp': 1761612716}
 2025-10-28 00:37:29.815219 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: b0dc0828-972c-4a75-beed-17c449174829
 2025-10-28 00:37:29.815487 [INFO] [USER][GETBY][ID] not_none_args: b0dc0828-972c-4a75-beed-17c449174829
-2025-10-28 00:37:29.836292 [INFO] [USER][GETBY][ID] user: <src.account.domain.entities.user.User object at 0x75621f318690>
-2025-10-28 00:37:29.836508 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.account.domain.entities.user.User object at 0x75621f318690>
-2025-10-28 00:37:29.836565 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.account.domain.entities.user.User object at 0x75621f318690>
+2025-10-28 00:37:29.836292 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x75621f318690>
+2025-10-28 00:37:29.836508 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x75621f318690>
+2025-10-28 00:37:29.836565 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x75621f318690>
 2025-10-28 00:37:29.836612 [INFO] [COMPANY ROUTES] [CREATE COMPANY] user_id: b0dc0828-972c-4a75-beed-17c449174829
 2025-10-28 00:37:54.902697 [INFO] [COMPANY][DELETE] company_id: 65771566-b2a6-4806-a349-d10d51f09165
