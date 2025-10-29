@@ -17,5 +17,7 @@ class Role(Base):
 
     user_company_roles = relationship("UserCompanyRole", back_populates="role")
 
+    work_days = relationship("WorkDay", back_populates="role", cascade="all, delete-orphan", passive_deletes=True)
+
     def __repr__(self):
         return f"<Role(id='{self.id}', name='{self.name}')>"
