@@ -9,7 +9,6 @@ Create Date: 2025-10-29 17:00:18.913409
 from typing import Sequence, Union
 
 import sqlalchemy as sa
-from sqlalchemy.dialects import postgresql
 
 from alembic import op
 
@@ -24,8 +23,8 @@ def upgrade() -> None:
     """Upgrade schema."""
     op.create_table(
         "work_shifts",
-        sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True),
-        sa.Column("work_day_id", postgresql.UUID(as_uuid=True), sa.ForeignKey("work_days.id", ondelete="CASCADE")),
+        sa.Column("id", sa.Integer, primary_key=True, autoincrement=True),
+        sa.Column("work_day_id", sa.Integer, sa.ForeignKey("work_days.id", ondelete="CASCADE")),
         sa.Column("weekday", sa.Integer, nullable=True),
         sa.Column("start_time", sa.DateTime(timezone=True), nullable=False),
         sa.Column("end_time", sa.DateTime(timezone=True), nullable=False),

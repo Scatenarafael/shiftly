@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import MetaData
 
-from src.app.controllers import auth_router, company_router, user_router
+from src.app.controllers import auth_router, company_router, link_user_to_company_router, user_router
 from src.app.controllers.middlewares.auth_middleware import AuthMiddleware
 
 origins = [
@@ -32,3 +32,4 @@ app.add_middleware(AuthMiddleware)
 app.include_router(auth_router.router)
 app.include_router(user_router.router)
 app.include_router(company_router.router)
+app.include_router(link_user_to_company_router.router)
