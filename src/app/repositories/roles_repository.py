@@ -20,10 +20,10 @@ class RolesRepository(IRolesRepository):
             except Exception as exception:
                 raise exception
 
-    async def create(self, name: str) -> Awaitable[Optional[Role]]:  # type: ignore
+    async def create(self, name: str, number_of_cooldown_days: int) -> Awaitable[Optional[Role]]:  # type: ignore
         async with DbConnectionHandler() as database:
             try:
-                new_register = Role(name=name)
+                new_register = Role(name=name, number_of_cooldown_days=number_of_cooldown_days)
 
                 if not new_register:
                     raise ValueError("Could not create role")

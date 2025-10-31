@@ -43,6 +43,7 @@ def get_auth_service() -> AuthService:
 
 class CreateRoleRequestBody(BaseModel):
     name: str
+    number_of_cooldown_days: int
 
 
 @router.get("")
@@ -74,7 +75,7 @@ async def create_role(request: Request, body: CreateRoleRequestBody, auth_servic
 
         app_logger.info(f"[ROLE ROUTES] [CREATE role] user_id: {user_json.get('id')}")
 
-        new_role = await create_role_usecase.execute(name=body.name)
+        new_role = await create_role_usecase.execute(name=body.name, number_of_cooldown_days=body.number_of_cooldown_days)
 
         return new_role
 

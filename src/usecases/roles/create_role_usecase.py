@@ -8,5 +8,5 @@ class CreateRoleUseCase:
     def __init__(self, roles_repository: IRolesRepository):
         self.roles_repository = roles_repository
 
-    async def execute(self, name: str) -> Awaitable[Optional[Role]]:
-        return await self.roles_repository.create(name=name)
+    async def execute(self, name: str, number_of_cooldown_days: int) -> Awaitable[Optional[Role]]:
+        return await self.roles_repository.create(name=name, number_of_cooldown_days=number_of_cooldown_days)
