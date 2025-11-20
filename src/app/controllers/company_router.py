@@ -1,6 +1,6 @@
 from typing import Awaitable, Optional
 
-from fastapi import APIRouter, Depends, HTTPException, Request, status
+from fastapi import APIRouter, Depends, HTTPException, Request, Response, status
 from pydantic import BaseModel
 
 from src.app.controllers.dtos.update_company_dto import PayloadUpdateCompanyDTO
@@ -98,3 +98,4 @@ async def delete_company(company_id: str):
         await get_delete_company_usecase().execute(company_id=company_id)
     except Exception as e:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e)) from e
+    return Response(status_code=status.HTTP_204_NO_CONTENT)

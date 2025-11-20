@@ -120,7 +120,7 @@ async def logout(request: Request, auth_service: AuthService = Depends(get_auth_
 
         if jti and raw:
             await auth_service.logout_by_cookie(raw, jti)
-    response = JSONResponse(content=None, status_code=status.HTTP_204_NO_CONTENT)
+    response = Response(status_code=status.HTTP_204_NO_CONTENT)
     app_logger.info(f"[AUTH ROUTES] [LOGOUT] cookie.delete before - REFRESH_COOKIE_NAME: {settings.REFRESH_COOKIE_NAME} - ACCESS_COOKIE_NAME: {settings.ACCESS_COOKIE_NAME}")
     # sempre limpa cookies do cliente
     response.delete_cookie(settings.REFRESH_COOKIE_NAME, path="/")
