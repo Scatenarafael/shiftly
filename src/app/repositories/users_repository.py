@@ -1,9 +1,12 @@
 from typing import Optional
 
 from passlib.context import CryptContext
-from sqlalchemy import delete, select
+from sqlalchemy import delete, orm, select
 
+from src.domain.entities.company import Company
+from src.domain.entities.role import Role
 from src.domain.entities.user import User
+from src.domain.entities.user_company_role import UserCompanyRole
 from src.infra.settings.connection import DbConnectionHandler
 from src.infra.settings.logging_config import app_logger
 from src.interfaces.iusers_repository import IUsersRepository
@@ -47,21 +50,43 @@ class UsersRepository(IUsersRepository):
 
     @classmethod
     async def get_by_id(cls, id: str) -> Optional[User]:
-        async with DbConnectionHandler() as database:
+        async with DbConnectionHandler() as database:  # type: ignore
             try:
                 app_logger.info(f"[USER][GETBY][ID] not_none_args: {id}")
-                if database.session:
-                    result = await database.session.execute(select(User).filter(User.id == id))  # type: ignore
-                    user = result.scalars().first()
-                    app_logger.info(f"[USER][GETBY][ID] user: {user}")
-                    if not user:
-                        raise LookupError("User not found!")
-                    return user  # type: ignore
+
+                if not database.session:
+                    return None
+
+                stmt = (
+                    select(User)
+                    .where(User.id == id)
+                    .options(
+                        # 1) Carrega apenas is_owner em UserCompanyRole
+                        #    + company.id / company.name
+                        orm.selectinload(User.companies_roles)
+                        .load_only(UserCompanyRole.is_owner)  # type: ignore
+                        .selectinload(UserCompanyRole.company)
+                        .load_only(Company.id, Company.name),  # type: ignore
+                        # 2) Carrega o role com apenas id / name
+                        orm.selectinload(User.companies_roles).selectinload(UserCompanyRole.role).load_only(Role.id, Role.name),  # type: ignore
+                    )
+                )
+
+                result = await database.session.execute(stmt)
+                user: User | None = result.scalars().unique().first()
+
+                app_logger.info(f"[USER][GETBY][ID] user: {user}")
+
+                if not user:
+                    raise LookupError("User not found!")
+
+                return user
+
             except Exception as exception:
                 app_logger.error(f"[USER][GETBY][ID] exception: {exception}")
                 if database.session:
                     await database.session.rollback()
-                raise exception
+                raise
 
     @classmethod
     async def get_by_email(cls, email: str) -> Optional[User]:

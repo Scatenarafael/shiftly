@@ -1,6 +1,6 @@
 import uuid
 
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 
@@ -13,10 +13,13 @@ class Role(Base):
     id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name = Column(String, nullable=False)
 
+    company_id = Column(UUID(as_uuid=True), ForeignKey("companies.id", ondelete="CASCADE"))
+
     number_of_cooldown_days = Column(Integer, nullable=False, default=0)
 
     user_company_roles = relationship("UserCompanyRole", back_populates="role")
 
+    company = relationship("Company", back_populates="roles")
     work_days = relationship("WorkDay", back_populates="role", cascade="all, delete-orphan", passive_deletes=True)
 
     def __repr__(self):
