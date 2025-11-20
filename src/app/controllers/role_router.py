@@ -43,6 +43,7 @@ def get_auth_service() -> AuthService:
 
 class CreateRoleRequestBody(BaseModel):
     name: str
+    company_id: str
     number_of_cooldown_days: int
 
 

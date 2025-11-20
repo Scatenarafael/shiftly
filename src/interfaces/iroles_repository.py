@@ -10,7 +10,7 @@ class IRolesRepository(ABC):
         pass
 
     @abstractmethod
-    async def create(self, name: str, number_of_cooldown_days: int) -> Awaitable[Optional[Role]]:
+    async def create(self, company_id: str, name: str, number_of_cooldown_days: int) -> Awaitable[Optional[Role]]:
         pass
 
     @abstractmethod
