@@ -14,6 +14,12 @@ class Company(Base):
     name = Column(String, index=True)
 
     users_roles = relationship("UserCompanyRole", back_populates="company", cascade="all, delete-orphan", passive_deletes=True)  # importante p/ ondelete funcionar no BD
+    roles = relationship(
+        "Role",
+        back_populates="company",
+        cascade="all, delete-orphan",
+        passive_deletes=True,
+    )
 
     def __repr__(self):
         return f"<Company(id='{self.id}', name='{self.name}')>"

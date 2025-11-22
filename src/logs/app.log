@@ -2097,3 +2097,66 @@ WHERE user_company_roles.user_id = :user_id_1
 2025-11-20 18:33:54.629026 [INFO] [AUTH ROUTES] [LOGOUT] cookie: c138d9a3-63d3-48ed-b978-c049dfaa4ef1:ExVqwZzgJgO0mTuuazvywJAq9pgIg2dciai5aX5hlmkSkSuwN4--s7LdmM4LKGLj05bluwmoVXhHoTH-bmdg8A
 2025-11-20 18:33:54.629461 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: c138d9a3-63d3-48ed-b978-c049dfaa4ef1
 2025-11-20 18:33:54.660594 [ERROR] [REFRESH TOKEN][GETBY][JTI] exception: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Role(roles)]'. Original exception was: Mapper 'Mapper[Company(companies)]' has no property 'roles'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-22 18:45:48.912369 [INFO] [AUTH ROUTES] [REFRESH] cookie: 30b347e6-73f6-43e0-9c00-f38912e86f49:cClHjfcVgB2ZIue1YnDkiD27YbugyRh7h1VcUe97Zbg49OtdxbLCOHldvk9mb_DGMs6oDOB9fZyucjTNNv4ngw
+2025-11-22 18:45:48.924518 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 30b347e6-73f6-43e0-9c00-f38912e86f49
+2025-11-22 18:45:48.942244 [ERROR] [REFRESH TOKEN][GETBY][JTI] exception: Mapper 'Mapper[Company(companies)]' has no property 'roles'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-22 18:45:48.962361 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 30b347e6-73f6-43e0-9c00-f38912e86f49:cClHjfcVgB2ZIue1YnDkiD27YbugyRh7h1VcUe97Zbg49OtdxbLCOHldvk9mb_DGMs6oDOB9fZyucjTNNv4ngw
+2025-11-22 18:45:48.962845 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 30b347e6-73f6-43e0-9c00-f38912e86f49
+2025-11-22 18:45:48.984158 [ERROR] [REFRESH TOKEN][GETBY][JTI] exception: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Role(roles)]'. Original exception was: Mapper 'Mapper[Company(companies)]' has no property 'roles'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-22 18:45:48.993829 [INFO] [AUTH ROUTES] [REFRESH] cookie: 30b347e6-73f6-43e0-9c00-f38912e86f49:cClHjfcVgB2ZIue1YnDkiD27YbugyRh7h1VcUe97Zbg49OtdxbLCOHldvk9mb_DGMs6oDOB9fZyucjTNNv4ngw
+2025-11-22 18:45:48.994121 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 30b347e6-73f6-43e0-9c00-f38912e86f49
+2025-11-22 18:45:49.005084 [ERROR] [REFRESH TOKEN][GETBY][JTI] exception: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Role(roles)]'. Original exception was: Mapper 'Mapper[Company(companies)]' has no property 'roles'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-22 18:45:49.015155 [INFO] [AUTH ROUTES] [LOGOUT] cookie: 30b347e6-73f6-43e0-9c00-f38912e86f49:cClHjfcVgB2ZIue1YnDkiD27YbugyRh7h1VcUe97Zbg49OtdxbLCOHldvk9mb_DGMs6oDOB9fZyucjTNNv4ngw
+2025-11-22 18:45:49.015630 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 30b347e6-73f6-43e0-9c00-f38912e86f49
+2025-11-22 18:45:49.038876 [ERROR] [REFRESH TOKEN][GETBY][JTI] exception: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Role(roles)]'. Original exception was: Mapper 'Mapper[Company(companies)]' has no property 'roles'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-22 18:45:52.108419 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-11-22 18:45:52.108563 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-11-22 18:45:52.108920 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-11-22 18:45:52.130052 [ERROR] [USER][GETBY][EMAIL] exception: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Role(roles)]'. Original exception was: Mapper 'Mapper[Company(companies)]' has no property 'roles'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-22 18:45:52.130352 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Role(roles)]'. Original exception was: Mapper 'Mapper[Company(companies)]' has no property 'roles'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-22 18:47:07.280947 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-11-22 18:47:07.281057 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-11-22 18:47:07.281300 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-11-22 18:47:07.293943 [ERROR] [USER][GETBY][EMAIL] exception: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Role(roles)]'. Original exception was: Mapper 'Mapper[Company(companies)]' has no property 'roles'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-22 18:47:07.294184 [ERROR] [AUTH ROUTES] [LOGIN] [Exception] e: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Role(roles)]'. Original exception was: Mapper 'Mapper[Company(companies)]' has no property 'roles'.  If this property was indicated from other mappers or configure events, ensure registry.configure() has been called.
+2025-11-22 19:46:57.990355 [INFO] [USER][CREATE] new_register: (first_name: john, last_name: doe, email: john.doe@email.com, active: True)
+2025-11-22 19:47:12.418033 [INFO] [AUTH ROUTES] [LOGIN] email: john.doe@email.com
+2025-11-22 19:47:12.418133 [DEBUG] [AUTH SERVICE] [LOGIN] email: john.doe@email.com
+2025-11-22 19:47:12.418401 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2025-11-22 19:47:12.436799 [DEBUG] [AUTH SERVICE] [LOGIN] user_json: {'id': '0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5', 'first_name': 'john', 'last_name': 'doe', 'email': 'john.doe@email.com', 'hashed_password': '$2b$12$R12spoMQD0CLkhgGdNPbiuiWC37I5f6/sYmDt8fEU.blv56cJ.akS', 'active': True, 'created_at': '2025-11-22T19:46:58.004302+00:00'}
+2025-11-22 19:47:12.436895 [DEBUG] [AUTH SERVICE] [LOGIN] user_json.get(hashed_password): $2b$12$R12spoMQD0CLkhgGdNPbiuiWC37I5f6/sYmDt8fEU.blv56cJ.akS
+2025-11-22 19:47:12.589003 [DEBUG] [AUTH SERVICE] [LOGIN] access: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTI3Y2EzZi00NzY4LTRjZTEtYWQ3NC1iMWIxYWM3NDUzYzUiLCJpYXQiOjE3NjM4NDA4MzIsImV4cCI6MTc2Mzg0MTczMn0.dPwVXKFCPOCB2qiEIsefhoDFe2YtMivZthHUuu3ALps
+2025-11-22 19:47:12.589105 [DEBUG] [AUTH SERVICE] [LOGIN] refresh_hash: 0b624766e029d84559647ed2b90136ead498aa075b60112d978fbf78f914c981
+2025-11-22 19:47:12.589146 [DEBUG] [AUTH SERVICE] [LOGIN] jti: e41a6e81-56d5-4e03-9691-b9459d150abc
+2025-11-22 19:47:12.589181 [DEBUG] [AUTH SERVICE] [LOGIN] expires_at: 2025-11-23 19:47:12.589172+00:00
+2025-11-22 19:47:12.589443 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= e41a6e81-56d5-4e03-9691-b9459d150abc, user_id= 0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5, token_hash= 0b624766e029d84559647ed2b90136ead498aa075b60112d978fbf78f914c981, expires_at= 2025-11-23 19:47:12.589172+00:00)
+2025-11-22 19:47:12.604559 [INFO] [AUTH ROUTES][SET_COOKIE][ACCESS] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTI3Y2EzZi00NzY4LTRjZTEtYWQ3NC1iMWIxYWM3NDUzYzUiLCJpYXQiOjE3NjM4NDA4MzIsImV4cCI6MTc2Mzg0MTczMn0.dPwVXKFCPOCB2qiEIsefhoDFe2YtMivZthHUuu3ALps
+2025-11-22 19:47:12.604685 [INFO] [AUTH ROUTES][SET_COOKIE][REFRESH] raw_refresh: zDj_yHnhJsq46tbzVR9yhK_RLoDXWABIdTNlMTOKxc0zDml5yNUvlAhd91tdIPVEshNdrovBsfpzhVcKAlXoJA
+2025-11-22 19:47:12.619678 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTI3Y2EzZi00NzY4LTRjZTEtYWQ3NC1iMWIxYWM3NDUzYzUiLCJpYXQiOjE3NjM4NDA4MzIsImV4cCI6MTc2Mzg0MTczMn0.dPwVXKFCPOCB2qiEIsefhoDFe2YtMivZthHUuu3ALps
+2025-11-22 19:47:12.619831 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5', 'iat': 1763840832, 'exp': 1763841732}
+2025-11-22 19:47:12.619868 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5
+2025-11-22 19:47:12.620086 [INFO] [USER][GETBY][ID] not_none_args: 0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5
+2025-11-22 19:47:12.639509 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7034b0cb7250>
+2025-11-22 19:47:12.639734 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7034b0cb7250>
+2025-11-22 19:47:12.639805 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x7034b0cb7250>
+2025-11-22 19:47:36.121429 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTI3Y2EzZi00NzY4LTRjZTEtYWQ3NC1iMWIxYWM3NDUzYzUiLCJpYXQiOjE3NjM4NDA4MzIsImV4cCI6MTc2Mzg0MTczMn0.dPwVXKFCPOCB2qiEIsefhoDFe2YtMivZthHUuu3ALps
+2025-11-22 19:47:36.121857 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5', 'iat': 1763840832, 'exp': 1763841732}
+2025-11-22 19:47:36.122008 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5
+2025-11-22 19:47:36.122448 [INFO] [USER][GETBY][ID] not_none_args: 0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5
+2025-11-22 19:47:36.149415 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7034b0cdaea0>
+2025-11-22 19:47:36.149762 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7034b0cdaea0>
+2025-11-22 19:47:36.149860 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x7034b0cdaea0>
+2025-11-22 19:55:26.350688 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTI3Y2EzZi00NzY4LTRjZTEtYWQ3NC1iMWIxYWM3NDUzYzUiLCJpYXQiOjE3NjM4NDA4MzIsImV4cCI6MTc2Mzg0MTczMn0.dPwVXKFCPOCB2qiEIsefhoDFe2YtMivZthHUuu3ALps
+2025-11-22 19:55:26.350919 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5', 'iat': 1763840832, 'exp': 1763841732}
+2025-11-22 19:55:26.350999 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5
+2025-11-22 19:55:26.351248 [INFO] [USER][GETBY][ID] not_none_args: 0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5
+2025-11-22 19:55:26.367763 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7034b0a51940>
+2025-11-22 19:55:26.368014 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7034b0a51940>
+2025-11-22 19:55:26.368081 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x7034b0a51940>
+2025-11-22 19:55:28.251608 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] access_token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTI3Y2EzZi00NzY4LTRjZTEtYWQ3NC1iMWIxYWM3NDUzYzUiLCJpYXQiOjE3NjM4NDA4MzIsImV4cCI6MTc2Mzg0MTczMn0.dPwVXKFCPOCB2qiEIsefhoDFe2YtMivZthHUuu3ALps
+2025-11-22 19:55:28.251768 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] payload: {'sub': '0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5', 'iat': 1763840832, 'exp': 1763841732}
+2025-11-22 19:55:28.251805 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user_id: 0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5
+2025-11-22 19:55:28.252029 [INFO] [USER][GETBY][ID] not_none_args: 0e27ca3f-4768-4ce1-ad74-b1b1ac7453c5
+2025-11-22 19:55:28.287884 [INFO] [USER][GETBY][ID] user: <src.domain.entities.user.User object at 0x7034b0cf4830>
+2025-11-22 19:55:28.288513 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] user: <src.domain.entities.user.User object at 0x7034b0cf4830>
+2025-11-22 19:55:28.288687 [DEBUG] [AUTH SERVICE] [RETURN USER BY ACCESS TOKEN] [AFTER DELATTR] user: <src.domain.entities.user.User object at 0x7034b0cf4830>
