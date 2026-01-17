@@ -1,9 +1,9 @@
-from typing import Awaitable, Optional
+from typing import cast
 
 from fastapi import APIRouter, Depends, HTTPException, Request, Response, status
 from pydantic import BaseModel
 
-from src.app.controllers.dtos.update_role_dto import PayloadUpdateRoleDTO
+from src.app.controllers.schemas.dtos.update_role_dto import PayloadUpdateRoleDTO
 from src.app.repositories.jwt_repository import JWTRepository
 from src.app.repositories.roles_repository import RolesRepository
 from src.app.repositories.users_repository import UsersRepository
@@ -51,6 +51,7 @@ class CreateRoleRequestBody(BaseModel):
 async def list_roles(list_roles_usecase: ListRolesUseCase = Depends(get_list_role_usecase)):
     try:
         roles = await list_roles_usecase.execute()
+        print(roles)
         return roles
     except Exception as e:
         app_logger.error(f"[ROLE ROUTES] [LIST roles] [EXCEPTION] e: {e}")
@@ -65,18 +66,14 @@ async def create_role(request: Request, body: CreateRoleRequestBody, auth_servic
         if not access:
             raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Access not provided")
 
-        user: Awaitable[Optional[User]] = await auth_service.return_user_by_access_token(access)
+        user = await auth_service.return_user_by_access_token(access)
 
         if not user:
             raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Could not find user")
-        else:
-            ensured_user: User = user  # type: ignore
 
-        user_json = ensured_user.to_dict()
+        user = cast(User, user)
 
-        app_logger.info(f"[ROLE ROUTES] [CREATE role] user_id: {user_json.get('id')}")
-
-        new_role = await create_role_usecase.execute(name=body.name, number_of_cooldown_days=body.number_of_cooldown_days)
+        new_role = await create_role_usecase.execute(name=body.name, user=user, company_id=body.company_id, number_of_cooldown_days=body.number_of_cooldown_days)
 
         return new_role
 

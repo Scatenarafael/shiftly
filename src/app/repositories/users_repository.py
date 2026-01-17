@@ -64,7 +64,7 @@ class UsersRepository(IUsersRepository):
                         # 1) Carrega apenas is_owner em UserCompanyRole
                         #    + company.id / company.name
                         orm.selectinload(User.companies_roles)
-                        .load_only(UserCompanyRole.is_owner)  # type: ignore
+                        .load_only(UserCompanyRole.is_owner, UserCompanyRole.company_id)  # type: ignore
                         .selectinload(UserCompanyRole.company)
                         .load_only(Company.id, Company.name),  # type: ignore
                         # 2) Carrega o role com apenas id / name

@@ -3,7 +3,7 @@ from typing import Awaitable, Optional
 from fastapi import APIRouter, Depends, HTTPException, Request, Response, status
 from pydantic import BaseModel
 
-from src.app.controllers.dtos.update_company_dto import PayloadUpdateCompanyDTO
+from src.app.controllers.schemas.pydantic.update_company_dto import PayloadUpdateCompanyDTO
 from src.app.repositories.companies_repository import CompaniesRepository
 from src.app.repositories.jwt_repository import JWTRepository
 from src.app.repositories.users_repository import UsersRepository

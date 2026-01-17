@@ -1,4 +1,4 @@
-from src.app.controllers.dtos.update_user_dto import PayloadUpdateUserDTO
+from src.app.controllers.schemas.dtos.update_user_dto import PayloadUpdateUserDTO
 from src.infra.settings.logging_config import app_logger
 from src.interfaces.iusers_repository import IUsersRepository
 

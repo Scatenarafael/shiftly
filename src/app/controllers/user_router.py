@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 from pydantic import BaseModel
 
-from src.app.controllers.dtos.update_user_dto import UpdateUserDTO
+from src.app.controllers.schemas.dtos.update_user_dto import UpdateUserDTO
 from src.app.repositories.users_repository import UsersRepository
 from src.infra.settings.logging_config import app_logger
 from src.interfaces.types.user_types import UserUpdateRequestBody
