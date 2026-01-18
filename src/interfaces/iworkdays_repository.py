@@ -1,4 +1,5 @@
 from abc import ABC, abstractmethod
+from datetime import datetime
 from typing import List, Optional
 
 from src.domain.entities.work_day import WorkDay
@@ -13,6 +14,10 @@ class IWorkdaysRepository(ABC):
         pass
 
     @abstractmethod
+    async def batch_create(self, payloads: List[WorkDay]) -> Optional[List[WorkDay]]:
+        pass
+
+    @abstractmethod
     async def create(self, workday: WorkDay) -> Optional[WorkDay]:
         pass
 
@@ -21,9 +26,17 @@ class IWorkdaysRepository(ABC):
         pass
 
     @abstractmethod
+    async def find_by_date(self, date: datetime) -> Optional[WorkDay]:
+        pass
+
+    @abstractmethod
     async def update(self, workday_id: int, payload: PartialWorkdayUpdate) -> Optional[WorkDay]:
         pass
 
     @abstractmethod
     async def delete(self, workday_id: int) -> None:
+        pass
+
+    @abstractmethod
+    async def batch_delete(self, workday_ids: List[int]) -> None:
         pass

@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from src.domain.entities.work_day import WorkDay
 from src.interfaces.iworkdays_repository import IWorkdaysRepository
 
@@ -7,5 +9,10 @@ class CreateWorkdayUseCase:
         self.workdays_repository = workdays_repository
 
     async def execute(self, workday: WorkDay):
+        inserted_workday = await self.workdays_repository.find_by_date(datetime.fromisoformat(str(workday.date)))
+
+        if inserted_workday:
+            raise ValueError(f"Workday for date {workday.date} already exists.")
+
         created_workday = await self.workdays_repository.create(workday)
         return created_workday
