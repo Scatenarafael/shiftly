@@ -11,8 +11,6 @@ class WorkShift(Base):
 
     work_day_id = Column(UUID(as_uuid=True), ForeignKey("work_days.id", ondelete="CASCADE"))
 
-    weekday = Column(Integer, nullable=True)
-
     start_time = Column(DateTime(timezone=True), nullable=False)
 
     end_time = Column(DateTime(timezone=True), nullable=False)

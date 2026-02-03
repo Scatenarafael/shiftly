@@ -25,7 +25,6 @@ def upgrade() -> None:
         "work_shifts",
         sa.Column("id", sa.Integer, primary_key=True, autoincrement=True),
         sa.Column("work_day_id", sa.Integer, sa.ForeignKey("work_days.id", ondelete="CASCADE")),
-        sa.Column("weekday", sa.Integer, nullable=True),
         sa.Column("start_time", sa.DateTime(timezone=True), nullable=False),
         sa.Column("end_time", sa.DateTime(timezone=True), nullable=False),
     )
