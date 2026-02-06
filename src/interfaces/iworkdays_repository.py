@@ -10,15 +10,15 @@ class IWorkdaysRepository(ABC):
     """Interface for Workdays Repository."""
 
     @abstractmethod
-    async def list(self) -> Optional[List[WorkDay]]:
+    async def list(self) -> List[WorkDay]:
         pass
 
     @abstractmethod
-    async def batch_create(self, payloads: List[WorkDay]) -> Optional[List[WorkDay]]:
+    async def batch_create(self, payloads: List[WorkDay]) -> List[WorkDay]:
         pass
 
     @abstractmethod
-    async def create(self, workday: WorkDay) -> Optional[WorkDay]:
+    async def create(self, workday: WorkDay) -> WorkDay:
         pass
 
     @abstractmethod

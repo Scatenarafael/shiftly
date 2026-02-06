@@ -1,18 +1,10 @@
-from sqlalchemy import UUID, Column, DateTime, ForeignKey, Integer
-from sqlalchemy.orm import relationship
-
-from src.infra.settings.base import Base
+from dataclasses import dataclass
+from datetime import datetime
 
 
-class WorkShift(Base):
-    __tablename__ = "work_shifts"
-
-    id = Column(Integer, primary_key=True, autoincrement=True)
-
-    work_day_id = Column(UUID(as_uuid=True), ForeignKey("work_days.id", ondelete="CASCADE"))
-
-    start_time = Column(DateTime(timezone=True), nullable=False)
-
-    end_time = Column(DateTime(timezone=True), nullable=False)
-
-    work_day = relationship("WorkDay", back_populates="work_shifts")
+@dataclass(slots=True)
+class WorkShift:
+    id: int
+    work_day_id: str
+    start_time: datetime
+    end_time: datetime

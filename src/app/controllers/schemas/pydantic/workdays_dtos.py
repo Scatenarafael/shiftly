@@ -90,6 +90,8 @@ class BatchIndividualCreateWorkdaysDTO:
                 "role_id": payload.role_id,
                 "date": date_payload.date,
                 "is_holiday": date_payload.is_holiday,
+                "weekday": date_payload.date.weekday(),
+                "id": None,
             }
             workdays.append(WorkDay(**workday))
         return workdays
@@ -103,3 +105,11 @@ class BatchCreateWorkdaysDTO:
 
 class BatchDeleteWorkdaysPayload(BaseModel):
     workday_ids: List[int]
+
+
+class WorkdayResponse(BaseModel):
+    id: Optional[int]
+    role_id: str
+    date: datetime
+    is_holiday: bool
+    weekday: Optional[int] = None

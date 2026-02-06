@@ -16,21 +16,14 @@ TEST_DATABASE_URL = os.getenv(
 os.environ["SQLALCHEMY_DATABASE_URI"] = TEST_DATABASE_URL
 
 from src.infra.settings import config as settings_config
+from src.infra.settings.connection import get_db_session
 
 settings_config.get_settings.cache_clear()
 
 from main import app as fastapi_app
 
-# Import entities so metadata is fully populated for create_all.
-from src.domain.entities import (  # noqa: F401
-    company,
-    refresh_token,
-    role,
-    user,
-    user_company_role,
-    work_day,
-    work_shift,
-)
+# Import ORM models so metadata is fully populated for create_all.
+from src.infra.db import models as _models  # noqa: F401
 from src.infra.settings.base import Base
 
 
@@ -98,7 +91,11 @@ async def db_session(db_connection):
 
 # ---- FastAPI app (per test) ----
 @pytest.fixture
-async def app():
+async def app(db_session):
+    async def _override_get_db_session():
+        yield db_session
+
+    fastapi_app.dependency_overrides[get_db_session] = _override_get_db_session
     return fastapi_app
 
 

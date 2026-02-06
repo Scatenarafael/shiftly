@@ -1,25 +1,7 @@
-import uuid
-
-from sqlalchemy import Column, String
-from sqlalchemy.dialects.postgresql import UUID
-from sqlalchemy.orm import relationship
-
-from src.infra.settings.base import Base
+from dataclasses import dataclass
 
 
-class Company(Base):
-    __tablename__ = "companies"
-
-    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
-    name = Column(String, index=True)
-
-    users_roles = relationship("UserCompanyRole", back_populates="company", cascade="all, delete-orphan", passive_deletes=True)  # importante p/ ondelete funcionar no BD
-    roles = relationship(
-        "Role",
-        back_populates="company",
-        cascade="all, delete-orphan",
-        passive_deletes=True,
-    )
-
-    def __repr__(self):
-        return f"<Company(id='{self.id}', name='{self.name}')>"
+@dataclass(slots=True)
+class Company:
+    id: str
+    name: str

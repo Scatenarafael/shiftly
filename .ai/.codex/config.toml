@@ -1,0 +1,10 @@
+# Project-scoped Codex configuration.
+# Codex carrega .codex/config.toml ao caminhar do root até o CWD (camadas),
+# mas por segurança só aplica isso quando o projeto é "trusted". :contentReference[oaicite:4]{index=4}
+
+# Aumenta o limite total combinado de instruções (AGENTS.* + fallbacks) antes de truncar. :contentReference[oaicite:5]{index=5}
+project_doc_max_bytes = 65536
+
+# Se um diretório não tiver AGENTS.* você pode usar um destes nomes alternativos
+# para fornecer instruções locais (opcional). :contentReference[oaicite:6]{index=6}
+project_doc_fallback_filenames = ["TEAM_GUIDE.md", ".agents.md"]

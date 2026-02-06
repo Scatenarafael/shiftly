@@ -2,6 +2,7 @@ from datetime import datetime
 from typing import List
 
 from src.domain.entities.work_day import WorkDay
+from src.domain.errors import AlreadyExistsError
 from src.interfaces.iworkdays_repository import IWorkdaysRepository
 
 
@@ -19,12 +20,12 @@ class BatchIndividualCreateWorkdayUseCase:
 
             if inserted_workday:
                 days_with_errors.append(str(day.date))
-                return
+                continue
             workdays.append(day)
 
-        created_workdays = await self.workdays_repository.batch_create(payloads=workdays)
-
         if days_with_errors:
-            raise ValueError(f"Workdays for dates {', '.join(days_with_errors)} already exist. The others were created successfully.")
+            raise AlreadyExistsError(f"Workdays for dates {', '.join(days_with_errors)} already exist.")
+
+        created_workdays = await self.workdays_repository.batch_create(payloads=workdays)
 
         return created_workdays

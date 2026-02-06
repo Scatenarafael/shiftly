@@ -1,16 +1,13 @@
-from typing import Awaitable, Optional
+from dataclasses import asdict
 
 from fastapi import APIRouter, Depends, HTTPException, Request, Response, status
 from pydantic import BaseModel
 
 from src.app.controllers.schemas.pydantic.update_company_dto import PayloadUpdateCompanyDTO
-from src.app.repositories.companies_repository import CompaniesRepository
-from src.app.repositories.jwt_repository import JWTRepository
-from src.app.repositories.users_repository import UsersRepository
-from src.domain.entities.user import User
-from src.infra.settings.config import get_settings
-from src.infra.settings.logging_config import app_logger
-from src.usecases.auth_service import AuthService
+from src.app.controllers.schemas.pydantic.user_schemas import CompanyResponse
+from src.app.dependencies import get_companies_repository
+from src.domain.errors import NotFoundError
+from src.interfaces.icompanies_repository import ICompaniesRepository
 from src.usecases.companies.create_company_usecase import CreateCompanyUseCase
 from src.usecases.companies.delete_company_usecase import DeleteCompanyUseCase
 from src.usecases.companies.list_companies_usecase import ListCompaniesUseCase
@@ -18,84 +15,64 @@ from src.usecases.companies.update_companies_usecase import UpdateCompaniesUseca
 
 router = APIRouter(tags=["companies"], prefix="/companies")
 
-settings = get_settings()
+
+def get_create_company_usecase(companies_repository: ICompaniesRepository = Depends(get_companies_repository)):
+    return CreateCompanyUseCase(companies_repository)
 
 
-def get_create_company_usecase():
-    return CreateCompanyUseCase(CompaniesRepository())
+def get_list_company_usecase(companies_repository: ICompaniesRepository = Depends(get_companies_repository)):
+    return ListCompaniesUseCase(companies_repository)
 
 
-def get_list_company_usecase():
-    return ListCompaniesUseCase(CompaniesRepository())
+def get_update_company_usecase(companies_repository: ICompaniesRepository = Depends(get_companies_repository)):
+    return UpdateCompaniesUsecase(companies_repository)
 
 
-def get_update_company_usecase():
-    return UpdateCompaniesUsecase(CompaniesRepository())
-
-
-def get_delete_company_usecase():
-    return DeleteCompanyUseCase(CompaniesRepository())
-
-
-def get_auth_service() -> AuthService:
-    return AuthService(UsersRepository(), JWTRepository())
+def get_delete_company_usecase(companies_repository: ICompaniesRepository = Depends(get_companies_repository)):
+    return DeleteCompanyUseCase(companies_repository)
 
 
 class CreateCompanyRequestBody(BaseModel):
     name: str
 
 
-@router.get("")
+@router.get("", response_model=list[CompanyResponse])
 async def list_companies(list_companies_usecase: ListCompaniesUseCase = Depends(get_list_company_usecase)):
     try:
         companies = await list_companies_usecase.execute()
-        return companies
-    except Exception as e:
-        app_logger.error(f"[COMPANY ROUTES] [LIST COMPANIES] [EXCEPTION] e: {e}")
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Could not list companies") from e
+        return [CompanyResponse(**asdict(company)) for company in companies]
+    except Exception as exc:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Could not list companies") from exc
 
 
-@router.post("/create")
-async def create_company(request: Request, body: CreateCompanyRequestBody, auth_service: AuthService = Depends(get_auth_service), create_company_usecase: CreateCompanyUseCase = Depends(get_create_company_usecase)):
-    access = request.cookies.get(settings.ACCESS_COOKIE_NAME)
-
+@router.post("/create", response_model=CompanyResponse, status_code=status.HTTP_201_CREATED)
+async def create_company(request: Request, body: CreateCompanyRequestBody, create_company_usecase: CreateCompanyUseCase = Depends(get_create_company_usecase)):
     try:
-        if not access:
+        user_id = getattr(request.state, "user_id", None)
+        if not user_id:
             raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Access not provided")
 
-        user: Awaitable[Optional[User]] = await auth_service.return_user_by_access_token(access)
-
-        if not user:
-            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Could not find user")
-        else:
-            ensured_user: User = user  # type: ignore
-
-        user_json = ensured_user.to_dict()
-
-        app_logger.info(f"[COMPANY ROUTES] [CREATE COMPANY] user_id: {user_json.get('id')}")
-
-        new_company = await create_company_usecase.execute(name=body.name, owner_id=user_json.get("id", ""))
-
-        return new_company
-
-    except Exception as e:
-        app_logger.error(f"[AUTH ROUTES] [ME] [EXCEPTION] e: {e}")
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Access token is not valid") from e
+        new_company = await create_company_usecase.execute(name=body.name, owner_id=user_id)
+        return CompanyResponse(**asdict(new_company))
+    except Exception as exc:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Access token is not valid") from exc
 
 
-@router.patch("/{company_id}")
+@router.patch("/{company_id}", response_model=CompanyResponse)
 async def update_company(company_id: str, payload: PayloadUpdateCompanyDTO, update_companies_usecase: UpdateCompaniesUsecase = Depends(get_update_company_usecase)):
     try:
         company = await update_companies_usecase.execute(id=company_id, name=payload.name)
-        return company
-    except Exception as e:
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e)) from e
+        if not company:
+            raise NotFoundError("Company not found")
+        return CompanyResponse(**asdict(company))
+    except NotFoundError as exc:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(exc)) from exc
 
 
 @router.delete("/{company_id}", status_code=status.HTTP_204_NO_CONTENT)
-async def delete_company(company_id: str):
+async def delete_company(company_id: str, delete_company_usecase: DeleteCompanyUseCase = Depends(get_delete_company_usecase)):
     try:
-        await get_delete_company_usecase().execute(company_id=company_id)
-    except Exception as e:
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e)) from e
+        await delete_company_usecase.execute(company_id=company_id)
+    except Exception as exc:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(exc)) from exc
     return Response(status_code=status.HTTP_204_NO_CONTENT)
