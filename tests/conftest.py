@@ -1,10 +1,15 @@
-import asyncio
 import os
+from pathlib import Path
 
 import httpx
-import pytest
+import pytest_asyncio
+from alembic import command
+from alembic.config import Config
+from alembic.runtime.migration import MigrationContext
+from alembic.script import ScriptDirectory
 from asgi_lifespan import LifespanManager
-from sqlalchemy import event
+from sqlalchemy import create_engine, event, inspect
+from sqlalchemy.engine import make_url
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.pool import NullPool
 
@@ -22,43 +27,87 @@ settings_config.get_settings.cache_clear()
 
 from main import app as fastapi_app
 
-# Import ORM models so metadata is fully populated for create_all.
-from src.infra.db import models as _models  # noqa: F401
-from src.infra.settings.base import Base
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+ALEMBIC_INI_PATH = PROJECT_ROOT / "alembic.ini"
+ALEMBIC_SCRIPT_LOCATION = PROJECT_ROOT / "alembic"
 
 
-# ---- event loop (pytest-asyncio) ----
-@pytest.fixture(scope="session")
-def event_loop():
-    loop = asyncio.get_event_loop_policy().new_event_loop()
-    yield loop
-    loop.close()
+def _to_sync_database_url(database_url: str) -> str:
+    url = make_url(database_url)
+    if url.drivername == "postgresql+asyncpg":
+        url = url.set(drivername="postgresql+psycopg2")
+    return url.render_as_string(hide_password=False)
+
+
+def _build_alembic_config(sync_database_url: str) -> Config:
+    alembic_config = Config(str(ALEMBIC_INI_PATH))
+    alembic_config.set_main_option("script_location", str(ALEMBIC_SCRIPT_LOCATION))
+    alembic_config.set_main_option("sqlalchemy.url", sync_database_url)
+    return alembic_config
+
+
+def _has_existing_schema(sync_database_url: str) -> bool:
+    engine = create_engine(sync_database_url, poolclass=NullPool, future=True)
+    try:
+        with engine.connect() as conn:
+            table_names = inspect(conn).get_table_names()
+            return any(table_name != "alembic_version" for table_name in table_names)
+    finally:
+        engine.dispose()
+
+
+def _reset_public_schema(sync_database_url: str) -> None:
+    engine = create_engine(sync_database_url, poolclass=NullPool, future=True)
+    try:
+        with engine.begin() as conn:
+            conn.exec_driver_sql("DROP SCHEMA IF EXISTS public CASCADE")
+            conn.exec_driver_sql("CREATE SCHEMA public")
+    finally:
+        engine.dispose()
+
+
+def _ensure_test_db_migrations() -> None:
+    sync_database_url = _to_sync_database_url(TEST_DATABASE_URL)
+    alembic_config = _build_alembic_config(sync_database_url)
+    script = ScriptDirectory.from_config(alembic_config)
+    head_revisions = set(script.get_heads())
+
+    engine = create_engine(sync_database_url, poolclass=NullPool, future=True)
+    try:
+        with engine.connect() as conn:
+            migration_context = MigrationContext.configure(conn)
+            current_revisions = set(migration_context.get_current_heads())
+    finally:
+        engine.dispose()
+
+    if current_revisions == head_revisions and current_revisions:
+        return
+
+    # If there is pre-existing non-versioned schema, reset test schema first.
+    if not current_revisions and _has_existing_schema(sync_database_url):
+        _reset_public_schema(sync_database_url)
+
+    command.upgrade(alembic_config, "head")
 
 
 # ---- engine (session scope) ----
-@pytest.fixture(scope="session")
+@pytest_asyncio.fixture(scope="session")
 async def async_engine():
+    _ensure_test_db_migrations()
+
     engine = create_async_engine(
         TEST_DATABASE_URL,
         poolclass=NullPool,  # isolates connections (good for tests)
         future=True,
     )
 
-    # Create schema once per test session
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
-
     yield engine
-
-    # Drop schema after all tests (optional but tidy)
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.drop_all)
 
     await engine.dispose()
 
 
 # ---- connection + outer transaction (per test) ----
-@pytest.fixture
+@pytest_asyncio.fixture
 async def db_connection(async_engine):
     async with async_engine.connect() as conn:
         tx = await conn.begin()
@@ -69,7 +118,7 @@ async def db_connection(async_engine):
 
 
 # ---- session + SAVEPOINT (per test) ----
-@pytest.fixture
+@pytest_asyncio.fixture
 async def db_session(db_connection):
     session = AsyncSession(bind=db_connection, expire_on_commit=False)
 
@@ -90,17 +139,20 @@ async def db_session(db_connection):
 
 
 # ---- FastAPI app (per test) ----
-@pytest.fixture
+@pytest_asyncio.fixture
 async def app(db_session):
     async def _override_get_db_session():
         yield db_session
 
     fastapi_app.dependency_overrides[get_db_session] = _override_get_db_session
-    return fastapi_app
+    try:
+        yield fastapi_app
+    finally:
+        fastapi_app.dependency_overrides.pop(get_db_session, None)
 
 
 # ---- HTTP client (per test) ----
-@pytest.fixture
+@pytest_asyncio.fixture
 async def client(app):
     async with LifespanManager(app):
         transport = httpx.ASGITransport(app=app)
