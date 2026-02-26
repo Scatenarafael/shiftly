@@ -16,6 +16,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
     restart: always
   
+  
   # redis:
   #   image: redis:7
   #   ports:

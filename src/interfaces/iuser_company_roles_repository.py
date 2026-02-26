@@ -13,7 +13,7 @@ class IUserCompanyRolesRepository(ABC):
         pass
 
     @abstractmethod
-    async def assign_user_and_role_to_company(self, user_id: str, company_id: str, role_id: str) -> None:
+    async def assign_user_and_role_to_company(self, user_id: str, company_id: str, role_id: str | None) -> None:
         pass
 
     @abstractmethod

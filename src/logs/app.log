@@ -2808,3 +2808,361 @@ WHERE user_company_roles.user_id = :user_id_1
 2026-02-24 23:26:27.631386 [INFO] [USER][CREATE] new_register: (first_name: Delete, last_name: Me, email: delete@b.com, active: True)
 2026-02-24 23:26:27.633493 [INFO] [USER][DELETE] user_id: a3a2941e-1fd5-4dce-b892-a9ab2caf4c87
 2026-02-24 23:26:27.634153 [INFO] [USER][GETBY][ID] not_none_args: a3a2941e-1fd5-4dce-b892-a9ab2caf4c87
+2026-02-24 23:36:08.642866 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2026-02-24 23:36:08.837559 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 99c13db4-9c3c-4575-b3e0-1f96c1260537, user_id= f6977932-ec3b-4d81-bafc-0424466dff61, token_hash= 10eca65c107aa452071eb9252e3373357b63d5a427bc4fe5d6bcd20157c562d3, expires_at= 2026-02-25 23:36:08.837487+00:00)
+2026-02-24 23:36:19.222995 [INFO] [COMPANY][PARTIAL][UPDATE] not_none_args: {'name': 'CMP-0124022026-ALTERADO'}
+2026-02-24 23:36:44.135246 [INFO] [COMPANY][DELETE] company_id: 9730e71c-90d4-4574-af90-f768c367c4bf
+2026-02-24 23:38:40.162750 [INFO] [USER][GETBY][ID] not_none_args: f6977932-ec3b-4d81-bafc-0424466dff61
+2026-02-24 23:41:41.551968 [INFO] [ROLE][PARTIAL][UPDATE] not_none_args: {}
+2026-02-24 23:58:47.103317 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 99c13db4-9c3c-4575-b3e0-1f96c1260537
+2026-02-24 23:58:47.134469 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: f6977932-ec3b-4d81-bafc-0424466dff61
+2026-02-24 23:58:47.138714 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 9a99b237-f84d-40e4-ba05-e89af02f6960, user_id= f6977932-ec3b-4d81-bafc-0424466dff61, token_hash= 2546b2306aeea2c7939e30c522336b1cbd8f88d8d0bd79bc016183a1ca1b374c, expires_at= 2026-02-25 23:58:47.138670+00:00)
+2026-02-24 23:58:58.115837 [INFO] [ROLE][PARTIAL][UPDATE] not_none_args: {'number_of_cooldown_days': 1}
+2026-02-25 00:02:58.470360 [INFO] [ROLE][PARTIAL][UPDATE] not_none_args: {'number_of_cooldown_days': 2}
+2026-02-25 00:03:06.598208 [INFO] [ROLE][PARTIAL][UPDATE] not_none_args: {'number_of_cooldown_days': 1}
+2026-02-25 00:03:37.531246 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-25 00:03:37.714465 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-25 00:03:37.738237 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-25 00:03:37.899770 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: conflict@b.com, active: True)
+2026-02-25 00:03:37.903528 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-25 00:03:37.971375 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-25 00:03:38.131894 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: list@b.com, active: True)
+2026-02-25 00:03:38.137282 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-25 00:03:38.296691 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= eb371a78-1d75-4c9f-8fe1-5aa0ad7657a1, user_id= 9acadab6-9dd5-4490-9b05-dfcfe7808584, token_hash= 6d29d8dac672e5130bbeb15b20bbd5a98825a9bb2558e112d9d2a7345ebc0a9d, expires_at= 2026-02-26 00:03:38.296638+00:00)
+2026-02-25 00:03:38.319851 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-25 00:03:38.492002 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: retrieve@b.com, active: True)
+2026-02-25 00:03:38.496599 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-25 00:03:38.649579 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 1bf9a3d9-0b66-4846-be6e-640e29b8777b, user_id= 070e4af3-596b-470d-9339-370a8f3779e3, token_hash= 100e1253e241657a5bb16b3883d748f3465031391c174e09d90a21af81d0a333, expires_at= 2026-02-26 00:03:38.649530+00:00)
+2026-02-25 00:03:38.653385 [INFO] [USER][GETBY][ID] not_none_args: 1734e3f8-806f-4c1d-9a33-52d434b30ab7
+2026-02-25 00:03:38.677445 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-25 00:03:38.838437 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update@b.com, active: True)
+2026-02-25 00:03:38.842468 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-25 00:03:38.995270 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 2f113bf3-63a3-4513-9f62-2e9fb0502912, user_id= ff83e2dd-d6ab-4f19-bbce-03c5e365f524, token_hash= a9365a7573f75241688aaf1c743ea9458409d04734f5ee29f0ee2f210432f922, expires_at= 2026-02-26 00:03:38.995218+00:00)
+2026-02-25 00:03:38.999476 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'Updated'}
+2026-02-25 00:03:39.016611 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-25 00:03:39.172354 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update-not-found@b.com, active: True)
+2026-02-25 00:03:39.176915 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-25 00:03:39.328243 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 1f6ce922-4e05-4b93-a046-d413f5aa4afb, user_id= 7566fc18-c4d2-4a4b-9194-ca29d5bc02ba, token_hash= 3dd3177ced49c3ecf2cf371f86bf14013f75569a5d13d549af946f8bc081ef1e, expires_at= 2026-02-26 00:03:39.328183+00:00)
+2026-02-25 00:03:39.349669 [INFO] [USER][GETBY][EMAIL] not_none_args: delete@b.com
+2026-02-25 00:03:39.507916 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: delete@b.com, active: True)
+2026-02-25 00:03:39.511032 [INFO] [USER][DELETE] user_id: 9a52a668-73f9-4d1d-8c27-17a3461309ac
+2026-02-25 00:03:39.513883 [INFO] [USER][GETBY][ID] not_none_args: 9a52a668-73f9-4d1d-8c27-17a3461309ac
+2026-02-25 00:03:39.689973 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-25 00:03:39.692964 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-25 00:03:39.868229 [INFO] [USER][CREATE] new_register: (first_name: Old, last_name: Name, email: old@b.com, active: True)
+2026-02-25 00:03:39.871060 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'New', 'active': False}
+2026-02-25 00:03:40.044535 [INFO] [USER][CREATE] new_register: (first_name: Delete, last_name: Me, email: delete@b.com, active: True)
+2026-02-25 00:03:40.046682 [INFO] [USER][DELETE] user_id: 165dfc00-8251-46a9-8be0-a8a00df29dd4
+2026-02-25 00:03:40.047325 [INFO] [USER][GETBY][ID] not_none_args: 165dfc00-8251-46a9-8be0-a8a00df29dd4
+2026-02-25 00:04:30.766104 [INFO] [ROLE][PARTIAL][UPDATE] not_none_args: {'number_of_cooldown_days': 2}
+2026-02-25 23:10:51.611001 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-25 23:10:51.790622 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: owner-request@b.com, active: True)
+2026-02-25 23:10:51.799021 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-25 23:10:51.959194 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= d13f5814-6363-4af9-b08d-8dadaeae509c, user_id= 6a62e46d-a6e6-46cf-83e4-eae6d73e87a7, token_hash= 23621a3f69b78df910cda751c1a584ac174e9fbb56d59562e6f61a889d6707d8, expires_at= 2026-02-26 23:10:51.959140+00:00)
+2026-02-25 23:10:51.970854 [INFO] [USER][GETBY][EMAIL] not_none_args: requester@b.com
+2026-02-25 23:10:52.127584 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: requester@b.com, active: True)
+2026-02-25 23:10:52.131394 [INFO] [USER][GETBY][EMAIL] not_none_args: requester@b.com
+2026-02-25 23:10:52.281345 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 653f5df6-44da-4ed1-8a6f-12ddd61376eb, user_id= 8fd44026-fa5b-4690-986d-3c2154c27cf1, token_hash= 0132ee819458703f520cce63409d8db0a6244c7b3b71bccdc48ab651588d9339, expires_at= 2026-02-26 23:10:52.281303+00:00)
+2026-02-25 23:10:52.284699 [INFO] [USER][GETBY][ID] not_none_args: 8fd44026-fa5b-4690-986d-3c2154c27cf1
+2026-02-25 23:10:52.288845 [INFO] [COMPANY][GETBY][ID] not_none_args: d779aa93-6165-4bc1-9c00-a99700bccffc
+2026-02-25 23:10:52.564972 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-nonowner@b.com
+2026-02-25 23:10:52.750494 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: owner-nonowner@b.com, active: True)
+2026-02-25 23:10:52.755707 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-nonowner@b.com
+2026-02-25 23:10:52.908940 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 97fc851c-4153-4c84-a5de-a528066016f6, user_id= 627c07c3-e22e-4dcf-8bf3-30342834e776, token_hash= 850cf3f26154c696594bbf33febbdf4683242682fde1a6d2bcf352224edf77e7, expires_at= 2026-02-26 23:10:52.908886+00:00)
+2026-02-25 23:10:52.916313 [INFO] [USER][GETBY][EMAIL] not_none_args: requester-nonowner@b.com
+2026-02-25 23:10:53.072694 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: requester-nonowner@b.com, active: True)
+2026-02-25 23:10:53.076582 [INFO] [USER][GETBY][EMAIL] not_none_args: requester-nonowner@b.com
+2026-02-25 23:10:53.229165 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 9fbc8bd9-e233-4db2-a1de-00b7059740f6, user_id= ee201c02-c8b5-438f-963c-e166e490ca9c, token_hash= 81085fd665708787c43b1817332a0dd894fd75eca907c75307ff9781e5ce0fe7, expires_at= 2026-02-26 23:10:53.229103+00:00)
+2026-02-25 23:10:53.232892 [INFO] [USER][GETBY][ID] not_none_args: ee201c02-c8b5-438f-963c-e166e490ca9c
+2026-02-25 23:10:53.235402 [INFO] [COMPANY][GETBY][ID] not_none_args: 4db3c14e-28d5-4b9c-a27b-68b6d86dc365
+2026-02-25 23:10:53.454658 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-25 23:10:53.610588 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-25 23:10:53.636398 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-25 23:10:53.800379 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: conflict@b.com, active: True)
+2026-02-25 23:10:53.804034 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-25 23:10:53.890593 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-25 23:10:54.041532 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: list@b.com, active: True)
+2026-02-25 23:10:54.046750 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-25 23:10:54.196701 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 0d1e11e2-70bf-4972-a322-1116db846fd8, user_id= a3443826-5d5e-40d8-93e8-bcef92c3ae39, token_hash= f477d1f1f26b3aecaa43741919bf2919c13bdefd5dbef627543e1a39ab59c230, expires_at= 2026-02-26 23:10:54.196661+00:00)
+2026-02-25 23:10:54.221813 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-25 23:10:54.381866 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: retrieve@b.com, active: True)
+2026-02-25 23:10:54.386534 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-25 23:10:54.541319 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= df72ec30-980d-4a61-8f44-731ee7161e0a, user_id= 1384de71-7172-48db-9d79-9e187e39b88a, token_hash= f7f741ddc4ce62e39520375d6855f9869b443553b1bdbadccb9b9b921e68d98e, expires_at= 2026-02-26 23:10:54.541283+00:00)
+2026-02-25 23:10:54.544455 [INFO] [USER][GETBY][ID] not_none_args: 4fa543ec-3ef3-43a3-9860-bedb4ef8feb5
+2026-02-25 23:10:54.570132 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-25 23:10:54.726061 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update@b.com, active: True)
+2026-02-25 23:10:54.730700 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-25 23:10:54.884862 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 13a42271-21d3-4309-b7ff-e5a4a4c1815c, user_id= 69f09eb0-e0f4-4642-9ab1-53a4c3f86696, token_hash= 51be795b3f07eab2f8dbb0b4422fe19ab70806e488cca02b5699bdaea5bc5ad6, expires_at= 2026-02-26 23:10:54.884822+00:00)
+2026-02-25 23:10:54.889087 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'Updated'}
+2026-02-25 23:10:54.914361 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-25 23:10:55.071108 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update-not-found@b.com, active: True)
+2026-02-25 23:10:55.074843 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-25 23:10:55.224373 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= f6004a15-bc82-4526-91f2-7000f6bca4f9, user_id= 524b0dc5-5b2d-492f-ab7d-efaeafad80b7, token_hash= 84e8d43755403602aeaff70aba6c7d0bba52a652c709b8b6285920cbe65c8645, expires_at= 2026-02-26 23:10:55.224340+00:00)
+2026-02-25 23:10:55.248566 [INFO] [USER][GETBY][EMAIL] not_none_args: delete@b.com
+2026-02-25 23:10:55.408235 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: delete@b.com, active: True)
+2026-02-25 23:10:55.411565 [INFO] [USER][DELETE] user_id: 9b3cf8a2-23a3-4ca2-b5ad-69aea340149e
+2026-02-25 23:10:55.414649 [INFO] [USER][GETBY][ID] not_none_args: 9b3cf8a2-23a3-4ca2-b5ad-69aea340149e
+2026-02-25 23:10:55.583129 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-25 23:10:55.585729 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-25 23:10:55.757408 [INFO] [USER][CREATE] new_register: (first_name: Old, last_name: Name, email: old@b.com, active: True)
+2026-02-25 23:10:55.760628 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'New', 'active': False}
+2026-02-25 23:10:55.930445 [INFO] [USER][CREATE] new_register: (first_name: Delete, last_name: Me, email: delete@b.com, active: True)
+2026-02-25 23:10:55.933577 [INFO] [USER][DELETE] user_id: dd513a40-a221-48cc-9c9a-e002aa3548e6
+2026-02-25 23:10:55.934425 [INFO] [USER][GETBY][ID] not_none_args: dd513a40-a221-48cc-9c9a-e002aa3548e6
+2026-02-26 01:00:36.036441 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-26 01:00:36.221541 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: owner-request@b.com, active: True)
+2026-02-26 01:00:36.226758 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-26 01:00:36.382693 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 2093d38e-6889-439c-bec8-8a78f75b9be8, user_id= 32c6dc38-82b8-4f02-ab2a-7d3ede448bde, token_hash= 952ad9face3388b92d2cfee4a47550fdb7d081f1f9e0148b7f334bc339c12e62, expires_at= 2026-02-27 01:00:36.382647+00:00)
+2026-02-26 01:00:36.392312 [INFO] [USER][GETBY][EMAIL] not_none_args: requester@b.com
+2026-02-26 01:00:36.544907 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: requester@b.com, active: True)
+2026-02-26 01:00:36.548249 [INFO] [USER][GETBY][EMAIL] not_none_args: requester@b.com
+2026-02-26 01:00:36.702045 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= e87c071f-1fe9-4885-99f5-75bbc3123934, user_id= 97eff7e8-7f81-409a-8834-ce4360caaa06, token_hash= 3a4f8ebefc1baef97541a3fccefea392c4bacfb216bf35d4efd816b219eab1d1, expires_at= 2026-02-27 01:00:36.701990+00:00)
+2026-02-26 01:00:36.705884 [INFO] [USER][GETBY][ID] not_none_args: 97eff7e8-7f81-409a-8834-ce4360caaa06
+2026-02-26 01:00:36.708754 [INFO] [COMPANY][GETBY][ID] not_none_args: 4da11d5d-96e8-4a52-95bb-30558f8cbb8b
+2026-02-26 01:00:36.970109 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-nonowner@b.com
+2026-02-26 01:00:37.125907 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: owner-nonowner@b.com, active: True)
+2026-02-26 01:00:37.130684 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-nonowner@b.com
+2026-02-26 01:00:37.283071 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= a4aa6e72-4d17-490f-aada-d182c64a6047, user_id= cf075d2b-bb30-4b76-b7af-81133b283749, token_hash= 1d835ce3da46998d768b000302a6555659e64f11435075b7e94d8c9280a51e84, expires_at= 2026-02-27 01:00:37.283022+00:00)
+2026-02-26 01:00:37.288488 [INFO] [USER][GETBY][EMAIL] not_none_args: requester-nonowner@b.com
+2026-02-26 01:00:37.438433 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: requester-nonowner@b.com, active: True)
+2026-02-26 01:00:37.441981 [INFO] [USER][GETBY][EMAIL] not_none_args: requester-nonowner@b.com
+2026-02-26 01:00:37.594311 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= da1237fb-258d-4ed5-a7e1-b3e2e8dbcd7a, user_id= 29352dec-1aab-43c3-926b-15dbac349b49, token_hash= 08cb3c79fc56ae4ae6caebab016e107dafa4b2811ed762a18a2bdfb69b261c13, expires_at= 2026-02-27 01:00:37.594276+00:00)
+2026-02-26 01:00:37.597763 [INFO] [USER][GETBY][ID] not_none_args: 29352dec-1aab-43c3-926b-15dbac349b49
+2026-02-26 01:00:37.600179 [INFO] [COMPANY][GETBY][ID] not_none_args: 3bab41b7-6aff-4835-b114-ba983e9df0fb
+2026-02-26 01:00:37.809648 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-26 01:00:37.970040 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-26 01:00:37.988772 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-26 01:00:38.141641 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: conflict@b.com, active: True)
+2026-02-26 01:00:38.145354 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-26 01:00:38.226118 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-26 01:00:38.377785 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: list@b.com, active: True)
+2026-02-26 01:00:38.382343 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-26 01:00:38.533271 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 1bc61aac-7054-4e42-948a-1b79a2feb55f, user_id= 95ab9903-09cf-4dc8-b19a-350693e0ae9b, token_hash= 1120c775d68536fad949828b7be35735469bd456f901ca3b9cf7f0d672590adf, expires_at= 2026-02-27 01:00:38.533233+00:00)
+2026-02-26 01:00:38.563310 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-26 01:00:38.719060 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: retrieve@b.com, active: True)
+2026-02-26 01:00:38.723504 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-26 01:00:38.875764 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 2a16d4dd-148e-42c4-b11a-d712c0e1b7b2, user_id= d07a1470-7ab6-42e9-aaf0-e2994844235b, token_hash= 2dd107c993601d9811f9950e925b31fa02924e4d9a80cd18c67970d42feb4e78, expires_at= 2026-02-27 01:00:38.875726+00:00)
+2026-02-26 01:00:38.878897 [INFO] [USER][GETBY][ID] not_none_args: 83f891dd-ca62-46e5-9d7c-cf451668e7ab
+2026-02-26 01:00:38.903972 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-26 01:00:39.067545 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update@b.com, active: True)
+2026-02-26 01:00:39.072803 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-26 01:00:39.225252 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 0541bf0f-29a6-4365-830f-3af5a547a72e, user_id= 19b11e49-5fdf-4489-aed8-3dc4c81e2ce4, token_hash= 53fda85bed97cfe3e8d6854c7feb9fbd1d9d8db9553210687be2fe8609b75b03, expires_at= 2026-02-27 01:00:39.225213+00:00)
+2026-02-26 01:00:39.229704 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'Updated'}
+2026-02-26 01:00:39.258406 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-26 01:00:39.420493 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update-not-found@b.com, active: True)
+2026-02-26 01:00:39.424989 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-26 01:00:39.581338 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 8f54116a-acd1-45f5-865a-f3ced852fd71, user_id= ce8f11f2-3b2e-45b5-bda5-97e6e8d5d25f, token_hash= 1a44696f91fca9c2895f927d80c21c32be1d52bef3e76be74ad7cb7bf9a646f9, expires_at= 2026-02-27 01:00:39.581290+00:00)
+2026-02-26 01:00:39.610347 [INFO] [USER][GETBY][EMAIL] not_none_args: delete@b.com
+2026-02-26 01:00:39.778663 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: delete@b.com, active: True)
+2026-02-26 01:00:39.782932 [INFO] [USER][DELETE] user_id: 2bdc5a75-95dc-40ba-86a8-3a9e80918605
+2026-02-26 01:00:39.785990 [INFO] [USER][GETBY][ID] not_none_args: 2bdc5a75-95dc-40ba-86a8-3a9e80918605
+2026-02-26 01:00:39.954693 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-26 01:00:39.957313 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-26 01:00:40.126389 [INFO] [USER][CREATE] new_register: (first_name: Old, last_name: Name, email: old@b.com, active: True)
+2026-02-26 01:00:40.130371 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'New', 'active': False}
+2026-02-26 01:00:40.295759 [INFO] [USER][CREATE] new_register: (first_name: Delete, last_name: Me, email: delete@b.com, active: True)
+2026-02-26 01:00:40.297997 [INFO] [USER][DELETE] user_id: 116cc35c-5c7c-445e-9fcd-0bf1e18adf66
+2026-02-26 01:00:40.298721 [INFO] [USER][GETBY][ID] not_none_args: 116cc35c-5c7c-445e-9fcd-0bf1e18adf66
+2026-02-26 01:02:25.664432 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-26 01:02:25.859954 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: owner-request@b.com, active: True)
+2026-02-26 01:02:25.865540 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-26 01:02:26.020999 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= df06adcf-48d0-40b5-a92c-3cee5a99be2a, user_id= 4386b942-2ced-4590-ac3d-5c550f8cbb32, token_hash= 81eb96014539d04e4e55be902a58554bd804ea33c72e748002d036b224a870bf, expires_at= 2026-02-27 01:02:26.020952+00:00)
+2026-02-26 01:02:26.030111 [INFO] [USER][GETBY][EMAIL] not_none_args: requester@b.com
+2026-02-26 01:02:26.181868 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: requester@b.com, active: True)
+2026-02-26 01:02:26.186693 [INFO] [USER][GETBY][EMAIL] not_none_args: requester@b.com
+2026-02-26 01:02:26.338658 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 0e39b074-c8cd-4305-94b4-690a763d21f7, user_id= 12d1b1d8-91c6-4d00-9c02-e1e555fb25e3, token_hash= 23a8e223155ecb7e230ad64d76459e0b332adb4f5d5b765ad40de8dca1810180, expires_at= 2026-02-27 01:02:26.338605+00:00)
+2026-02-26 01:02:26.342636 [INFO] [USER][GETBY][ID] not_none_args: 12d1b1d8-91c6-4d00-9c02-e1e555fb25e3
+2026-02-26 01:02:26.347044 [INFO] [COMPANY][GETBY][ID] not_none_args: 6d422431-b576-49f3-95ba-fdd687c01b46
+2026-02-26 01:02:26.356049 [INFO] [USER_COMPANY_REQUEST][CREATE] user_id: 12d1b1d8-91c6-4d00-9c02-e1e555fb25e3, company_id: 6d422431-b576-49f3-95ba-fdd687c01b46
+2026-02-26 01:02:26.360306 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-26 01:02:26.515125 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 0144e96d-e0cd-4509-ba9e-cbec88e2bd34, user_id= 4386b942-2ced-4590-ac3d-5c550f8cbb32, token_hash= 79aedcfa6f693aaeb13e3221a64d5c2e96bedf074c392b2b44743bd704298a47, expires_at= 2026-02-27 01:02:26.515074+00:00)
+2026-02-26 01:02:26.519416 [INFO] [USER][GETBY][ID] not_none_args: 4386b942-2ced-4590-ac3d-5c550f8cbb32
+2026-02-26 01:02:26.523416 [INFO] [USER_COMPANY_REQUEST][APPROVE] request_id: 20249509-dda5-4c5c-9682-4f6a758b61ab
+2026-02-26 01:02:26.823950 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-nonowner@b.com
+2026-02-26 01:02:26.985421 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: owner-nonowner@b.com, active: True)
+2026-02-26 01:02:26.990078 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-nonowner@b.com
+2026-02-26 01:02:27.140301 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 46b5257d-4533-485b-88bc-36d688f102a7, user_id= e8916216-525c-4605-bf55-3c72b32beeca, token_hash= f7d117793a0138172159ebceaf61747de58043ebc894e2859a0b9f74924530f5, expires_at= 2026-02-27 01:02:27.140259+00:00)
+2026-02-26 01:02:27.146721 [INFO] [USER][GETBY][EMAIL] not_none_args: requester-nonowner@b.com
+2026-02-26 01:02:27.297983 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: requester-nonowner@b.com, active: True)
+2026-02-26 01:02:27.301288 [INFO] [USER][GETBY][EMAIL] not_none_args: requester-nonowner@b.com
+2026-02-26 01:02:27.450890 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= bd2369f3-b9d4-4cdb-b490-081ed236cbb7, user_id= eed57acb-ebff-4a40-a9b2-5b52498bcbf0, token_hash= 0144c17d8b10e741f3edeb35ffdabbabe7fcdcee1bb87a24d89325c1c85c0b37, expires_at= 2026-02-27 01:02:27.450848+00:00)
+2026-02-26 01:02:27.454687 [INFO] [USER][GETBY][ID] not_none_args: eed57acb-ebff-4a40-a9b2-5b52498bcbf0
+2026-02-26 01:02:27.457195 [INFO] [COMPANY][GETBY][ID] not_none_args: 62571daa-92cc-408a-ac97-fb5b6e0a2699
+2026-02-26 01:02:27.463919 [INFO] [USER_COMPANY_REQUEST][CREATE] user_id: eed57acb-ebff-4a40-a9b2-5b52498bcbf0, company_id: 62571daa-92cc-408a-ac97-fb5b6e0a2699
+2026-02-26 01:02:27.465817 [INFO] [USER][GETBY][EMAIL] not_none_args: intruder@b.com
+2026-02-26 01:02:27.618351 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: intruder@b.com, active: True)
+2026-02-26 01:02:27.621675 [INFO] [USER][GETBY][EMAIL] not_none_args: intruder@b.com
+2026-02-26 01:02:27.771611 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= f18a0c06-57a6-49a0-a754-4171e2a226b3, user_id= 9d5e08a8-19ac-45b5-b3f9-30dd5136bb43, token_hash= 98a3b3da5c275d3baa7eb3a6a795f22a679f4c6b3a66f334d867c32d24fc7b93, expires_at= 2026-02-27 01:02:27.771577+00:00)
+2026-02-26 01:02:27.775216 [INFO] [USER][GETBY][ID] not_none_args: 9d5e08a8-19ac-45b5-b3f9-30dd5136bb43
+2026-02-26 01:02:27.796916 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-26 01:02:27.951398 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-26 01:02:27.970335 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-26 01:02:28.123037 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: conflict@b.com, active: True)
+2026-02-26 01:02:28.126706 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-26 01:02:28.199217 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-26 01:02:28.369488 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: list@b.com, active: True)
+2026-02-26 01:02:28.373874 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-26 01:02:28.524961 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 28b94455-6c25-4844-a805-5d07e2b7ddac, user_id= 2f750694-e457-43d6-baf1-121a386771d9, token_hash= a82d83c719f7721e3b338fc3cef559ce95cae7a9e75913c69e23f7266d54057a, expires_at= 2026-02-27 01:02:28.524911+00:00)
+2026-02-26 01:02:28.554324 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-26 01:02:28.714849 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: retrieve@b.com, active: True)
+2026-02-26 01:02:28.719857 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-26 01:02:28.870081 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 94716e19-7efd-452f-9e84-0df53d6499f3, user_id= 71e379cd-ceeb-4c09-8d29-72c8a8b36751, token_hash= 16996233dc1770b310fe5062a4059c0c6adbf5427bd94bbad33a5ab7821c3881, expires_at= 2026-02-27 01:02:28.870035+00:00)
+2026-02-26 01:02:28.873862 [INFO] [USER][GETBY][ID] not_none_args: c8df3301-7389-43b9-ab2c-d2d6e3d47b3f
+2026-02-26 01:02:28.892280 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-26 01:02:29.056925 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update@b.com, active: True)
+2026-02-26 01:02:29.062165 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-26 01:02:29.224295 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= c3d433b1-cec8-4538-a93e-23c7d88a34dd, user_id= 4f98b1f7-4013-4b52-97b0-b789bd64f0e3, token_hash= 59d42c7a520d74f6718aad42ee4b96a31b4d4f842d3c749a1a4ffe5a5396f8ba, expires_at= 2026-02-27 01:02:29.224251+00:00)
+2026-02-26 01:02:29.228474 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'Updated'}
+2026-02-26 01:02:29.257140 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-26 01:02:29.413998 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update-not-found@b.com, active: True)
+2026-02-26 01:02:29.419461 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-26 01:02:29.570850 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 922d8308-d3b9-40ad-9c22-70e7ef74cd0c, user_id= 0149b168-78a5-4075-aad3-a751e8dc30ff, token_hash= a635d8fdb336c91a31eb1d97081703a217e8dc8890b29623e76fd687d93bcae9, expires_at= 2026-02-27 01:02:29.570806+00:00)
+2026-02-26 01:02:29.600754 [INFO] [USER][GETBY][EMAIL] not_none_args: delete@b.com
+2026-02-26 01:02:29.763730 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: delete@b.com, active: True)
+2026-02-26 01:02:29.768323 [INFO] [USER][DELETE] user_id: b70be281-a31d-4ec7-96af-9c97347f01ed
+2026-02-26 01:02:29.771116 [INFO] [USER][GETBY][ID] not_none_args: b70be281-a31d-4ec7-96af-9c97347f01ed
+2026-02-26 01:02:29.951901 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-26 01:02:29.954691 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-26 01:02:30.130918 [INFO] [USER][CREATE] new_register: (first_name: Old, last_name: Name, email: old@b.com, active: True)
+2026-02-26 01:02:30.134973 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'New', 'active': False}
+2026-02-26 01:02:30.312262 [INFO] [USER][CREATE] new_register: (first_name: Delete, last_name: Me, email: delete@b.com, active: True)
+2026-02-26 01:02:30.315611 [INFO] [USER][DELETE] user_id: 908aaaf5-6977-407b-91dc-88e7375a20fd
+2026-02-26 01:02:30.316350 [INFO] [USER][GETBY][ID] not_none_args: 908aaaf5-6977-407b-91dc-88e7375a20fd
+2026-02-26 01:05:09.120229 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-26 01:05:09.297599 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: owner-request@b.com, active: True)
+2026-02-26 01:05:09.302477 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-26 01:05:09.454876 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 70c30150-f978-45d6-945c-547e463a8dc6, user_id= aed736d2-e3ee-4ad7-8d9b-2f4e812e615f, token_hash= 5077caaf389b0555db5662165d55d4e81b7bb30389464782ab0d25d369f58cfb, expires_at= 2026-02-27 01:05:09.454821+00:00)
+2026-02-26 01:05:09.462154 [INFO] [USER][GETBY][EMAIL] not_none_args: requester@b.com
+2026-02-26 01:05:09.611209 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: requester@b.com, active: True)
+2026-02-26 01:05:09.614847 [INFO] [USER][GETBY][EMAIL] not_none_args: requester@b.com
+2026-02-26 01:05:09.763906 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= bdaafa59-e364-48cf-b219-c1d8f2ab6b00, user_id= 3fb0c01e-bdd9-470c-9940-9d4c185f66e6, token_hash= 958baa1572d0acf10bb36dc4c5d7ee92e5d7d5a9a6b28b9c977b016a47c307fa, expires_at= 2026-02-27 01:05:09.763866+00:00)
+2026-02-26 01:05:09.766887 [INFO] [USER][GETBY][ID] not_none_args: 3fb0c01e-bdd9-470c-9940-9d4c185f66e6
+2026-02-26 01:05:09.769824 [INFO] [COMPANY][GETBY][ID] not_none_args: 00963da2-ad07-42c6-8f70-b28680a40e16
+2026-02-26 01:05:09.775422 [INFO] [USER_COMPANY_REQUEST][CREATE] user_id: 3fb0c01e-bdd9-470c-9940-9d4c185f66e6, company_id: 00963da2-ad07-42c6-8f70-b28680a40e16
+2026-02-26 01:05:09.777864 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-26 01:05:09.928910 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= f933d803-b29c-4ed0-b6aa-f8fd0f7a7773, user_id= aed736d2-e3ee-4ad7-8d9b-2f4e812e615f, token_hash= db072d95b1993d60f36fdb3e0df6ed46da85de14ab5acb9cab7f30bc0911c200, expires_at= 2026-02-27 01:05:09.928854+00:00)
+2026-02-26 01:05:09.932755 [INFO] [USER][GETBY][ID] not_none_args: aed736d2-e3ee-4ad7-8d9b-2f4e812e615f
+2026-02-26 01:05:09.935467 [INFO] [USER_COMPANY_REQUEST][APPROVE] request_id: 18ee3d66-cf1a-4bc8-be1a-f9e031773b18
+2026-02-26 01:05:09.952939 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-nonowner@b.com
+2026-02-26 01:05:10.108451 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: owner-nonowner@b.com, active: True)
+2026-02-26 01:05:10.114384 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-nonowner@b.com
+2026-02-26 01:05:10.267315 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= f7ea7cc8-d64c-43ea-a1c8-4b292d3631ae, user_id= 3be86cb6-5911-43ad-8878-3dc7656ff20a, token_hash= 035aef03911a1ae183b4ebc97125a4926f6259a1c2abcbd2e481a79588ae2a57, expires_at= 2026-02-27 01:05:10.267267+00:00)
+2026-02-26 01:05:10.274422 [INFO] [USER][GETBY][EMAIL] not_none_args: requester-nonowner@b.com
+2026-02-26 01:05:10.425280 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: requester-nonowner@b.com, active: True)
+2026-02-26 01:05:10.429014 [INFO] [USER][GETBY][EMAIL] not_none_args: requester-nonowner@b.com
+2026-02-26 01:05:10.579385 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= d313d434-97d7-4f8e-bb79-640080c0d569, user_id= b0d3828a-b4cf-4a77-8306-4e12f11a3b3e, token_hash= 9bdc6ebaa03373e718ae413c35458f8a000edcb674d937dbd06df54ec524060a, expires_at= 2026-02-27 01:05:10.579338+00:00)
+2026-02-26 01:05:10.582872 [INFO] [USER][GETBY][ID] not_none_args: b0d3828a-b4cf-4a77-8306-4e12f11a3b3e
+2026-02-26 01:05:10.584711 [INFO] [COMPANY][GETBY][ID] not_none_args: 81a52999-7e14-48ae-9c54-3766e36cfd31
+2026-02-26 01:05:10.589021 [INFO] [USER_COMPANY_REQUEST][CREATE] user_id: b0d3828a-b4cf-4a77-8306-4e12f11a3b3e, company_id: 81a52999-7e14-48ae-9c54-3766e36cfd31
+2026-02-26 01:05:10.591079 [INFO] [USER][GETBY][EMAIL] not_none_args: intruder@b.com
+2026-02-26 01:05:10.741035 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: intruder@b.com, active: True)
+2026-02-26 01:05:10.744820 [INFO] [USER][GETBY][EMAIL] not_none_args: intruder@b.com
+2026-02-26 01:05:10.894761 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 61d3b385-8190-4a4d-bc80-8ff7609af03b, user_id= e58d8e0c-46ac-45e9-a04d-0b0eedf231fb, token_hash= 1dc599ae30c33f664a1e0938ee04205f9c5ddf839b1e873541dbbb73530e50a2, expires_at= 2026-02-27 01:05:10.894721+00:00)
+2026-02-26 01:05:10.898262 [INFO] [USER][GETBY][ID] not_none_args: e58d8e0c-46ac-45e9-a04d-0b0eedf231fb
+2026-02-26 01:05:10.921998 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-26 01:05:11.087775 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-26 01:05:11.109641 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-26 01:05:11.261342 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: conflict@b.com, active: True)
+2026-02-26 01:05:11.265129 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-26 01:05:11.340333 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-26 01:05:11.501323 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: list@b.com, active: True)
+2026-02-26 01:05:11.505400 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-26 01:05:11.655367 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= c5de8a78-f7a6-42be-a7e9-cc10915b3cde, user_id= 528b5c7b-7304-4a37-9682-c47a4843e399, token_hash= 9c074cda8886fe401b0d16c979946b49bc75b284fa6acbe1b5edd611f6a580ad, expires_at= 2026-02-27 01:05:11.655326+00:00)
+2026-02-26 01:05:11.684789 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-26 01:05:11.838960 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: retrieve@b.com, active: True)
+2026-02-26 01:05:11.842619 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-26 01:05:11.995304 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= eba3f849-4802-4bec-9ef0-29f4e09981d9, user_id= 92f0f726-8f1d-4d59-bb84-933c8250f479, token_hash= 1e8007207206f9c2c557ca37e6792335143f9db4b8579ca105d2607579b36da3, expires_at= 2026-02-27 01:05:11.995267+00:00)
+2026-02-26 01:05:11.998001 [INFO] [USER][GETBY][ID] not_none_args: c3d981c6-8465-4415-a753-e8154622de70
+2026-02-26 01:05:12.016597 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-26 01:05:12.176779 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update@b.com, active: True)
+2026-02-26 01:05:12.181384 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-26 01:05:12.332762 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 17943586-9c89-40c9-b1a1-00e55513211d, user_id= 82bd58c2-25a0-47ff-a835-bef8a3c0e126, token_hash= 5dc46d5ba0d4f479bc0c6c30a41a0732419db8d4c55ca91c232fdfb602b54ddc, expires_at= 2026-02-27 01:05:12.332717+00:00)
+2026-02-26 01:05:12.336858 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'Updated'}
+2026-02-26 01:05:12.354961 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-26 01:05:12.514983 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update-not-found@b.com, active: True)
+2026-02-26 01:05:12.519330 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-26 01:05:12.674915 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 71e62002-835c-4489-85bb-080f16c08d22, user_id= ac16aad9-96b3-4eaa-8b81-60c7fc54ed2a, token_hash= 1072de918d3d8059b8274c2a32f835b698730cec13af2df6e89ba8a3e2bf230d, expires_at= 2026-02-27 01:05:12.674869+00:00)
+2026-02-26 01:05:12.696322 [INFO] [USER][GETBY][EMAIL] not_none_args: delete@b.com
+2026-02-26 01:05:12.857887 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: delete@b.com, active: True)
+2026-02-26 01:05:12.861181 [INFO] [USER][DELETE] user_id: d9f86b5c-fc1f-44bb-81af-c4947520fdaa
+2026-02-26 01:05:12.864272 [INFO] [USER][GETBY][ID] not_none_args: d9f86b5c-fc1f-44bb-81af-c4947520fdaa
+2026-02-26 01:05:13.047652 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-26 01:05:13.050880 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-26 01:05:13.219706 [INFO] [USER][CREATE] new_register: (first_name: Old, last_name: Name, email: old@b.com, active: True)
+2026-02-26 01:05:13.222651 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'New', 'active': False}
+2026-02-26 01:05:13.389011 [INFO] [USER][CREATE] new_register: (first_name: Delete, last_name: Me, email: delete@b.com, active: True)
+2026-02-26 01:05:13.391883 [INFO] [USER][DELETE] user_id: 0b38bc6b-645a-451d-bf09-62889dd0724c
+2026-02-26 01:05:13.392571 [INFO] [USER][GETBY][ID] not_none_args: 0b38bc6b-645a-451d-bf09-62889dd0724c
+2026-02-26 01:17:29.904755 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2026-02-26 01:17:30.095298 [INFO] [USER][CREATE] new_register: (first_name: john, last_name: doe, email: john.doe@email.com, active: True)
+2026-02-26 01:17:51.365162 [INFO] [USER][GETBY][EMAIL] not_none_args: john.doe@email.com
+2026-02-26 01:17:51.518429 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 485ec34a-9ea7-4599-9320-944c16cb2b2e, user_id= 13da0857-bdf8-432d-84e4-7090bd87432b, token_hash= 4802d9cfb50d907699adbe01088fe6c279a0908aa1518b675a9081088aca0458, expires_at= 2026-02-27 01:17:51.518366+00:00)
+2026-02-26 01:31:31.636205 [INFO] [USER][GETBY][ID] not_none_args: 13da0857-bdf8-432d-84e4-7090bd87432b
+2026-02-26 01:35:13.905389 [INFO] [REFRESH TOKEN][GETBY][JTI] jti: 485ec34a-9ea7-4599-9320-944c16cb2b2e
+2026-02-26 01:35:13.932655 [INFO] [REFRESH TOKEN][REVOKEALL] user_id: 13da0857-bdf8-432d-84e4-7090bd87432b
+2026-02-26 01:35:13.935325 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= b948e851-1424-4d7c-b095-5b712562e636, user_id= 13da0857-bdf8-432d-84e4-7090bd87432b, token_hash= c6b142ce17f55b9d22afbac73cd35e7d02228d0e3bbffc323294d3f5274222cf, expires_at= 2026-02-27 01:35:13.935289+00:00)
+2026-02-26 01:42:01.064286 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-26 01:42:01.251869 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: owner-request@b.com, active: True)
+2026-02-26 01:42:01.257338 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-26 01:42:01.413373 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 43e76ecc-1a68-4b32-866a-1a0fdd99c95a, user_id= 230fd608-3d4a-4c4e-9f23-e03e364260c4, token_hash= f89613047279af0961ec83e667d84b79405c12a67698e7675aac11b21af44587, expires_at= 2026-02-27 01:42:01.413322+00:00)
+2026-02-26 01:42:01.422854 [INFO] [USER][GETBY][EMAIL] not_none_args: requester@b.com
+2026-02-26 01:42:01.574112 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: requester@b.com, active: True)
+2026-02-26 01:42:01.577604 [INFO] [USER][GETBY][EMAIL] not_none_args: requester@b.com
+2026-02-26 01:42:01.730103 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 224aaeb8-222a-4dbb-9757-624190b803ab, user_id= 8f38c3be-984c-4159-9ca2-6b08bed62a4f, token_hash= b269cd821871c6e74455f1f0e75fc6f555d534ba2dea0d813913e72af7121d75, expires_at= 2026-02-27 01:42:01.730060+00:00)
+2026-02-26 01:42:01.734161 [INFO] [USER][GETBY][ID] not_none_args: 8f38c3be-984c-4159-9ca2-6b08bed62a4f
+2026-02-26 01:42:01.738520 [INFO] [COMPANY][GETBY][ID] not_none_args: d998e9c7-9edd-47a9-8ad8-b2b327794336
+2026-02-26 01:42:01.747680 [INFO] [USER_COMPANY_REQUEST][CREATE] user_id: 8f38c3be-984c-4159-9ca2-6b08bed62a4f, company_id: d998e9c7-9edd-47a9-8ad8-b2b327794336
+2026-02-26 01:42:01.750929 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-request@b.com
+2026-02-26 01:42:01.907468 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= a8f90c3d-f570-41af-b8a2-92043401faf2, user_id= 230fd608-3d4a-4c4e-9f23-e03e364260c4, token_hash= 1f8344da1c822910be418bd51fe7fe55bff5b4559d99815de8d545255ea5da23, expires_at= 2026-02-27 01:42:01.907436+00:00)
+2026-02-26 01:42:01.911495 [INFO] [USER][GETBY][ID] not_none_args: 230fd608-3d4a-4c4e-9f23-e03e364260c4
+2026-02-26 01:42:01.915294 [INFO] [USER_COMPANY_REQUEST][APPROVE] request_id: cbfb42e8-e515-4ffb-9859-76749c360271
+2026-02-26 01:42:01.940571 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-nonowner@b.com
+2026-02-26 01:42:02.103652 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: owner-nonowner@b.com, active: True)
+2026-02-26 01:42:02.106780 [INFO] [USER][GETBY][EMAIL] not_none_args: owner-nonowner@b.com
+2026-02-26 01:42:02.255615 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 73422a8c-6b57-49f0-b5b6-ce60e25750a5, user_id= fd92d1d1-419b-4f2d-83fd-d590b2640e38, token_hash= c098791bbdedc6a53f3f076921448fc417e3fb150ffc43b9b8e749debbb6e9c3, expires_at= 2026-02-27 01:42:02.255583+00:00)
+2026-02-26 01:42:02.260823 [INFO] [USER][GETBY][EMAIL] not_none_args: requester-nonowner@b.com
+2026-02-26 01:42:02.411032 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: requester-nonowner@b.com, active: True)
+2026-02-26 01:42:02.414031 [INFO] [USER][GETBY][EMAIL] not_none_args: requester-nonowner@b.com
+2026-02-26 01:42:02.562951 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 165b7c8a-2102-4560-a276-d6a9dcc78fa3, user_id= 7847f2a6-dafb-4e4b-801b-46b64d2e17b4, token_hash= f9da0b8f158dd98f3712bde5aa1c1b355b0acaeed0dd4ae5807051c4e3a4d84c, expires_at= 2026-02-27 01:42:02.562917+00:00)
+2026-02-26 01:42:02.565818 [INFO] [USER][GETBY][ID] not_none_args: 7847f2a6-dafb-4e4b-801b-46b64d2e17b4
+2026-02-26 01:42:02.567113 [INFO] [COMPANY][GETBY][ID] not_none_args: 0dfb4a77-e8b6-4500-8308-bf74e22c981a
+2026-02-26 01:42:02.571444 [INFO] [USER_COMPANY_REQUEST][CREATE] user_id: 7847f2a6-dafb-4e4b-801b-46b64d2e17b4, company_id: 0dfb4a77-e8b6-4500-8308-bf74e22c981a
+2026-02-26 01:42:02.573142 [INFO] [USER][GETBY][EMAIL] not_none_args: intruder@b.com
+2026-02-26 01:42:02.721977 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: intruder@b.com, active: True)
+2026-02-26 01:42:02.724780 [INFO] [USER][GETBY][EMAIL] not_none_args: intruder@b.com
+2026-02-26 01:42:02.873229 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 1de4c98c-7479-4bcc-9f6d-fbe8be98f25c, user_id= 4bee4066-703a-4b2d-9549-aeb5d7d5b891, token_hash= a8a14b8402ed28f19164e866c0f417f760ab09e9f5796e63016e10c6802eccdb, expires_at= 2026-02-27 01:42:02.873200+00:00)
+2026-02-26 01:42:02.875973 [INFO] [USER][GETBY][ID] not_none_args: 4bee4066-703a-4b2d-9549-aeb5d7d5b891
+2026-02-26 01:42:02.898476 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-26 01:42:03.056450 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-26 01:42:03.076263 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-26 01:42:03.234505 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: conflict@b.com, active: True)
+2026-02-26 01:42:03.237833 [INFO] [USER][GETBY][EMAIL] not_none_args: conflict@b.com
+2026-02-26 01:42:03.315628 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-26 01:42:03.477847 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: list@b.com, active: True)
+2026-02-26 01:42:03.482546 [INFO] [USER][GETBY][EMAIL] not_none_args: list@b.com
+2026-02-26 01:42:03.634913 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 1dc08fae-5ac9-4de8-b033-42924e5a20bf, user_id= 679707bc-b34a-4ac7-a352-ddfeb41194a7, token_hash= 59c52f50d152be0ba7229a4ba75f5f5794f2ccfbb15ccfec364b60a59d79ba38, expires_at= 2026-02-27 01:42:03.634876+00:00)
+2026-02-26 01:42:03.655672 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-26 01:42:03.807531 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: retrieve@b.com, active: True)
+2026-02-26 01:42:03.812500 [INFO] [USER][GETBY][EMAIL] not_none_args: retrieve@b.com
+2026-02-26 01:42:03.962595 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 80502681-fa1f-4519-a941-fdec55f54627, user_id= 2c78c072-2255-4401-a678-0d3e02f79d13, token_hash= 85eed2129b0c05f8018af71603177e6aee3f3bed8f9818ee1f382f67006bbcc8, expires_at= 2026-02-27 01:42:03.962565+00:00)
+2026-02-26 01:42:03.966517 [INFO] [USER][GETBY][ID] not_none_args: a9343df7-8e89-4f09-b689-168d0a81df26
+2026-02-26 01:42:03.993571 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-26 01:42:04.147873 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update@b.com, active: True)
+2026-02-26 01:42:04.152912 [INFO] [USER][GETBY][EMAIL] not_none_args: update@b.com
+2026-02-26 01:42:04.305147 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= c678e06f-ed55-4a33-a4a5-76414493505e, user_id= f84bbce4-a739-4fef-9534-7f075079b8b7, token_hash= f4c1a872a129ce712bd623f0dc970c59ccfae3c1081f3a71f8a0088516c96881, expires_at= 2026-02-27 01:42:04.305104+00:00)
+2026-02-26 01:42:04.309827 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'Updated'}
+2026-02-26 01:42:04.333384 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-26 01:42:04.492726 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: update-not-found@b.com, active: True)
+2026-02-26 01:42:04.498807 [INFO] [USER][GETBY][EMAIL] not_none_args: update-not-found@b.com
+2026-02-26 01:42:04.649699 [INFO] [REFRESH TOKEN][SAVE] new_register: (id= 213fb612-9b16-423e-a72d-a68ee08ee926, user_id= c54ff2c2-40db-4817-a087-713ce39cc7ed, token_hash= fccd9c3fd314354a1ab339d7fffc4924a111ac469b45186063fd835106777e4d, expires_at= 2026-02-27 01:42:04.649668+00:00)
+2026-02-26 01:42:04.672607 [INFO] [USER][GETBY][EMAIL] not_none_args: delete@b.com
+2026-02-26 01:42:04.827819 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: delete@b.com, active: True)
+2026-02-26 01:42:04.830905 [INFO] [USER][DELETE] user_id: b9cd27c7-0899-4160-91c6-c7e0f7bc920f
+2026-02-26 01:42:04.833065 [INFO] [USER][GETBY][ID] not_none_args: b9cd27c7-0899-4160-91c6-c7e0f7bc920f
+2026-02-26 01:42:05.010546 [INFO] [USER][CREATE] new_register: (first_name: A, last_name: B, email: a@b.com, active: True)
+2026-02-26 01:42:05.013398 [INFO] [USER][GETBY][EMAIL] not_none_args: a@b.com
+2026-02-26 01:42:05.186811 [INFO] [USER][CREATE] new_register: (first_name: Old, last_name: Name, email: old@b.com, active: True)
+2026-02-26 01:42:05.190151 [INFO] [USER][PARTIAL][UPDATE] not_none_args: {'first_name': 'New', 'active': False}
+2026-02-26 01:42:05.355078 [INFO] [USER][CREATE] new_register: (first_name: Delete, last_name: Me, email: delete@b.com, active: True)
+2026-02-26 01:42:05.358014 [INFO] [USER][DELETE] user_id: b98affcd-82ee-4580-a510-69db1a9a3501
+2026-02-26 01:42:05.358724 [INFO] [USER][GETBY][ID] not_none_args: b98affcd-82ee-4580-a510-69db1a9a3501

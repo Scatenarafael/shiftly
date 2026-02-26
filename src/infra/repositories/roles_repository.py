@@ -16,9 +16,9 @@ class RolesRepository(IRolesRepository):
     def _to_domain_role(model: Role) -> DomainRole:
         return DomainRole(
             id=str(model.id),
-            name=model.name,
-            company_id=str(model.company_id) if model.company_id else None,
-            number_of_cooldown_days=model.number_of_cooldown_days,
+            name=str(model.name),
+            company_id=str(model.company_id) if str(model.company_id) else None,
+            number_of_cooldown_days=int(model.number_of_cooldown_days),  # type: ignore
         )
 
     async def list(self) -> list[DomainRole]:
@@ -45,13 +45,13 @@ class RolesRepository(IRolesRepository):
             return None
         return self._to_domain_role(role)
 
-    async def partial_update_by_id(self, id: str, name: str | None):
+    async def partial_update_by_id(self, id: str, name: str | None, number_of_cooldown_days: int | None) -> DomainRole | None:
         result = await self.session.execute(select(Role).filter(Role.id == id))  # type: ignore[arg-type]
         role = result.scalars().first()
         if not role:
             return None
 
-        args = {"name": name}
+        args = {"name": name, "number_of_cooldown_days": number_of_cooldown_days}
         not_none_args = {k: v for k, v in args.items() if v is not None}
 
         app_logger.info(f"[ROLE][PARTIAL][UPDATE] not_none_args: {not_none_args}")

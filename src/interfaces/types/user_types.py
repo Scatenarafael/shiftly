@@ -2,6 +2,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import List, Optional
 
+from src.domain.entities.user_company_requests import UserCompanyRequestStatus
+
 
 @dataclass(slots=True)
 class UserUpdatePayload:
@@ -60,10 +62,34 @@ class UserSummaryDTO:
 @dataclass(slots=True)
 class UsersRolesFromCompany:
     user: UserSummaryDTO
+    is_owner: bool
     role: Optional[RoleDTO]
 
 
 @dataclass(slots=True)
 class CompaniesRolesFromUser:
     company: CompanyDTO
+    is_owner: bool
     role: Optional[RoleDTO]
+
+
+@dataclass(slots=True)
+class UserCompanyRequestDTO:
+    id: str
+    user_id: str
+    company_id: str
+    status: UserCompanyRequestStatus
+    accepted: bool
+    created_at: Optional[datetime]
+    updated_at: Optional[datetime]
+
+
+@dataclass(slots=True)
+class UserCompanyRequestWithUser:
+    id: str
+    user: UserSummaryDTO
+    company_id: str
+    status: UserCompanyRequestStatus
+    accepted: bool
+    created_at: Optional[datetime]
+    updated_at: Optional[datetime]

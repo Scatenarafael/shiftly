@@ -61,9 +61,35 @@ class UserSummaryResponse(BaseModel):
 
 class UsersRolesFromCompanyResponse(BaseModel):
     user: UserSummaryResponse
+    is_owner: bool
     role: Optional[RoleResponse]
 
 
 class CompaniesRolesFromUserResponse(BaseModel):
     company: CompanyResponse
+    is_owner: bool
     role: Optional[RoleResponse]
+
+
+class UserCompanyRequestCreateRequest(BaseModel):
+    company_id: str
+
+
+class UserCompanyRequestResponse(BaseModel):
+    id: str
+    user_id: str
+    company_id: str
+    status: str
+    accepted: bool
+    created_at: Optional[datetime]
+    updated_at: Optional[datetime]
+
+
+class UserCompanyRequestWithUserResponse(BaseModel):
+    id: str
+    user: UserSummaryResponse
+    company_id: str
+    status: str
+    accepted: bool
+    created_at: Optional[datetime]
+    updated_at: Optional[datetime]

@@ -1,6 +1,7 @@
 from src.interfaces.icompanies_repository import ICompaniesRepository
 from src.interfaces.ijwt_repository import IJWTRepository
 from src.interfaces.iroles_repository import IRolesRepository
+from src.interfaces.iuser_company_requests_repository import IUserCompanyRequestsRepository
 from src.interfaces.iuser_company_roles_repository import IUserCompanyRolesRepository
 from src.interfaces.iusers_repository import IUsersRepository
 from src.interfaces.iworkdays_repository import IWorkdaysRepository
@@ -26,6 +27,10 @@ def get_roles_repository() -> IRolesRepository:
 
 def get_user_company_roles_repository() -> IUserCompanyRolesRepository:
     raise _not_configured("get_user_company_roles_repository")
+
+
+def get_user_company_requests_repository() -> IUserCompanyRequestsRepository:
+    raise _not_configured("get_user_company_requests_repository")
 
 
 def get_workdays_repository() -> IWorkdaysRepository:

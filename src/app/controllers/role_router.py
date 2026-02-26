@@ -76,7 +76,7 @@ async def create_role(request: Request, body: CreateRoleRequestBody, create_role
 @router.patch("/{role_id}", response_model=RoleResponse)
 async def update_role(role_id: str, payload: PayloadUpdateRoleDTO, update_roles_usecase: UpdateRolesUsecase = Depends(get_update_role_usecase)):
     try:
-        role = await update_roles_usecase.execute(id=role_id, name=payload.name)
+        role = await update_roles_usecase.execute(id=role_id, name=payload.name, number_of_cooldown_days=payload.number_of_cooldown_days)
         if not role:
             raise NotFoundError("Role not found")
         return RoleResponse(**asdict(role))

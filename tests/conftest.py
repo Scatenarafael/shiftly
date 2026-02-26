@@ -3,7 +3,6 @@ from pathlib import Path
 
 import httpx
 import pytest_asyncio
-from alembic import command
 from alembic.config import Config
 from alembic.runtime.migration import MigrationContext
 from alembic.script import ScriptDirectory
@@ -13,10 +12,12 @@ from sqlalchemy.engine import make_url
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.pool import NullPool
 
+from alembic import command
+
 # Ensure the test DB URL is used before any project imports.
 TEST_DATABASE_URL = os.getenv(
     "TEST_DATABASE_URL",
-    "postgresql+asyncpg://postgres:postgres@localhost:5433/shiftly_test",
+    "postgresql+asyncpg://postgres:postgres@localhost:5433/shiftly_db",
 )
 os.environ["SQLALCHEMY_DATABASE_URI"] = TEST_DATABASE_URL
 

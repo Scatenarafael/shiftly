@@ -18,7 +18,7 @@ class IRolesRepository(ABC):
         pass
 
     @abstractmethod
-    async def partial_update_by_id(self, id: str, name: Optional[str]) -> Optional[Role]:
+    async def partial_update_by_id(self, id: str, name: Optional[str], number_of_cooldown_days: Optional[int]) -> Optional[Role]:
         pass
 
     @abstractmethod
